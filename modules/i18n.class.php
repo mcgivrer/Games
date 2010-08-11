@@ -18,8 +18,7 @@
  * @version 1.0 
  * @copyright 2010/05/15
  */
-class I18n {
-	private static $_instance = null;
+class I18n extends Singleton{
 	private static $_language = null;
 	private static $_langkey  = "en_EN";
 	private static $_themes = array();
@@ -96,10 +95,7 @@ class I18n {
 	 * initialise language from config.ini file.
 	 */
 	public function getInstance(){
-		if(!isset(self::$_instance) || self::$_instance == null){
-			self::$_instance = new I18n();
-		}
-		return self::$_instance;
+		return self::getSingletonInstance(__CLASS__);
 	}
 }
 ?>

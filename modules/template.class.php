@@ -47,7 +47,8 @@ class Template extends Singleton{
 	public function renderAppContainer($manager="",$template="",$data=""){
 		$attributes = self::$context->getAll();
 		foreach($attributes as $key=>$value){
-			$$key = $value; 
+			$$key = $value;
+			__debug("context item: $key = $value",__METHOD__,__CLASS__);
 		}
 		include_once("themes/".$this->active."/application.tpl");
 	}
@@ -59,6 +60,7 @@ class Template extends Singleton{
 	 * @param array $data data to be parse for this page
 	 */
 	public function renderMaster($manager="",$template="",$data=""){
+		__debug("manager=$manager, template=$template",__METHOD__,__CLASS__);
 		$attributes = self::$context->getAll();
 		foreach($attributes as $key=>$value){
 			$$key = $value; 

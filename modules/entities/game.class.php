@@ -12,12 +12,7 @@ class Game extends Entity implements IEntity {
     
     /**
      * Default constructor.
-     * @param $id
-     * @param $support
-     * @param $title
-     * @param $comment
-     * @param $note
-     * @param $author
+     * @param string $id
      */
     public function Game($id){
     	parent::Entity(__CLASS__);
@@ -43,22 +38,27 @@ class Game extends Entity implements IEntity {
     	if(isset($this->attributes[$attribute])){
 	    	switch($attribute){
 	    		case 'title':
-	    			return "".ucwords("".$this->attributes[$attribute]);
+	    			return "".ucwords("".$this->getAttribute($attribute));
 	    			break;
 	    		case 'support':
-	    			return "".strtoupper("".$this->attributes[$attribute]);
+	    			return "".strtoupper("".$this->getAttribute($attribute));
 	    			break;
 	    		case 'comment':
-	    			return "".ucfirst("".$this->attributes[$attribute]);
+	    			return "".ucfirst("".$this->getAttribute($attribute));
 	    		default:
-	    			return "".$this->attributes[$attribute];
+	    			return "".$this->getAttribute($attribute);
 	    			break;
 	    	}
     	}else{
-    		return "unknown attribute";
+    		return "unknown attribute '$attribute'.";
     	}
     }
     
+    /**
+     * Implemntation of the comparator for uasort() call in Data process.
+     * @param unknown_type $game1
+     * @param unknown_type $game2
+     */
     public function compare($game1,$game2){
     	$title1 = $game1->getAttribute('title');
     	$title2 = $game2->getAttribute('title');
@@ -69,6 +69,5 @@ class Game extends Entity implements IEntity {
     		return ($title1 < $title2) ? -1 : 1;
     	}
     }
-    
 }
 ?>

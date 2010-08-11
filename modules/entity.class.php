@@ -33,6 +33,15 @@ class Entity extends ImagesEntity  implements IEntity {
 	}
 	
 	/**
+	 * Add or set an attribute <code>$attribute</code> to value <code>$value</code>.
+	 * @param string $attribute
+	 * @param object $value
+	 */
+	public function setAttribute($attribute,$value){
+		$this->attributes[$attribute] = $value;
+	}
+	
+	/**
 	 * Return entity attribute <code>$key</code> value
 	 * @param string $key attribute name.
 	 */
