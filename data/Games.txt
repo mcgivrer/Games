@@ -1,0 +1,19 @@
+support|title|note|comment|author|
+x360|alan wake|18||McGivrer
+x360|assassins creed ii|16||McGivrer
+x360|battlefield bad compagny|17|The most illarious war story, inspired by the famous "Three Kings" film with G.Clooney.|McGivrer
+x360|battlefield bad compagny 2|16||McGivrer
+x360|blur|15||McGivrer
+x360|darksiders|15||McGivrer
+x360|magna carta 2|14||McGivrer
+x360|red faction guerilla|16||McGivrer
+x360|risen|14||McGivrer
+x360|split second velocity|15||McGivrer
+x360|the saboteur|14||McGivrer
+x360|tomb raider underworld|17||McGivrer
+x360|wet|16||McGivrer
+ps3|little big planet|19||McGivrer
+psp|jake and daxter : the lost frontier|17|The best continue for the Jak's adventures|McGivrer
+psp|little big adventure|19|One of the (or the) best Playstation Portable game !|McGivrer
+psp|ratchet and clank : size matter|16|Platform game for PSP. a reference. After 3 adventures on PS2, installation on PSP is an easy success.|McGivrer
+END|END|END|END|END

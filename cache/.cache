@@ -1,0 +1,64 @@
+<br />
+<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>13</b><br />
+<br />
+<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>14</b><br />
+<br />
+<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>15</b><br />
+<br />
+<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>16</b><br />
+<pre>class to 'singletonize':Data</pre><pre>instances:[Data Object
+(
+)
+]</pre>Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+<pre>game id=1, support = x360</pre><?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Games - Alan Wake</title>
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="default.lightbox" />
+        <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.lightbox.0.5.pack.js"></script>
+        <script>
+        $(function() {
+		   $('a[@rel*=lightbox]').lightBox({
+			overlayBgColor: '#FFF',
+			overlayOpacity: 0.6,
+			imageLoading: 'http://example.com/images/loading.gif',
+			imageBtnClose: 'http://example.com/images/close.gif',
+			imageBtnPrev: 'http://example.com/images/prev.gif',
+			imageBtnNext: 'http://example.com/images/next.gif',
+			containerResizeSpeed: 350,
+			txtImage: 'Imagem',
+			txtOf: 'de'
+		   });
+		});
+		</script>
+    </head>
+    <body>
+        <div id="page">
+          <div id="header">
+            <h1>Games</h1>
+          </div>
+          	<br />
+<b>Warning</b>:  include_once(themes/default/managers//master.tpl) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in <b>D:\tools\WebAppPortable\App\app\games\modules\template.class.php</b> on line <b>62</b><br />
+<br />
+<b>Warning</b>:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'themes/default/managers//master.tpl' for inclusion (include_path='.;C:\php5\pear') in <b>D:\tools\WebAppPortable\App\app\games\modules\template.class.php</b> on line <b>62</b><br />
+          <div class="clear"></div>
+          <div id="footer">
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
+          </div>
+        </div>
+    </body>
+</html>
