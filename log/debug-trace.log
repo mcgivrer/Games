@@ -6246,3 +6246,2016 @@
 2010/08/12-12:12:24|DEBUG|I18n|get()|start : group=list, key=author
 2010/08/12-12:12:24|DEBUG|I18n|get()|start : group=list, key=note
 2010/08/12-12:12:24|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:25:59|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:25:59|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:25:59|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:25:59|DEBUG|Router|run()|Call page manager
+2010/08/12-12:25:59|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:25:59|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:25:59|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:25:59|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:25:59|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:25:59|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:25:59|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:25:59|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:26:42|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:26:42|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:26:42|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:26:42|DEBUG|Router|run()|Call page manager
+2010/08/12-12:26:42|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:26:42|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:26:42|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:26:42|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:26:42|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:26:42|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:26:42|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:26:42|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:26:42|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:26:42|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:26:42|DEBUG|PageManager|display()|action: view
+2010/08/12-12:26:42|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:26:42|DEBUG|IndexManager|view()|display page id=11
+2010/08/12-12:26:42|DEBUG|Data|getDataById()|retrieve data for id:11
+2010/08/12-12:26:42|DEBUG|Data|getData()|GetData for (Game/11)
+2010/08/12-12:26:42|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:26:42|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:26:42|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:26:42|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:26:42|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:26:42|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:26:42|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:28:10|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:28:10|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:28:10|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:28:10|DEBUG|Router|run()|Call page manager
+2010/08/12-12:28:10|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:28:10|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:28:10|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:28:10|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:28:10|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:28:10|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:28:10|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:28:10|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:10|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:10|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:28:10|DEBUG|PageManager|display()|action: view
+2010/08/12-12:28:10|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:28:10|DEBUG|IndexManager|view()|display page id=11
+2010/08/12-12:28:10|DEBUG|Data|getDataById()|retrieve data for id:11
+2010/08/12-12:28:10|DEBUG|Data|getData()|GetData for (Game/11)
+2010/08/12-12:28:10|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:28:10|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:28:10|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:28:10|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:28:10|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:28:10|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:28:10|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:28:13|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:28:13|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:28:13|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:28:13|DEBUG|Router|run()|Call page manager
+2010/08/12-12:28:13|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:28:13|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:28:13|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:28:13|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:28:13|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:28:13|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:28:13|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:28:13|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:13|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:28:13|DEBUG|PageManager|display()|action: view
+2010/08/12-12:28:13|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:28:13|DEBUG|IndexManager|view()|display page id=1
+2010/08/12-12:28:13|DEBUG|Data|getDataById()|retrieve data for id:1
+2010/08/12-12:28:13|DEBUG|Data|getData()|GetData for (Game/1)
+2010/08/12-12:28:13|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:28:13|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:28:13|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:28:13|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:28:13|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:28:13|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:28:13|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:28:14|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:28:14|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:28:14|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:28:14|DEBUG|Router|run()|Call page manager
+2010/08/12-12:28:14|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:28:14|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:28:14|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:28:14|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:28:14|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:28:14|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:28:14|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:28:14|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:28:14|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:28:14|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:28:14|DEBUG|PageManager|display()|action: view
+2010/08/12-12:28:14|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:28:14|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:28:14|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:28:14|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:28:14|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:28:14|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:28:14|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:28:14|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:28:14|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:28:14|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:28:14|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:38:33|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:38:33|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:38:33|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:38:33|DEBUG|Router|run()|Call page manager
+2010/08/12-12:38:33|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:38:33|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:38:33|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:38:33|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:38:33|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:38:33|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:38:33|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:38:33|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:38:33|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:38:33|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:38:33|DEBUG|PageManager|display()|action: view
+2010/08/12-12:38:33|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:38:33|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:38:33|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:38:33|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:38:33|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:38:33|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:38:33|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:38:33|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:38:33|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:39:13|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:13|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:13|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:13|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:13|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:13|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:13|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:13|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:13|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:13|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:13|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:13|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:13|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:13|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:13|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:13|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:13|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:39:13|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:39:13|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:39:13|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:13|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:39:13|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:39:13|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:39:13|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:13|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:13|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:13|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:49|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:49|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:49|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:49|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:49|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:49|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:49|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:49|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:49|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:49|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:49|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:49|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:49|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:49|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:49|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:49|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:49|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:39:49|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:39:49|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:39:49|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:49|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:39:49|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:39:49|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:39:49|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:49|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:49|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:39:52|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:52|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:52|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:52|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:52|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:52|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:52|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:52|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:52|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:52|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:52|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:52|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:52|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:52|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:52|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:52|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:52|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:39:52|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:39:52|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:39:52|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:52|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:52|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=psp
+)
+]
+2010/08/12-12:39:52|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => psp
+        )
+
+)
+]
+2010/08/12-12:39:52|DEBUG|Data|isConditionArrayTrue()|condition true for item(15)
+2010/08/12-12:39:52|DEBUG|Data|getDataFiltered()|Add item(15) as array of attributes[Array]
+2010/08/12-12:39:52|DEBUG|Data|isConditionArrayTrue()|condition true for item(16)
+2010/08/12-12:39:52|DEBUG|Data|getDataFiltered()|Add item(16) as array of attributes[Array]
+2010/08/12-12:39:52|DEBUG|Data|isConditionArrayTrue()|condition true for item(17)
+2010/08/12-12:39:52|DEBUG|Data|getDataFiltered()|Add item(17) as array of attributes[Array]
+2010/08/12-12:39:52|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:52|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:52|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:39:53|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:53|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:53|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:53|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:53|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:53|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:53|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:53|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:53|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:53|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:53|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:53|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:53|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:53|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:53|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:53|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:53|DEBUG|IndexManager|view()|display page id=3
+2010/08/12-12:39:53|DEBUG|Data|getDataById()|retrieve data for id:3
+2010/08/12-12:39:53|DEBUG|Data|getData()|GetData for (Game/3)
+2010/08/12-12:39:53|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:53|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:53|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=ps3
+)
+]
+2010/08/12-12:39:53|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => ps3
+        )
+
+)
+]
+2010/08/12-12:39:53|DEBUG|Data|isConditionArrayTrue()|condition true for item(14)
+2010/08/12-12:39:53|DEBUG|Data|getDataFiltered()|Add item(14) as array of attributes[Array]
+2010/08/12-12:39:53|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:53|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:53|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:53|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:53|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:39:54|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:54|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:54|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:54|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:54|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:54|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:54|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:54|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:54|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:54|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:54|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:54|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:54|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:54|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:54|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:54|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:54|DEBUG|IndexManager|view()|display page id=14
+2010/08/12-12:39:54|DEBUG|Data|getDataById()|retrieve data for id:14
+2010/08/12-12:39:54|DEBUG|Data|getData()|GetData for (Game/14)
+2010/08/12-12:39:54|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:54|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:54|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=ps3
+)
+]
+2010/08/12-12:39:54|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => ps3
+        )
+
+)
+]
+2010/08/12-12:39:54|DEBUG|Data|isConditionArrayTrue()|condition true for item(14)
+2010/08/12-12:39:54|DEBUG|Data|getDataFiltered()|Add item(14) as array of attributes[Array]
+2010/08/12-12:39:54|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:54|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:54|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:54|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:54|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:39:56|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:56|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:56|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:56|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:56|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:56|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:56|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:56|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:56|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:56|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:56|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:56|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:56|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:56|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:56|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:56|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:56|DEBUG|IndexManager|view()|display page id=14
+2010/08/12-12:39:56|DEBUG|Data|getDataById()|retrieve data for id:14
+2010/08/12-12:39:56|DEBUG|Data|getData()|GetData for (Game/14)
+2010/08/12-12:39:56|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:56|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:39:56|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:39:56|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:39:56|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:56|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:56|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:39:57|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:39:57|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:39:57|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:39:57|DEBUG|Router|run()|Call page manager
+2010/08/12-12:39:57|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:39:57|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:39:57|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:39:57|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:39:57|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:39:57|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:39:57|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:39:57|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:39:57|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:39:57|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:39:57|DEBUG|PageManager|display()|action: view
+2010/08/12-12:39:57|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:39:57|DEBUG|IndexManager|view()|display page id=1
+2010/08/12-12:39:57|DEBUG|Data|getDataById()|retrieve data for id:1
+2010/08/12-12:39:57|DEBUG|Data|getData()|GetData for (Game/1)
+2010/08/12-12:39:57|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:39:57|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:39:57|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:39:57|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:39:57|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:39:57|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_supports
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=list_games
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|getS()|group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=view_title
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=game, key=default_image_cover
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=author
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=note
+2010/08/12-12:39:57|DEBUG|I18n|get()|start : group=list, key=comment
+2010/08/12-12:42:20|MAIN|Singleton|------ Start Log for new page ------
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Router
+2010/08/12-12:42:20|DEBUG|Router|__construct()|default constructor for Router
+2010/08/12-12:42:20|DEBUG|Router|run()|Call page manager
+2010/08/12-12:42:20|DEBUG|Router|initializeCache()|Initialize Cache following config.ini/cache/[include/exclude] parameters
+2010/08/12-12:42:20|DEBUG|Router|initializeCache()|Cahe engine is off
+2010/08/12-12:42:20|DEBUG|Router|initializeCache()|include:[*], exclude:[g=3,s=psp]
+2010/08/12-12:42:20|DEBUG|/home/frederic/public_html/games/modules/router.class.php|index()|Generate page
+2010/08/12-12:42:20|DEBUG|Router|getManager()|instanciate manager=IndexManager
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Data
+2010/08/12-12:42:20|DEBUG|Data|Data()|parse data directory
+2010/08/12-12:42:20|DEBUG|Data|Data()|find 'Games.txt', generate entity(ies) for this file data
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|Game|Game()|Game.entityName=Game
+2010/08/12-12:42:20|DEBUG|ImagesEntity|loadImages()|param: treeType='support/title', categories='cover,arts,screenshots', search for existing images into 
+2010/08/12-12:42:20|DEBUG|PageManager|display()|path:/home/frederic/public_html/games/modules/pagemanager.class.php
+2010/08/12-12:42:20|DEBUG|PageManager|display()|action: view
+2010/08/12-12:42:20|DEBUG|IndexManager|view()|retrieve params and populate data
+2010/08/12-12:42:20|DEBUG|IndexManager|view()|display page id=1
+2010/08/12-12:42:20|DEBUG|Data|getDataById()|retrieve data for id:1
+2010/08/12-12:42:20|DEBUG|Data|getData()|GetData for (Game/1)
+2010/08/12-12:42:20|DEBUG|Data|getData()|returned data:[count=1]
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|retrieve all instance of Game and generate array with [id,title,support]
+2010/08/12-12:42:20|DEBUG|Data|analyzeConditions()|conditions item:[Array
+(
+    [0] => support=x360
+)
+]
+2010/08/12-12:42:20|DEBUG|Data|analyzeConditions()|conditions array:[Array
+(
+    [0] => Array
+        (
+            [attribute] => support
+            [comparator] => =
+            [value] => x360
+        )
+
+)
+]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(1)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(1) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(2)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(2) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(3)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(3) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(4)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(4) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(5)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(5) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(6)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(6) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(7)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(7) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(8)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(8) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(9)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(9) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(10)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(10) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(11)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(11) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(12)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(12) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Data|isConditionArrayTrue()|condition true for item(13)
+2010/08/12-12:42:20|DEBUG|Data|getDataFiltered()|Add item(13) as array of attributes[Array]
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Template
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Template
+2010/08/12-12:42:20|DEBUG|I18n|I18n()|path:[i18n/en_EN/main.properties]
+2010/08/12-12:42:20|DEBUG|I18n|I18n()|messages=Array
+(
+    [home] => Array
+        (
+            [title] => Games
+        )
+
+    [list] => Array
+        (
+            [list_supports] => Supports
+            [list_games] => List of Games
+            [list_view_title] => Show all games from {0}
+            [author] => Author
+            [note] => Note
+            [comment] => Comment
+        )
+
+    [game] => Array
+        (
+            [default_image_cover] => images/default/default-cover.png
+        )
+
+)
+
+2010/08/12-12:42:20|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:42:20|DEBUG|I18n|get()|start : group=home, key=title
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Template
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Template
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_supports
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=list_games
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getS()|group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=view_title
+2010/08/12-12:42:20|DEBUG|Singleton|getSingletonInstance()|Return an instance of the needed class Template
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=game, key=default_image_cover
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=author
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=note
+2010/08/12-12:42:20|DEBUG|Singleton|get()|start : group=list, key=comment

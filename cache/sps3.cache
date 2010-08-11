@@ -1,10 +1,10 @@
-<pre>game id=15, support = ps3</pre><?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+<pre>game id=3, support = ps3</pre><?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Games - Jake And Daxter : The Lost Frontier</title>
+        <title>Games - Battlefield Bad Compagny</title>
         <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
         <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="default.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
@@ -52,10 +52,10 @@
 <div id="content">
 <div id="game">
 	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
-		<h2>PSP / Jake And Daxter : The Lost Frontier</h2>
+		<h2>X360 / Battlefield Bad Compagny</h2>
 		<div class="file">
 			<a href="#" title="open cover picture in full size">
-			    <img src="images/default/default-cover.png" title="cover for Jake And Daxter : The Lost Frontier" alt="box cover of game 'Jake And Daxter : The Lost Frontier'">
+			    <img src="images/default/default-cover.png" title="cover for Battlefield Bad Compagny" alt="box cover of game 'Battlefield Bad Compagny'">
 			</a>			
 			<ul class="infos">
 				<li><span class="label">Author</span>McGivrer
@@ -64,7 +64,7 @@
 				<li>
 					<span class="label fullwidth">Comment</span>
 					<div class="comment">
-			    	The best continue for the Jak's adventures					</div>
+			    	The most illarious war story, inspired by the famous "Three Kings" film with G.Clooney.					</div>
 				</li>
 			</ul>
 			<br />

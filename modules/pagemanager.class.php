@@ -58,8 +58,15 @@ class PageManager {
 		$action = (isset($_REQUEST['action'])?$_REQUEST['action']:"view");
 		__debug("action: $action","display",__CLASS__);
 		$template = call_user_func(array($this,$action));
-		$roles=array('admin'=>false);
-		Template::getInstance()->setContext($this->getShortManagerName(),$template,$this->data,$_REQUEST,$roles);
+		$context = new Context();
+		$context->set('manager',$this->getShortManagerName());
+		$context->set('template',$template);
+		$context->set('data',$this->data);
+		$context->set('request',$_REQUEST);
+		$context->set('roles',array('admin'=>false));
+		
+		
+		Template::getInstance()->setContext($context);
 		Template::getInstance()->renderAppContainer();
 	}
 	

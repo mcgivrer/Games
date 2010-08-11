@@ -1,5 +1,13 @@
 <?php
-class Template {
+/**
+ * Template Engine 
+ * Manage multiple themes rendering and support specific i18n, scripts and styles.
+ * @author Frederic Delorme<frederic.delorme@gmail.com>
+ * @version 1.0
+ * @copyright 2010/08/11
+ *
+ */
+class Template extends Singleton{
 	
 	static private $_instance;
 	
@@ -26,13 +34,8 @@ class Template {
 	 * @param string $template template to use for rendering page (linked to Manager action)
 	 * @param array $data data manipulated for this display.
 	 */
-	public function setContext($manager,$template,$data,$request,$roles){
-		self::$context=array(
-				'manager'=>$manager,
-				'template'=>$template,
-				'data'=>$data,
-				'request'=>$request,
-				'roles'=>$roles);
+	public function setContext($context){
+		self::$context=$context;
 	}
 
 	/**
@@ -42,14 +45,10 @@ class Template {
 	 * @param array $data data to be parse for this page.
 	 */
 	public function renderAppContainer($manager="",$template="",$data=""){
-		
-		foreach(self::$context as $key=>$value){
+		$attributes = self::$context->getAll();
+		foreach($attributes as $key=>$value){
 			$$key = $value; 
 		}
-		/*if($manager=="") $manager=self::$context['manager'];
-		if($template=="") $template=self::$context['template'];
-		if($data=="") $data=self::$context['data'];
-		$request=self::$context['request'];*/
 		include_once("themes/".$this->active."/application.tpl");
 	}
 	
@@ -60,10 +59,15 @@ class Template {
 	 * @param array $data data to be parse for this page
 	 */
 	public function renderMaster($manager="",$template="",$data=""){
-		if($manager=="") $manager=self::$context['manager'];
+		$attributes = self::$context->getAll();
+		foreach($attributes as $key=>$value){
+			$$key = $value; 
+		}
+		/*if($manager=="") $manager=self::$context['manager'];
 		if($template=="") $template=self::$context['template'];
 		if($data=="") $data=self::$context['data'];
 		$request=self::$context['request'];
+		*/
 		include_once("themes/".$this->active."/managers/".$manager."/".$template.".tpl");
 	}
 
@@ -75,7 +79,7 @@ class Template {
 	 * @param array $data data to be parse for this page.
 	 */
 	public function renderEntity($entity,$action,$data){
-		$request=self::$context['request'];
+		$request=self::$context->get('request');
 		include_once("themes/".$this->active."/entities/".$entity."/".$action.".tpl");
 	}
 
@@ -83,10 +87,7 @@ class Template {
 	 * Singleton
 	 */
 	public static function getInstance(){
-		if(!isset(self::$_instance)){
-			self::$_instance=new Template();
-		}
-		return self::$_instance;
+		return self::getSingletonInstance(__CLASS__);
 	}
 }
 ?>

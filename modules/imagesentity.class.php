@@ -134,8 +134,13 @@ class ImagesEntity{
 	public function getPictureThumb($key="default",$index=1,$default){
 		return (isset($this->pictures[$key][$index]['thumb'])?$this->pictures[$key][$index]['thumb']:$default);
 	}
+	/**
+	 * TODO Code this part to store images.
+	 * @param string $treeType
+	 * @param FileObjectArray $files
+	 */
 	
-	public function upload($treeType="id/"){
+	public function upload($treeType="id/",$files){
 		
 	}
 	/**
