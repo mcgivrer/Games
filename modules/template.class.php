@@ -17,6 +17,7 @@ class Template extends Singleton{
 	
 	public function __construct(){
 		$this->active = __config('template','active');
+		I18n::getInstance()->addI18nTheme($this->getActive());
 	}
 	
 

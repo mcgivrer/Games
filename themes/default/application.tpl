@@ -20,8 +20,8 @@
 			imageBtnPrev: 'images/icons/lightbox/lightbox-btn-prev.gif',
 			imageBtnNext: 'images/icons/lightbox/lightbox-btn-next.gif',
 			containerResizeSpeed: 350,
-			txtImage: '<?php __('image','image_lightbox_label')?>',
-			txtOf: '<?php __('image','image_lightbox_de_label')?>'
+			txtImage: '<?= __('lightbox','image_lightbox_label')?>',
+			txtOf: '<?= __('lightbox','image_lightbox_de_label')?>'
 		   });
 		});
 		</script>
@@ -34,7 +34,7 @@
           	<? __render();?>
           <div class="clear"></div>
           <div id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
           </div>
         </div>
     </body>

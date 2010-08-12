@@ -10,7 +10,9 @@
 	<h2><?= __('list','list_games')?></h2>
     <ul>
     <? foreach($data['games'] as $id=>$game): ?>
+    	<?php if($id!="meta") :?>
         <li<?= ($data['game_selected']==$game['id']?" class=\"selected\"":"")?>><a href="<?= "?g=".$game['id'] ?>" title="<?= __s('game','view_title',$game['title'])?>"><?= $game['title']?></a></li>
+        <?php endif;?>
     <? endforeach; ?>
     </ul>
 </div>

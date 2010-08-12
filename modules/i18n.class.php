@@ -28,12 +28,12 @@ class I18n extends Singleton{
 	 * Default constructor.
 	 */
 	public function __construct(){
-		self::$debug = Debug::getInstance(__CLASS__);
+		//self::$debug = Debug::getInstance(__CLASS__);
 		self::$_langkey = Config::getInstance()->get("system","language");
 		if(!isset(self::$_language) || self::$_language == null){
 			self::$_language = parse_ini_file(dirname(__FILE__)."/../i18n/".self::$_langkey."/main.properties",true);
-			__debug("path:["."i18n/".self::$_langkey."/main.properties]","I18n");
-			__debug("messages=".print_r(self::$_language,true),"I18n");
+			__debug("path:["."i18n/".self::$_langkey."/main.properties]",__METHOD__,__CLASS__);
+			__debug("messages=".print_r(self::$_language,true),__METHOD__,__CLASS__);
 		}
 	}
 	/**
@@ -41,17 +41,17 @@ class I18n extends Singleton{
 	 * @param String $themepath name of the theme.
 	 */
 	public function addI18nTheme($themepath){
-		__debug("Add template I18n definitions - start","addI18nTheme");
-		$i18npath = "public/templates/".$themepath."/i18n/".self::$_langkey."/application.ini";
-		if(!isset(self::$_themes[$themepath]) && file_exists(dirname(__FILE__)."/../../".$i18npath)){
-			__debug("file for [".$themepath."/".self::$_langkey."] exists [".$i18npath."]. Added.","addI18nTheme");
+		__debug("Add template I18n definitions - start",__METHOD__,__CLASS__);
+		$i18npath = "themes/".$themepath."/i18n/".self::$_langkey."/application.ini";
+		if(!isset(self::$_themes[$themepath]) && file_exists(dirname(__FILE__)."/../".$i18npath)){
+			__debug("file for [".$themepath."/".self::$_langkey."] exists [".$i18npath."]. Added.",__METHOD__,__CLASS__);
 			$themeI18n = parse_ini_file($i18npath,true);
 			self::$_themes[$themepath]=$themepath;
 			self::$_language = array_merge(self::$_language,$themeI18n);
 		}else{
-			__debug("file for [".$themepath."/".self::$_langkey."] does not exist [".$i18npath."]!","addI18nTheme");
+			__debug("file for [".$themepath."/".self::$_langkey."] does not exist [".$i18npath."]!",__METHOD__,__CLASS__);
 		}
-		__debug("Theme I18n definition - end","addI18nTheme");
+		__debug("Theme I18n definition - end",__METHOD__,__CLASS__);
 	}
 	/**
 	 * return the message based on $group and $key identifiers.
@@ -59,7 +59,7 @@ class I18n extends Singleton{
 	 * @param $key
 	 */
 	public function get($group,$key){
-		__debug("start : group=$group, key=$key","get");
+		__debug("start : group=$group, key=$key",__METHOD__,__CLASS__);
 		if(isset(self::$_language[$group]) && isset(self::$_language[$group][$key])){
 			return self::$_language[$group][$key];
 		}else{
@@ -72,7 +72,7 @@ class I18n extends Singleton{
 	 * @param $key
 	 */
 	public function getS($group,$key,$args){
-		__debug("group=$group, key=$key","getS");
+		__debug("group=$group, key=$key",__METHOD__,__CLASS__);
 		$msg=self::get($group,$key);
 		$msg = mb_convert_encoding(self::get($group,$key),Config::getInstance()->get("system","encoding"));
 
@@ -87,7 +87,7 @@ class I18n extends Singleton{
 	 * @param $key
 	 */
 	public function removeHtml($group,$key){
-		__debug("group=$group, key=$key","removeHtml");
+		__debug("group=$group, key=$key",__METHOD__,__CLASS__);
 		$msg=self::get($group,$key);
 		return strip_tags($msg);
 	}

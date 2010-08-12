@@ -1,6 +1,5 @@
 <?php
-class PageManager {
-	static protected $_instance;
+class PageManager extends Singleton{
 	protected 	$data = array(
         'theme' => "default");
 	protected $request = array();
@@ -96,11 +95,7 @@ class PageManager {
 		}
 	}
 	
-	public function getInstance($managerName="PageManager"){
-		if(!isset(self::$_instance)){
-			self::$_instance = new $managerName;
-			self::$_instance->managerName = $managerName; 
-		}
-		return self::$_instance;
+	public function getInstance($className=__CLASS__){
+		return parent::getSingletonInstance($className);
 	}
 }

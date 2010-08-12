@@ -39,6 +39,7 @@ class IndexManager extends PageManager{
 		
 		$this->addData('game_selected', $g);
 		$this->addData('support_selected', $s);
+		$this->addData('size-screenshot',"180x120");
 		
 		echo "<pre>game id=$g, support = $s</pre>";
 		return "master";
