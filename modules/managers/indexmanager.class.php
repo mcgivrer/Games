@@ -22,14 +22,14 @@ class IndexManager extends PageManager{
 		__debug("retrieve params and populate data","view",__CLASS__);
 		$g = __requestSession('g',"1");
 		$s = __requestSession('s',"x360");
-		__debug("display page id=$g","view",__CLASS__);
+		__debug("display page id=$g",__METHOD__,__CLASS__);
 		
 		$game = $this->persistance->getDataById($g);
 						
 		$games = $this->persistance->getDataFiltered('Game',
 						array('id','title','support'),
 						"support=".strtolower($s),
-						array('limit'=>5));
+						array('limit'=>20));
 		
 		$supports = $this->persistance->getDataListDistinct('Game','support');
 		
@@ -41,7 +41,7 @@ class IndexManager extends PageManager{
 		$this->addData('support_selected', $s);
 		$this->addData('size-screenshot',"180x120");
 		
-		echo "<pre>game id=$g, support = $s</pre>";
+		//echo "<pre>game id=$g, support = $s</pre>";
 		return "master";
 	}
 	

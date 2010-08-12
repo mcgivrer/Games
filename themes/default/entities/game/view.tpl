@@ -16,6 +16,7 @@
 				</li>
 			</ul>
 			<?php if(count($data['game']->getPictures('screenshots'))>0):?>
+			<div class="clear"></div>
 			<div class="gallery">
 				<h3><?= __('game','gallery_title')?></h3>
 				<div class="gallery-content">
@@ -28,6 +29,7 @@
 				</div>
 			</div>
 			<?php else:?>
+				<div class="clear"></div>
 				<div class="nogallery"><p><?= __('game','no_gallery')?></p></div>
 			<?php endif;?>
 			<?php if($roles['admin']):?>
