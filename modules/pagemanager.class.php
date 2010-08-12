@@ -15,6 +15,7 @@ class PageManager {
 		header("Cache-Control: no-cache, must-revalidate"); 
 		header("Pragma: no-cache"); 
 		$this->request = $_REQUEST;
+		//$this->persistance = DataRS::getInstance();
 		$this->persistance = Data::getInstance();
 		$this->managerName = $managerName;
 	}

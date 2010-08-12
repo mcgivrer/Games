@@ -81,7 +81,12 @@ class Template extends Singleton{
 	 * @param array $data data to be parse for this page.
 	 */
 	public function renderEntity($entity,$action,$data){
-		$request=self::$context->get('request');
+		$attributes = self::$context->getAll();
+		foreach($attributes as $key=>$value){
+			if($key!='data'){
+				$$key = $value; 
+			}
+		}
 		include_once("themes/".$this->active."/entities/".$entity."/".$action.".tpl");
 	}
 

@@ -1,10 +1,23 @@
 <?php
+/**
+ * Sample on how to use PageManager for simple display purpose.
+ * @author Frédéric Delorme<frederic.delorme@gmail.com>
+ * @version 1.0
+ * @copyright 2010/08/11
+ */
 class IndexManager extends PageManager{
 	
+	/**
+	 * Call parent constructorto initialize default system.
+	 */
 	public function __construct(){
 		parent::__construct(__CLASS__);
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see modules/PageManager::view()
+	 */
 	public function view(){
 		__debug("retrieve params and populate data","view",__CLASS__);
 		$g = __requestSession('g',"1");
@@ -15,7 +28,8 @@ class IndexManager extends PageManager{
 						
 		$games = $this->persistance->getDataFiltered('Game',
 						array('id','title','support'),
-						"support=".strtolower($s));
+						"support=".strtolower($s),
+						array('limit'=>5));
 		
 		$supports = $this->persistance->getDataListDistinct('Game','support');
 		
@@ -30,10 +44,7 @@ class IndexManager extends PageManager{
 		return "master";
 	}
 	
-	public function create(){
-		return "master";
-		
-	}
+	
 	/**
 	 * Upload images
 	 */
@@ -43,16 +54,36 @@ class IndexManager extends PageManager{
 		return "matser";
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see modules/PageManager::create()
+	 */
+	public function create(){
+		return "master";
+		
+	}
+	/**
+	 * (non-PHPdoc)
+	 * @see modules/PageManager::update()
+	 */
 	public function update(){
 		return "master";
 		
 	}
 
+	/**
+	 * (non-PHPdoc)
+	 * @see modules/PageManager::delete()
+	 */
 	public function delete(){
 		return "master";
 		
 	}
-	
+
+	/**
+	 * (non-PHPdoc)
+	 * @see modules/PageManager::getInstance()
+	 */
 	public function getInstance(){
 		parent::getInstance(__CLASS__);
 		return self::$_instance;

@@ -84,7 +84,7 @@ class Data extends TData implements IData{
 	/**
 	 * @see IData#getData($entityName,$entityUID)
 	 */
-	public function getData($entityName="",$entityUID=""){
+	public function getData($entityName="",$entityUID="",$options=null){
 		__debug("GetData for ($entityName/$entityUID)","getData",__CLASS__);
 		if($entityName=="" && $entityUID==""){
 			$ret= self::$_data;
@@ -95,10 +95,43 @@ class Data extends TData implements IData{
 		}else{
 			$ret=null;
 		}
+		if(is_array($ret)){
+			$ret = $this->manageOptions($ret, $options);
+		}
 		__debug("returned data:[count=".count($ret)."]","getData",__CLASS__);
 		return $ret;
 	}
 
+	/**
+	 * Manage Options on data retrieving,like 'limit',...
+	 * If 'limit' is set in the <code>$options</code> array, slice array for limit value.
+	 * @param array $items to be optionized.
+	 * @param array $options list of options to evaluate.
+	 */
+	private function manageOptions($items, $options){
+				// calculate number of items
+		$count = count($items);
+		$itemsOptionized = $items; 
+		// manager options
+		//print_r($options);
+		if($options!=null){
+			// If limit is set, slice array for limit value.
+			if(isset($options['limit'])){
+				__debug("limit=".$options['limit'],__METHOD__,__CLASS__);
+				//echo 'limit:'.$options['limit'];
+				$arrayOffset =(isset($items['meta']['array_offset'])?$items['meta']['array_offset']:0);
+				if($count>$options['limit']){
+					$itemsOptionized = array_slice($items, 0, $options['limit'],true);
+				} 
+				$itemsOptionized['meta']['array_offset'] = $arrayOffset;
+				$itemsOptionized['meta']['array_page'] = $options['limit'];
+			}
+		}
+		$itemsOptionized['meta']['array_count'] = $count;
+		//print_r($itemsOptionized);
+		return $itemsOptionized;		
+	}
+	
 	/**
 	 * @see IData#getDataDistinct($entityName,$distinctOnAttribute,$attributes=null)
 	 */
@@ -192,7 +225,7 @@ class Data extends TData implements IData{
 	 * @param string $type
 	 * @param array of string $attributes list of attributes to be extracted from objects.
 	 */
-	public function getDataFiltered($entityName,$attributes=null,$conditions=""){
+	public function getDataFiltered($entityName,$attributes=null,$conditions="",$options=null){
 		__debug("retrieve all instance of $entityName and generate array with [".print_r(($attributes!=null?implode(',',$attributes):"null"),true)."]","getDataFiltered",__CLASS__);
 		$ret=array();
 		$conditionsArray = array();
@@ -201,12 +234,11 @@ class Data extends TData implements IData{
 		}
 		foreach(self::$_data[$entityName] as $key=>$item){
 			$retitem = array();
-			if($this->isConditionArrayTrue($item,$conditionsArray)){
+			if($this->isConditionArrayTrue($item,$conditionsArray) && $key!="meta"){
 				//echo "<strong>item $key:</strong>[".print_r($item,true)."]<br/>";
 				if(is_array($attributes)){
 					__debug("Add item(".$item->getAttribute('id').") as array of attributes[$attributes]","getDataFiltered",__CLASS__);
 					foreach($attributes as $attribute){
-						
 						$retitem[$attribute] = "".$item->getInfo($attribute);
 					}
 				}else{
@@ -215,6 +247,9 @@ class Data extends TData implements IData{
 				}
 				$ret[$key]=$retitem;
 			}
+		}
+		if(is_array($ret) && $options!=null){
+			$ret = $this->manageOptions($ret, $options);
 		}
 		return $ret;
 	}

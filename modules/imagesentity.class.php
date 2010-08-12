@@ -6,10 +6,10 @@
  * @copyright 2010/08/08
  */
 class ImagesEntity{
-	static private $defaultImagesPath;
-	static private $formatsAccepted;
-	static private $thumbsSizes;
-	static private $thumbsDefaultSize;
+	static private $defaultImagesPath=null;
+	static private $formatsAccepted=null;
+	static private $thumbsSizes=null;
+	static private $thumbsDefaultSize=null;
 
 	protected $pictures = array();
 	
@@ -21,7 +21,7 @@ class ImagesEntity{
 	 * - default thumbnail size ($thumbsDefaultSize).
 	 */
 	public function __construct(){
-		if(self::$defaultImagesPath!=""){
+		if(is_null(self::$defaultImagesPath)){
 			__debug("Initialize default values from configuration file keys",__METHOD__,__CLASS__);
 			self::$defaultImagesPath = __config('resources','path');
 			self::$formatsAccepted  = __config('resources','formats');
@@ -59,13 +59,15 @@ class ImagesEntity{
 		$paths = $this->generateImagesPath($treeType);		
 		$imagesAbsolutePath= $paths['absolute'];
 		$imagesRelativePath= $paths['relative'];
+		$categories = explode(',',$categories);
+		//print_r($categories);
 		if(file_exists($imagesAbsolutePath))
 		{
 			$dir = opendir($imagesAbsolutePath);
 			while(false !== ($item = readdir($dir)))
 			{
 				if( 
-					//(($categories!="" && strpos($categories,$item)!=false) || $categories=="") && 
+					//((count($categories)>0 && isset($categories[$item])) || count($categories)==0) && 
 					file_exists($imagesAbsolutePath."/".$item) 
 					&& is_dir($imagesAbsolutePath."/".$item)
 					)
@@ -80,23 +82,27 @@ class ImagesEntity{
 						if(is_file($file) 
 								&& $image != "." 
 								&& $image !=".." 
-								&& $image !=".Thumbs" 
+								&& $image !="Thumbs.db" 
 								//&& preg_match('/(^\*)+[.]['.self::$formatsAccepted.']/',strtolower($image))
 						){
-							__debug("image=".$imagesAbsolutePath."/".$item."$image","loadImages",__CLASS__);
+							//echo("<pre>subdir=[$imagesAbsolutePath/$item]</pre>");
+							//__debug("image=".$imagesAbsolutePath."/".$item."$image","loadImages",__CLASS__);
 							$this->pictures[$item][$i]['image']=$fileRelative;
 							
-							if(!Image::getInstance($thumbsSizes)->thumbsExists(
+							if(!Image::getInstance(self::$thumbsSizes)->thumbsExists(
 								$imagesAbsolutePath."/".$item."/thumbs/",
 								self::$thumbsDefaultSize))
 							{
-								Image::getInstance($thumbsSizes)->generateThumbs(
+								mkdir($imagesAbsolutePath."/".$item."/thumbs/");
+								Image::getInstance(self::$thumbsSizes)->generateThumbs(
 										$file,
 										$imagesAbsolutePath."/".$item."/thumbs/",
 										self::$thumbsDefaultSize);
 							}
-							$this->pictures[$item][$i]['thumb']=$imagesRelativePath."/".$item."/thumbs/".self::$thumbsDefaultSize."/".basename($image,".jpg").".png";
-							//ImagickThumb::create($file,$imagesAbsolutePath."/".$item."/thumbs/".basename($image,".jpg").".png","80x120");
+							foreach(explode(',',self::$thumbsSizes) as $thSize){
+								$this->pictures[$item][$i]['thumb'][$thSize]=$imagesRelativePath."/".$item."/thumbs/".$thSize."/".basename($image,".jpg").".png";
+							}
+							Image::getInstance(explode(',',self::$thumbsSizes))->generateThumbs($file,$imagesAbsolutePath."/".$item."/thumbs/");
 							$i++;
 						}
 					}
@@ -114,11 +120,13 @@ class ImagesEntity{
 	 * @param string thumb (optional) Size of the thumb.
 	 */
 	public function getPicture($key="default",$index=1,$thumb="",$default){
+		
 		if($thumb!=""){
+			
 			if(isset($this->pictures[$key][$index]['thumb'][$thumb])){
 				return $this->pictures[$key][$index]['thumb'][$thumb];
 			}else{
-				return $this->pictures[$key][$index]['thumb'];
+				return $this->pictures[$key][$index]['thumb'][self::$thumbsDefaultSize];
 			}
 		}else{
 			
@@ -126,21 +134,28 @@ class ImagesEntity{
 		}
 
 	}
+	/**
+	 * Return all Images from <code>$key</code> category. by default the cover.
+	 * @param string $key Subdirectory image path.
+	 * @param integer index Image number
+	 * @param string thumb (optional) Size of the thumb.
+	 */
+	public function getPictures($key="screenshots"){
+		return (isset($this->pictures[$key])?$this->pictures[$key]:null);
+	}
 	
 	/**
 	 * Return Image thumbs. by default the cover.
 	 * @param unknown_type $key
 	 */
-	public function getPictureThumb($key="default",$index=1,$default){
-		return (isset($this->pictures[$key][$index]['thumb'])?$this->pictures[$key][$index]['thumb']:$default);
+	public function getPictureThumb($key="default",$index=1, $default,$size=""){
+		if($size==""){
+			$size = self::$thumbsDefaultSize;
+		}
+		return (isset($this->pictures[$key][$index]['thumb'][$size])?$this->pictures[$key][$index]['thumb'][$size]:$default);
 	}
-	/**
-	 * TODO Code this part to store images.
-	 * @param string $treeType
-	 * @param FileObjectArray $files
-	 */
 	
-	public function upload($treeType="id/",$files){
+	public function upload($treeType="id/"){
 		
 	}
 	/**
@@ -161,7 +176,7 @@ class ImagesEntity{
 		//echo "<pre>ImagesEntity.entityName=".$this->getInfo('entityName')."</pre>";
 		$paths['absolute']= dirname(__FILE__)."/../".self::$defaultImagesPath.$this->getInfo('entityName').$imagesPath;
 		$paths['relative']= self::$defaultImagesPath.$this->getInfo('entityName').$imagesPath;
-		//__debug("paths=['absolute'=>\"".print_r($paths['absolute'],true)."\", 'relative'=>\"".print_r($paths['relative'],true)."\"]","loadImages",__CLASS__);
+		__debug("paths=['absolute'=>\"".print_r($paths['absolute'],true)."\", 'relative'=>\"".print_r($paths['relative'],true)."\"]","loadImages",__CLASS__);
 
 		return $paths;
 	}

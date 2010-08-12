@@ -37,19 +37,21 @@ class Image{
 	
 	
 	public function __construct($thumbsSizes){
-		if($thumbsSises !=""){
+		if($thumbsSizes !=""){
 			$thumbsFormats = $thumbsSizes;
 		}
 	}
 	
 	public function generateThumbs($image,$path){
 		foreach($this->thumbsFormats as $format){
+			//print_r($format);
+			$size = explode('x',$format);
+			$split=explode('.',basename($image));
+			$pathFileDest = $path."/".$format."/".$split[0].".png";
 			if(!file_exists($path."/".$format)){
 				mkdir($path."/".$format);
-				$size = explode('x',$format);
-				$split=explode('.',basename($image));
-				$pathFileDest = $path."/".$format."/".$split[0].".png";
-				
+			}
+			if(!file_exists($pathFileDest)){
 				$this->resizeImage($image, $pathFileDest, $size[0],$size[1],true);
 			}
 		}
@@ -66,8 +68,17 @@ class Image{
 			$max_width,
 			$max_height,
 			$force=true,
-			$options=array('shadow'=>array('offset_x'=>2,'offset_y'=>2,'blending'=>4,'alpha'=>80,'activate'=>true))){
+			$options=array('shadow'=>array(
+								'offset_x'=>2,
+								'offset_y'=>2,
+								'blending'=>4,
+								'alpha'=>80,
+								'activate'=>false)
+					)
+			){
+		__debug("dest: $destination_pic, width:$max_width, height: $max_height, force: $force",__METHOD__,__CLASS__);
 		
+		//print_r($options);
 		if(!file_exists($destination_pic) || $force){
 			list($width,$height,$format)=getimagesize($source_pic);
 	
@@ -97,6 +108,10 @@ class Image{
 				//background
 				$background=imagecolorallocatealpha($tmp, 0, 0, 0, 127);
 				$shadow=imagecolorallocatealpha($tmp, 0, 0, 0, $options['shadow']['alpha']);
+				$twidth = $tn_width+$options['shadow']['offset_x']+$options['shadow']['blending'];
+				$theight= $tn_height+$options['shadow']['offset_y']+$options['shadow']['blending'];
+				/*echo("width:".$twidth.
+					 ", height:".$theight."<br/>");*/
 				$tmp=imagerectangle($tmp, 
 									0,
 									0,
@@ -110,9 +125,10 @@ class Image{
 										$options['shadow']['offset_y']+$i,
 										$tn_width+$options['shadow']['offset_x']+$i, 
 										$tn_height+$options['shadow']['offset_y']+$i, 
-										$background);
+										$shadow);
 				}
 			}else{
+				//echo("width:$tn_width, height:$tn_height");
 				$tmp=imagecreatetruecolor($tn_width,$tn_height);		
 			}
 			imagealphablending($tmp,true);

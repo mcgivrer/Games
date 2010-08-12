@@ -9,19 +9,19 @@
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/screen.css" media="screen" id="<?=$data['theme']?>" />
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="scripts/jquery.lightbox.0.5.pack.js"></script>
+        <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
         <script>
-        $(function() {
-		   $('a[@rel*=lightbox]').lightBox({
-			overlayBgColor: '#FFF',
-			overlayOpacity: 0.6,
-			imageLoading: 'http://example.com/images/loading.gif',
-			imageBtnClose: 'http://example.com/images/close.gif',
-			imageBtnPrev: 'http://example.com/images/prev.gif',
-			imageBtnNext: 'http://example.com/images/next.gif',
+        $(document).ready(function() {
+		   $('a[rel*=lightbox]').lightBox({
+			overlayBgColor: '#000',
+			overlayOpacity: 0.8,
+			imageLoading: 'images/icons/lightbox/lightbox-btn-loading.gif',
+			imageBtnClose: 'images/icons/lightbox/lightbox-btn-close.gif',
+			imageBtnPrev: 'images/icons/lightbox/lightbox-btn-prev.gif',
+			imageBtnNext: 'images/icons/lightbox/lightbox-btn-next.gif',
 			containerResizeSpeed: 350,
-			txtImage: 'Imagem',
-			txtOf: 'de'
+			txtImage: '<?php __('image','image_lightbox_label')?>',
+			txtOf: '<?php __('image','image_lightbox_de_label')?>'
 		   });
 		});
 		</script>

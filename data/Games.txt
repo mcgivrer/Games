@@ -13,7 +13,7 @@ x360|the saboteur|14||McGivrer
 x360|tomb raider underworld|17||McGivrer
 x360|wet|16||McGivrer
 ps3|little big planet|19||McGivrer
-psp|jake and daxter : the lost frontier|17|The best continue for the Jak's adventures|McGivrer
-psp|little big adventure|19|One of the (or the) best Playstation Portable game !|McGivrer
-psp|ratchet and clank : size matter|16|Platform game for PSP. a reference. After 3 adventures on PS2, installation on PSP is an easy success.|McGivrer
+psp|jake and daxter the lost frontier|17|The best continue for the Jak's adventures|McGivrer
+psp|little big planet|19|One of the (or the) best Playstation Portable game !|McGivrer
+psp|ratchet and clank size matter|16|Platform game for PSP. a reference. After 3 adventures on PS2, installation on PSP is an easy success.|McGivrer
 END|END|END|END|END

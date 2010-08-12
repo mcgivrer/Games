@@ -1,24 +1,3 @@
-<br />
-<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>13</b><br />
-<br />
-<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>14</b><br />
-<br />
-<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>15</b><br />
-<br />
-<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at D:\tools\WebAppPortable\App\app\games\modules\patterns\singleton.pattern.php:8) in <b>D:\tools\WebAppPortable\App\app\games\modules\pagemanager.class.php</b> on line <b>16</b><br />
-<pre>class to 'singletonize':Data</pre><pre>instances:[Data Object
-(
-)
-]</pre>Array
-(
-    [0] => Array
-        (
-            [attribute] => support
-            [comparator] => =
-            [value] => x360
-        )
-
-)
 <pre>game id=1, support = x360</pre><?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "DTD/xhtml1-strict.dtd">
@@ -51,10 +30,57 @@
           <div id="header">
             <h1>Games</h1>
           </div>
-          	<br />
-<b>Warning</b>:  include_once(themes/default/managers//master.tpl) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in <b>D:\tools\WebAppPortable\App\app\games\modules\template.class.php</b> on line <b>62</b><br />
-<br />
-<b>Warning</b>:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'themes/default/managers//master.tpl' for inclusion (include_path='.;C:\php5\pear') in <b>D:\tools\WebAppPortable\App\app\games\modules\template.class.php</b> on line <b>62</b><br />
+          	<div id="sidebar">
+<div id="support" class="list">
+	<h2>Supports</h2>
+	<ul>
+            <li class="selected">
+        	<a href="?s=x360" title="Show all games from X360">X360</a>
+        </li>
+            <li>
+        	<a href="?s=psp" title="Show all games from PSP">PSP</a>
+        </li>
+            <li>
+        	<a href="?s=ps3" title="Show all games from PS3">PS3</a>
+        </li>
+    	</ul>
+	<h2>List of Games</h2>
+    <ul>
+            <li class="selected"><a href="?g=1" title="Show me the details about game 'Alan Wake'">Alan Wake</a></li>
+            <li><a href="?g=2" title="Show me the details about game 'Assassins Creed Ii'">Assassins Creed Ii</a></li>
+            <li><a href="?g=3" title="Show me the details about game 'Battlefield Bad Compagny'">Battlefield Bad Compagny</a></li>
+            <li><a href="?g=4" title="Show me the details about game 'Battlefield Bad Compagny 2'">Battlefield Bad Compagny 2</a></li>
+            <li><a href="?g=5" title="Show me the details about game 'Blur'">Blur</a></li>
+            <li<br />
+<b>Notice</b>:  Undefined index: id in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
+><a href="?g=" title="<br />
+<b>Notice</b>:  Undefined index: title in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
+Show me the details about game ''"><br />
+<b>Notice</b>:  Undefined index: title in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
+</a></li>
+        </ul>
+</div></div>
+<div id="content">
+<div id="game">
+	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
+		<h2>X360 / Alan Wake</h2>
+		<div class="file">
+			<a href="#" title="open cover picture in full size">
+			    <img src="images/default/default-cover.png" title="cover for Alan Wake" alt="box cover of game 'Alan Wake'">
+			</a>			
+			<ul class="infos">
+				<li><span class="label">Author</span>McGivrer
+</li>
+				<li><span class="label">Note</span>18</li>
+				<li>
+					<span class="label fullwidth">Comment</span>
+					<div class="comment">
+			    						</div>
+				</li>
+			</ul>
+					</div>
+	</form>
+</div></div>
           <div class="clear"></div>
           <div id="footer">
             <p>Copyright &copy; 2010 - Frédéric Delorme&lt<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
