@@ -15,11 +15,14 @@
  * @copyright 2010/08/11
  */
 class ThemeDescriptor extends SimpleXMLElement {
+	public $shortname;
 	public $name;
 	public $description;
 	public $version;
 	public $date;
-	public $author;	
+	public $author;
+	public $encoding;
+	public $path;
 }
 
 /**
@@ -44,15 +47,16 @@ class Template extends Singleton{
 	
 	private function buildThemesList() {
 		__debug("",__METHOD__,__CLASS__);
-		$basePath = dirname(__FILE__)."../themes/";
+		$basePath = dirname(__FILE__)."/../themes/";
 		$dir = opendir($basePath);
-		while(($theme=readir($dir))!== false){
+		while(($theme=readdir($dir))!== false){
 			if(file_exists($basePath.$theme."/"."theme.xml")){
 				$themexml = simplexml_load_file($basePath.$theme."/"."theme.xml","ThemeDescriptor");
-				print_r($themexml);
-				self::$themes[] = $themexml;
+				$themexml->path = $basePath.$theme."/";
+				self::$themes["".$themexml->shortname] = $themexml;
 			}
 		}
+		echo("<pre>themes:[".print_r(self::$themes,true)."]</pre>");
 	}
 
 	public function setActive($activated){
