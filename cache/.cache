@@ -1,88 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <title>.: Games :. - Wet</title>
-        <link rel="stylesheet" type="text/css" href="themes/html5/styles/screen.css" media="screen" id="html5" />
-        <link rel="stylesheet" type="text/css" href="themes/html5/styles/jquery.lightbox-0.5.css" media="screen" id="html5.lightbox" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Games - Alan Wake</title>
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="default.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
-        <script type="text/javascript" src="themes/html5/scripts/theme.js"></script>
+        <script>
+        $(document).ready(function() {
+		   $('a[rel*=lightbox]').lightBox({
+			overlayBgColor: '#000',
+			overlayOpacity: 0.8,
+			imageLoading: 'images/icons/lightbox/lightbox-btn-loading.gif',
+			imageBtnClose: 'images/icons/lightbox/lightbox-btn-close.gif',
+			imageBtnPrev: 'images/icons/lightbox/lightbox-btn-prev.gif',
+			imageBtnNext: 'images/icons/lightbox/lightbox-btn-next.gif',
+			containerResizeSpeed: 350,
+			txtImage: 'Image',
+			txtOf: '/'
+		   });
+		});
+		</script>
     </head>
     <body>
         <div id="page">
-          <header id="header">
-          	<div class="theme">
+          <div id="header">
+          	<div id="loading" class="hidden"><img src="images/icons/wait.png"/></div>
+			<div class="theme">
           		<form name="theme" method="post" action="?action=setTheme">
-					<p>Theme <select id="theme" name="theme" onchange="submit();">
-          			          			<option value="default" >Default</option>
-          			          			<option value="html5" selected = "selected">HTML5</option>
-          			          			</select></p>
+					<span></span><select id="theme" name="theme" onchange="submit();">
+          			          			<option value="default" selected = "selected">Default</option>
+          			          			<option value="html5" >HTML5</option>
+          			          			</select>
           		</form>
           	</div>
-            <h1>.: Games :.</h1>
-          </header>
-          	<section id="content">
-<article id="game">
-	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
-		<h2>X360 / Wet</h2>
-		<div class="file">
-			<a href="images/resources/Game/x360/wet/cover/x360-wet-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> X360</li><li><span class='label'>Game:</span> Wet</li></ul>">
-			    <img src="images/resources/Game/x360/wet/cover/thumbs/320x240/x360-wet-cover.png" title="cover for Wet" alt="box cover of game 'Wet'">
-			</a>
-			<div class="block">
-				<h3>Game Information</h3>
-				<div class="block-content">		
-				<div class="note"><span class="legend">Note</span><span>16</span></div>
-				<ul class="infos">
-					<li><span class="label">Author</span>McGivrer
-</li>
-					<li>
-						<span class="label fullwidth">Test</span>
-						<div class="comment">
-				    							</div>
-					</li>
-				</ul>
-				</div>
-			</div>
-						<div class="clear"></div>
-			<div class="block gallery">
-				<h3>Gallery / Screenshots</h3>
-				<div class=" block-content gallery-content">
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc000.jpg" title="X360 / Wet - screenshot 1">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc000.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc001.jpg" title="X360 / Wet - screenshot 2">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc001.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc002.jpg" title="X360 / Wet - screenshot 3">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc002.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc003.jpg" title="X360 / Wet - screenshot 4">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc003.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc004.jpg" title="X360 / Wet - screenshot 5">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc004.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc005.jpg" title="X360 / Wet - screenshot 6">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc005.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc006.jpg" title="X360 / Wet - screenshot 7">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc006.png" title="" />
-					</a>
-									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc007.jpg" title="X360 / Wet - screenshot 8">
-						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc007.png" title="" />
-					</a>
-								<div class="clear"></div>
-				</div>
-			</div>
-								</div>
-	</form>
-	<div class="clear"></div>
-</article></section>
-<aside id="sidebar">
-<nav id="support" class="list">
-	<h2>Support</h2>
+            <h1>Games</h1>
+          </div>
+          	<div id="sidebar">
+<div id="support" class="list">
+	<h2>Supports</h2>
 	<ul>
             <li class="selected">
         	<a href="?s=x360" title="Show all games from X360">X360</a>
@@ -94,9 +53,9 @@
         	<a href="?s=ps3" title="Show all games from PS3">PS3</a>
         </li>
     	</ul>
-	<h2>Games</h2>
+	<h2>List of Games</h2>
     <ul>
-        	        <li><a href="?g=1" title="message game/view_title not defined in en_EN">Alan Wake</a></li>
+        	        <li class="selected"><a href="?g=1" title="message game/view_title not defined in en_EN">Alan Wake</a></li>
                 	        <li><a href="?g=2" title="message game/view_title not defined in en_EN">Assassins Creed Ii</a></li>
                 	        <li><a href="?g=3" title="message game/view_title not defined in en_EN">Battlefield Bad Compagny</a></li>
                 	        <li><a href="?g=4" title="message game/view_title not defined in en_EN">Battlefield Bad Compagny 2</a></li>
@@ -108,12 +67,42 @@
                 	        <li><a href="?g=10" title="message game/view_title not defined in en_EN">Split Second Velocity</a></li>
                 	        <li><a href="?g=11" title="message game/view_title not defined in en_EN">The Saboteur</a></li>
                 	        <li><a href="?g=12" title="message game/view_title not defined in en_EN">Tomb Raider Underworld</a></li>
-                	        <li class="selected"><a href="?g=13" title="message game/view_title not defined in en_EN">Wet</a></li>
+                	        <li><a href="?g=13" title="message game/view_title not defined in en_EN">Wet</a></li>
                 	        </ul>
-</nav></aside>          <div class="clear"></div>
-          <footer id="footer">
+</div></div>
+<div id="content">
+<div id="game">
+	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
+		<h2>X360 / Alan Wake</h2>
+		<div class="file">
+			<a href="images/resources/Game/x360/alan-wake/cover/x360-alan_wake-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> X360</li><li><span class='label'>Game:</span> Alan Wake</li></ul>">
+			    <img src="images/resources/Game/x360/alan-wake/cover/thumbs/320x240/x360-alan_wake-cover.png" title="cover for Alan Wake" alt="box cover of game 'Alan Wake'">
+			</a>
+			<div class="block">
+				<h3>Game Information</h3>
+				<div class="block-content">		
+				<ul class="infos">
+					<li><span class="label">Author</span>McGivrer
+</li>
+					<li><span class="label">Note</span>18</li>
+					<li>
+						<span class="label fullwidth">Comment</span>
+						<div class="comment">
+				    							</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+							<div class="clear"></div>
+				<div class="nogallery"><p>No gallery for now.</p></div>
+								</div>
+		<div class="clear"></div>
+	</form>
+</div></div>
+          <div class="clear"></div>
+          <div id="footer">
             <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
-          </footer>
+          </div>
         </div>
     </body>
 </html>
