@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Template Engine 
  * Manage multiple themes rendering and support specific i18n, scripts and styles.
  * @author Frederic Delorme<frederic.delorme@gmail.com>
@@ -7,19 +7,53 @@
  * @copyright 2010/08/11
  *
  */
+
+/**
+ * ThemeDescriptor reresenting one theme information.
+ * @author Frederic Delorme<frederic.delorme@gmail.com>
+ * @version 1.0
+ * @copyright 2010/08/11
+ */
+class ThemeDescriptor extends SimpleXMLElement {
+	public $name;
+	public $description;
+	public $version;
+	public $date;
+	public $author;	
+}
+
+/**
+ * Template class managing multiple themes and the rendering layers.
+ * @author Frederic Delorme<frederic.delorme@gmail.com>
+ * @version 1.0
+ * @copyright 2010/08/11
+*/
 class Template extends Singleton{
 	
-	static private $_instance;
+	static private $themes=array();
 	
-	static private $active;
+	static private $active="";
 	
-	static private $context;
+	static private $context=array();
 	
 	public function __construct(){
 		$this->active = __config('template','active');
+		$this->buildThemesList();
 		I18n::getInstance()->addI18nTheme($this->getActive());
 	}
 	
+	private function buildThemesList() {
+		__debug("",__METHOD__,__CLASS__);
+		$basePath = dirname(__FILE__)."../themes/";
+		$dir = opendir($basePath);
+		while(($theme=readir($dir))!== false){
+			if(file_exists($basePath.$theme."/"."theme.xml")){
+				$themexml = simplexml_load_file($basePath.$theme."/"."theme.xml","ThemeDescriptor");
+				print_r($themexml);
+				self::$themes[] = $themexml;
+			}
+		}
+	}
 
 	public function setActive($activated){
 		$this->active = $activated;

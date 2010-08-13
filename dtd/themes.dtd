@@ -1,0 +1,9 @@
+<!ELEMENT themes ((theme)*)>
+<!ELEMENT theme (name, description, author, version, date)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+

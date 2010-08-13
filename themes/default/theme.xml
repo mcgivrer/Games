@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "//WebContext//DTD Themes 1.0/EN" "../../dtd/themes.dtd">
+<themes>
+	<theme>
+		<name>Default</name>
+		<description>A default theme fo template rendering framework</description>
+		<author>Frédéric Delorme(frederic.delorme@gmail.com)</author>
+		<version>"1.0"</version>
+		<date>2010/08/12</date>
+	</theme>
+</themes>
