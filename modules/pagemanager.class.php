@@ -17,11 +17,20 @@ class PageManager extends Singleton{
 		//$this->persistance = DataRS::getInstance();
 		$this->persistance = Data::getInstance();
 		$this->managerName = $managerName;
+		$this->data['theme'] = __requestSession('theme',__config('template','active'));
 	}
 	
 	public function getShortManagerName(){
 		return strtolower(preg_replace('/([^\*]+)Manager/','\1',$this->managerName));	
 	}
+
+	public function setTheme(){
+		$t = __requestSession('theme','default');
+		$this->addData('theme',$t);
+		Template::getInstance()->setTheme($t);
+		return $this->view();
+	}
+	
 	/**
 	 * Display page in VIEW mode
 	 */

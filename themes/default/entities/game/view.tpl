@@ -4,22 +4,27 @@
 		<div class="file">
 			<a href="<?= $data['game']->getPicture('cover',1,"","#")?>" rel="lightbox" title="<?= __s('game','cover_show',$data['game']->getInfo('support'),$data['game']->getInfo('title')) ?>">
 			    <img src="<?= $data['game']->getPictureThumb('cover',1,__('game','default_image_cover'))?>" title="cover for <?= $data['game']->getInfo('title') ?>" alt="box cover of game '<?=$data['game']->getInfo('title') ?>'">
-			</a>			
-			<ul class="infos">
-				<li><span class="label"><?= __('list','author')?></span><?= $data['game']->getInfo('author') ?></li>
-				<li><span class="label"><?= __('list','note')?></span><?= $data['game']->getInfo('note') ?></li>
-				<li>
-					<span class="label fullwidth"><?= __('list','comment')?></span>
-					<div class="comment">
-			    	<?= $data['game']->getInfo('comment') ?>
-					</div>
-				</li>
-			</ul>
+			</a>
+			<div class="block">
+				<h3><?= __('game','info_title')?></h3>
+				<div class="block-content">		
+				<ul class="infos">
+					<li><span class="label"><?= __('list','author')?></span><?= $data['game']->getInfo('author') ?></li>
+					<li><span class="label"><?= __('list','note')?></span><?= $data['game']->getInfo('note') ?></li>
+					<li>
+						<span class="label fullwidth"><?= __('list','comment')?></span>
+						<div class="comment">
+				    	<?= $data['game']->getInfo('comment') ?>
+						</div>
+					</li>
+				</ul>
+				</div>
+			</div>
 			<?php if(count($data['game']->getPictures('screenshots'))>0):?>
 			<div class="clear"></div>
-			<div class="gallery">
+			<div class="block gallery">
 				<h3><?= __('game','gallery_title')?></h3>
-				<div class="gallery-content">
+				<div class=" block-content gallery-content">
 				<?php foreach($data['game']->getPictures('screenshots') as $id => $picture) :?>
 					<a class="screenshot" rel="lightbox[galery]" href="<?= $picture['image']?>" title="<?= __s('game','sc_show',$data['game']->getInfo('support'),$data['game']->getInfo('title'),$id) ?>">
 						<img src="<?=$picture['thumb'][$data['size-screenshot']]?>" title="" />

@@ -1,7 +1,8 @@
-<!ELEMENT theme (shortname, name, description, author, version, date, encoding)>
+<!ELEMENT theme (shortname, name, description, author, (author_long)?, version, date, encoding)>
 <!ELEMENT shortname (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
+<!ELEMENT author_long (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT version (#PCDATA)>
 <!ELEMENT date (#PCDATA)>

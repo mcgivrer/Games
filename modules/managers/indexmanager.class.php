@@ -39,12 +39,11 @@ class IndexManager extends PageManager{
 		
 		$this->addData('game_selected', $g);
 		$this->addData('support_selected', $s);
-		$this->addData('size-screenshot',"180x120");
-		
+		//$this->addData('size-screenshot',"120x80");//__("game","screenshot-size"));
+		$this->addData('size-screenshot',__config('resources','screenshot_size'));
 		//echo "<pre>game id=$g, support = $s</pre>";
 		return "master";
 	}
-	
 	
 	/**
 	 * Upload images

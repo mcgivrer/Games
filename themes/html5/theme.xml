@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "//WebContext//DTD Themes 1.0/EN" "../../dtd/themes.dtd">
+<theme>
+	<shortname>html5</shortname>
+	<name>HTML5</name>
+	<description>A HTML 5 oriented design for the template rendering framework</description>
+	<author>F. Delorme</author>
+	<author_long>Frederic Delorme(frederic.delorme@gmail.com)</author_long>
+	<version>1.0</version>
+	<date>2010/08/12</date>
+	<encoding>UTF-8</encoding>
+</theme>

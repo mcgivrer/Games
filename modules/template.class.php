@@ -10,9 +10,6 @@
 
 /**
  * ThemeDescriptor reresenting one theme information.
- * @author Frederic Delorme<frederic.delorme@gmail.com>
- * @version 1.0
- * @copyright 2010/08/11
  */
 class ThemeDescriptor extends SimpleXMLElement {
 	public $shortname;
@@ -21,15 +18,13 @@ class ThemeDescriptor extends SimpleXMLElement {
 	public $version;
 	public $date;
 	public $author;
+	public $author_long;
 	public $encoding;
 	public $path;
 }
 
 /**
  * Template class managing multiple themes and the rendering layers.
- * @author Frederic Delorme<frederic.delorme@gmail.com>
- * @version 1.0
- * @copyright 2010/08/11
 */
 class Template extends Singleton{
 	
@@ -40,11 +35,13 @@ class Template extends Singleton{
 	static private $context=array();
 	
 	public function __construct(){
-		$this->active = __config('template','active');
 		$this->buildThemesList();
-		I18n::getInstance()->addI18nTheme($this->getActive());
+		$this->setTheme(__requestSession('theme',__config('template','active')));
 	}
 	
+	/**
+	 * Load theme.xml files from /themes/ path to build list of available themes.
+	 */
 	private function buildThemesList() {
 		__debug("",__METHOD__,__CLASS__);
 		$basePath = dirname(__FILE__)."/../themes/";
@@ -56,15 +53,24 @@ class Template extends Singleton{
 				self::$themes["".$themexml->shortname] = $themexml;
 			}
 		}
-		echo("<pre>themes:[".print_r(self::$themes,true)."]</pre>");
+		//echo("<pre>themes:[".print_r(self::$themes,true)."]</pre>");
 	}
 
-	public function setActive($activated){
-		$this->active = $activated;
+	/**
+	 * Set active theme.
+	 * @param string $shortname shortname
+	 */
+	public function setTheme($shortname){
+		if(array_key_exists($shortname,self::$themes)){
+			self::$active = self::$themes["".$shortname];
+			I18n::getInstance()->addI18nTheme("".$this->getTheme()->shortname);
+		}else{
+			throw new Exception("Theme '$shortname' does not exists.",20001);
+		}
 	}
 	
-	public function getActive(){
-		return $this->active;
+	public function getTheme(){
+		return self::$active;
 	}
 
 	/**
@@ -74,7 +80,11 @@ class Template extends Singleton{
 	 * @param array $data data manipulated for this display.
 	 */
 	public function setContext($context){
-		self::$context=$context;
+		if($context instanceof Context){
+			self::$context=$context;
+		}else{
+			throw new Exception("Context set is not a Context class instance.",20002);
+		}
 	}
 
 	/**
@@ -89,7 +99,9 @@ class Template extends Singleton{
 			$$key = $value;
 			__debug("context item: $key = $value",__METHOD__,__CLASS__);
 		}
-		include_once("themes/".$this->active."/application.tpl");
+		$data['theme-info'] = self::$active;
+		$data['themes'] = self::$themes;
+		include_once("themes/".self::$active->shortname."/application.tpl");
 	}
 	
 	/**
@@ -104,12 +116,9 @@ class Template extends Singleton{
 		foreach($attributes as $key=>$value){
 			$$key = $value; 
 		}
-		/*if($manager=="") $manager=self::$context['manager'];
-		if($template=="") $template=self::$context['template'];
-		if($data=="") $data=self::$context['data'];
-		$request=self::$context['request'];
-		*/
-		include_once("themes/".$this->active."/managers/".$manager."/".$template.".tpl");
+		$data['theme-info'] = self::$active;
+		$data['themes'] = self::$themes;
+		include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
 	}
 
 	
@@ -126,7 +135,9 @@ class Template extends Singleton{
 				$$key = $value; 
 			}
 		}
-		include_once("themes/".$this->active."/entities/".$entity."/".$action.".tpl");
+		$data['theme-info'] = self::$active;
+		$data['themes'] = self::$themes;
+		include_once("themes/".self::$active->shortname."/entities/".$entity."/".$action.".tpl");
 	}
 
 	/**

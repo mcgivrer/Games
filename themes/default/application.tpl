@@ -29,12 +29,22 @@
     <body>
         <div id="page">
           <div id="header">
+          	<div id="loading" class="hidden"><img src="images/icons/wait.png"/></div>
+			<div class="theme">
+          		<form name="theme" method="post" action="?action=setTheme">
+					<span></span><select id="theme" name="theme" onchange="submit();">
+          			<?php foreach($data['themes'] as $theme) :?>
+          			<option value="<?= $theme->shortname?>" <?=($theme->shortname == $data['theme']?"selected = \"selected\"":"")?>><?= $theme->name?></option>
+          			<?php endforeach;?>
+          			</select>
+          		</form>
+          	</div>
             <h1><?= __('home','title') ?></h1>
           </div>
           	<? __render();?>
           <div class="clear"></div>
           <div id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
           </div>
         </div>
     </body>

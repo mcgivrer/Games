@@ -1,38 +1,88 @@
-<pre>game id=1, support = x360</pre><?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
-     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Games - Alan Wake</title>
-        <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
-        <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="default.lightbox" />
+        <meta charset="UTF-8"/>
+        <title>.: Games :. - Wet</title>
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/screen.css" media="screen" id="html5" />
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/jquery.lightbox-0.5.css" media="screen" id="html5.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="scripts/jquery.lightbox.0.5.pack.js"></script>
-        <script>
-        $(function() {
-		   $('a[@rel*=lightbox]').lightBox({
-			overlayBgColor: '#FFF',
-			overlayOpacity: 0.6,
-			imageLoading: 'http://example.com/images/loading.gif',
-			imageBtnClose: 'http://example.com/images/close.gif',
-			imageBtnPrev: 'http://example.com/images/prev.gif',
-			imageBtnNext: 'http://example.com/images/next.gif',
-			containerResizeSpeed: 350,
-			txtImage: 'Imagem',
-			txtOf: 'de'
-		   });
-		});
-		</script>
+        <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
+        <script type="text/javascript" src="themes/html5/scripts/theme.js"></script>
     </head>
     <body>
         <div id="page">
-          <div id="header">
-            <h1>Games</h1>
-          </div>
-          	<div id="sidebar">
-<div id="support" class="list">
-	<h2>Supports</h2>
+          <header id="header">
+          	<div class="theme">
+          		<form name="theme" method="post" action="?action=setTheme">
+					<p>Theme <select id="theme" name="theme" onchange="submit();">
+          			          			<option value="default" >Default</option>
+          			          			<option value="html5" selected = "selected">HTML5</option>
+          			          			</select></p>
+          		</form>
+          	</div>
+            <h1>.: Games :.</h1>
+          </header>
+          	<section id="content">
+<article id="game">
+	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
+		<h2>X360 / Wet</h2>
+		<div class="file">
+			<a href="images/resources/Game/x360/wet/cover/x360-wet-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> X360</li><li><span class='label'>Game:</span> Wet</li></ul>">
+			    <img src="images/resources/Game/x360/wet/cover/thumbs/320x240/x360-wet-cover.png" title="cover for Wet" alt="box cover of game 'Wet'">
+			</a>
+			<div class="block">
+				<h3>Game Information</h3>
+				<div class="block-content">		
+				<div class="note"><span class="legend">Note</span><span>16</span></div>
+				<ul class="infos">
+					<li><span class="label">Author</span>McGivrer
+</li>
+					<li>
+						<span class="label fullwidth">Test</span>
+						<div class="comment">
+				    							</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+						<div class="clear"></div>
+			<div class="block gallery">
+				<h3>Gallery / Screenshots</h3>
+				<div class=" block-content gallery-content">
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc000.jpg" title="X360 / Wet - screenshot 1">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc000.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc001.jpg" title="X360 / Wet - screenshot 2">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc001.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc002.jpg" title="X360 / Wet - screenshot 3">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc002.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc003.jpg" title="X360 / Wet - screenshot 4">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc003.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc004.jpg" title="X360 / Wet - screenshot 5">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc004.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc005.jpg" title="X360 / Wet - screenshot 6">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc005.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc006.jpg" title="X360 / Wet - screenshot 7">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc006.png" title="" />
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="images/resources/Game/x360/wet/screenshots/x360-wet-sc007.jpg" title="X360 / Wet - screenshot 8">
+						<img src="images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc007.png" title="" />
+					</a>
+								<div class="clear"></div>
+				</div>
+			</div>
+								</div>
+	</form>
+	<div class="clear"></div>
+</article></section>
+<aside id="sidebar">
+<nav id="support" class="list">
+	<h2>Support</h2>
 	<ul>
             <li class="selected">
         	<a href="?s=x360" title="Show all games from X360">X360</a>
@@ -44,47 +94,26 @@
         	<a href="?s=ps3" title="Show all games from PS3">PS3</a>
         </li>
     	</ul>
-	<h2>List of Games</h2>
+	<h2>Games</h2>
     <ul>
-            <li class="selected"><a href="?g=1" title="Show me the details about game 'Alan Wake'">Alan Wake</a></li>
-            <li><a href="?g=2" title="Show me the details about game 'Assassins Creed Ii'">Assassins Creed Ii</a></li>
-            <li><a href="?g=3" title="Show me the details about game 'Battlefield Bad Compagny'">Battlefield Bad Compagny</a></li>
-            <li><a href="?g=4" title="Show me the details about game 'Battlefield Bad Compagny 2'">Battlefield Bad Compagny 2</a></li>
-            <li><a href="?g=5" title="Show me the details about game 'Blur'">Blur</a></li>
-            <li<br />
-<b>Notice</b>:  Undefined index: id in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
-><a href="?g=" title="<br />
-<b>Notice</b>:  Undefined index: title in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
-Show me the details about game ''"><br />
-<b>Notice</b>:  Undefined index: title in <b>/home/frederic/public_html/games.old/themes/default/entities/game/list.tpl</b> on line <b>13</b><br />
-</a></li>
-        </ul>
-</div></div>
-<div id="content">
-<div id="game">
-	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
-		<h2>X360 / Alan Wake</h2>
-		<div class="file">
-			<a href="#" title="open cover picture in full size">
-			    <img src="images/default/default-cover.png" title="cover for Alan Wake" alt="box cover of game 'Alan Wake'">
-			</a>			
-			<ul class="infos">
-				<li><span class="label">Author</span>McGivrer
-</li>
-				<li><span class="label">Note</span>18</li>
-				<li>
-					<span class="label fullwidth">Comment</span>
-					<div class="comment">
-			    						</div>
-				</li>
-			</ul>
-					</div>
-	</form>
-</div></div>
-          <div class="clear"></div>
-          <div id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>;&gt;</p>
-          </div>
+        	        <li><a href="?g=1" title="message game/view_title not defined in en_EN">Alan Wake</a></li>
+                	        <li><a href="?g=2" title="message game/view_title not defined in en_EN">Assassins Creed Ii</a></li>
+                	        <li><a href="?g=3" title="message game/view_title not defined in en_EN">Battlefield Bad Compagny</a></li>
+                	        <li><a href="?g=4" title="message game/view_title not defined in en_EN">Battlefield Bad Compagny 2</a></li>
+                	        <li><a href="?g=5" title="message game/view_title not defined in en_EN">Blur</a></li>
+                	        <li><a href="?g=6" title="message game/view_title not defined in en_EN">Darksiders</a></li>
+                	        <li><a href="?g=7" title="message game/view_title not defined in en_EN">Magna Carta 2</a></li>
+                	        <li><a href="?g=8" title="message game/view_title not defined in en_EN">Red Faction Guerilla</a></li>
+                	        <li><a href="?g=9" title="message game/view_title not defined in en_EN">Risen</a></li>
+                	        <li><a href="?g=10" title="message game/view_title not defined in en_EN">Split Second Velocity</a></li>
+                	        <li><a href="?g=11" title="message game/view_title not defined in en_EN">The Saboteur</a></li>
+                	        <li><a href="?g=12" title="message game/view_title not defined in en_EN">Tomb Raider Underworld</a></li>
+                	        <li class="selected"><a href="?g=13" title="message game/view_title not defined in en_EN">Wet</a></li>
+                	        </ul>
+</nav></aside>          <div class="clear"></div>
+          <footer id="footer">
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
+          </footer>
         </div>
     </body>
 </html>
