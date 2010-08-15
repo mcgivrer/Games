@@ -21,9 +21,4 @@ interface IData{
 	 */
 	public function getDataListDistinct($entityName,$distinctOnAttribute,$attributes=null);
 	
-	
-	/**
-	 * Singleton
-	 */
-	public static function getInstance();
 }

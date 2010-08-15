@@ -25,9 +25,13 @@ class Cache{
 	 * @param string $pCachePath default path for cache files.
 	 */	
 	public function __construct($pCachePath=""){
-		$this->cachePath = ($pCachePath!=""?$pCachePath:($this->cachePath!=""?$this->cachePath:dirname(__FILE__)."/../cache/"));
+		$this->setCachePath($pCachePath);
 	}
 
+	public function setCachePath($pCachePath=""){
+		$this->cachePath = ($pCachePath!=""?$pCachePath:($this->cachePath!=""?$this->cachePath:dirname(__FILE__)."/../cache/"));
+	}
+	
 	public function addIncludeFilter($filter){
 		$this->filters['include'][$filter]=$filter;
 	}

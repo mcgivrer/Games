@@ -84,7 +84,7 @@ class IndexManager extends PageManager{
 	 * (non-PHPdoc)
 	 * @see modules/PageManager::getInstance()
 	 */
-	public function getInstance(){
+	public static function getInstance(){
 		parent::getInstance(__CLASS__);
 		return self::$_instance;
 	}

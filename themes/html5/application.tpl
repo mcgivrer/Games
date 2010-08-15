@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title><?= __s('application','title',(isset($data['game'])?" - ".$data['game']->getInfo('support')."/".$data['game']->getInfo('title'):""))?></title>
+        <title><?= __s('application','page_title',(isset($data['game'])?" &gt; ".$data['game']->getInfo('support')." &gt; ".$data['game']->getInfo('title'):""))?></title>
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/screen.css" media="screen" id="<?=$data['theme']?>" />
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>

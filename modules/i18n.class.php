@@ -94,7 +94,7 @@ class I18n extends Singleton{
 	/**
 	 * initialise language from config.ini file.
 	 */
-	public function getInstance(){
+	public static function getInstance(){
 		return self::getSingletonInstance(__CLASS__);
 	}
 }

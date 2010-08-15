@@ -104,7 +104,7 @@ class PageManager extends Singleton{
 		}
 	}
 	
-	public function getInstance($className=__CLASS__){
+	public static function getInstance($className=__CLASS__){
 		return parent::getSingletonInstance($className);
 	}
 }

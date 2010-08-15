@@ -210,7 +210,9 @@ aside{
 	float:left;
 }
 #content .file .gallery-content{
-	width:100%;
+	display:inline-block;
+	width:90%;
+	text-align:center;
 }
 
 #content .file .gallery .screenshot img{
