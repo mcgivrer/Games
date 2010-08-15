@@ -26,7 +26,7 @@
           	<? __render();?>
           <div class="clear"></div>
           <footer id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt; - <?= __s('application','generatedTime',__enlapsedTime());?></p>
           </footer>
         </div>
     </body>

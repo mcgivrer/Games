@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>Games</title>
+        <title>Games Request  &gt; PSP &gt; Ratchet And Clank Size Matter</title>
         <link rel="stylesheet" type="text/css" href="themes/html5/styles/screen.css" media="screen" id="html5" />
         <link rel="stylesheet" type="text/css" href="themes/html5/styles/jquery.lightbox-0.5.css" media="screen" id="html5.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
@@ -20,7 +20,7 @@
           			          			</select></p>
           		</form>
           	</div>
-            <h1>Games</h1>
+            <h1>Games Request</h1>
           </header>
           	
 
@@ -29,8 +29,8 @@
 	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
 		<h2>PSP / Ratchet And Clank Size Matter</h2>
 		<div class="file">
-			<a href="images/resources/Game/psp/ratchet-and-clank-size-matter/cover/psp-ratchet_and_clank_size_matter-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> PSP</li><li><span class='label'>Game:</span> Ratchet And Clank Size Matter</li></ul>">
-			    <img class="cover" src="images/resources/Game/psp/ratchet-and-clank-size-matter/cover/thumbs/320x240/psp-ratchet_and_clank_size_matter-cover.png" title="cover for Ratchet And Clank Size Matter" alt="box cover of game 'Ratchet And Clank Size Matter'">
+			<a href="#" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> PSP</li><li><span class='label'>Game:</span> Ratchet And Clank Size Matter</li></ul>">
+			    <img class="cover" src="images/default/default-cover.png" title="cover for Ratchet And Clank Size Matter" alt="box cover of game 'Ratchet And Clank Size Matter'">
 			</a>
 			<div class="block">
 				<h3>Game Information</h3>
@@ -69,13 +69,13 @@
     	</ul>
 	<h2>Games</h2>
     <ul>
-        	        <li><a href="?g=15" title="message game/view_title not defined in en_EN">Jak And Daxter The Lost Frontier</a></li>
-                	        <li><a href="?g=16" title="message game/view_title not defined in en_EN">Little Big Planet</a></li>
-                	        <li class="selected"><a href="?g=17" title="message game/view_title not defined in en_EN">Ratchet And Clank Size Matter</a></li>
+        	        <li><a href="?g=15" title="message game/view_title not defined in en-EN">Jak And Daxter The Lost Frontier</a></li>
+                	        <li><a href="?g=16" title="message game/view_title not defined in en-EN">Little Big Planet</a></li>
+                	        <li class="selected"><a href="?g=17" title="message game/view_title not defined in en-EN">Ratchet And Clank Size Matter</a></li>
                 	        </ul>
 </nav></aside>          <div class="clear"></div>
           <footer id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt; - Page generated in 0.03051 s.</p>
           </footer>
         </div>
     </body>

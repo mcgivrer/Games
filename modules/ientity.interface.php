@@ -7,5 +7,5 @@ interface IEntity{
 	 * @param array $mapping
 	 */
 	public function load($uid,$data,$mapping);
-	public function getDisplay($attribute);
+	public function getDisplay($attribute,$value);
 }

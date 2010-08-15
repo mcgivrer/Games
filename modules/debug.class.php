@@ -3,7 +3,9 @@ include_once("modules/error.class.php");
 class Debug{
 	private static $_instance = null;
 	private static $path="";
+	private static $timeFormat="";
 	private static $messages = array();
+	private $microtimeStart=null;
 	
 	private $className="";
 
@@ -17,6 +19,7 @@ class Debug{
 	public function __construct($pClassName=""){
 		if(self::$path==""){
 			self::$path = __config("debug","logfilepath");
+			self::$timeFormat = __config('debug','timeformat',"Ymd-his,u");
 			if( isset(self::$path) && 
 				self::$path!="" && 
 				!file_exists(self::$path)){
@@ -31,13 +34,15 @@ class Debug{
 			}
 			$this->className=$pClassName;
 			$this->write("------ Start Log for new page ------",Debug::LEVEL_MAIN);
+			$this->microtimeStart = microtime(true);
 		}
 	}
 
 	protected function write($message,$level){
 		if(strstr(__config("debug","level"),$level) || $level==Debug::LEVEL_MAIN){
 			$file = fopen(self::$path,"a+");
-			$msg=date("Y/m/d-h:i:s")."|".$level."|".$this->className."|".$message;
+			//echo "microtime=".(microtime(true)-$this->microtimeStart)."<br/>";
+			$msg=date(self::$timeFormat).",".sprintf("%05f",microtime(true)-$this->microtimeStart)."|".$level."|".$this->className."|".$message;
 			if(isset($file)){
 					fwrite($file,$msg."\r\n");
 			}
@@ -97,6 +102,13 @@ class Debug{
 		if($className!="") $this->className=$className;
 	}
 	
+	/**
+	 * Return time enlapsed from starting page generation.
+	 */
+	public function getEnlapsedTime($format="%02.5f"){
+		//print_r(microtime(true)-($this->microtimeStart));
+		return sprintf($format,(microtime(true)-($this->microtimeStart)));
+	}
 	/**
 	 * initialise Debug output and log file.
 	 */

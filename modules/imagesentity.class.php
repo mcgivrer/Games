@@ -5,7 +5,7 @@
  * @version 1.0
  * @copyright 2010/08/08
  */
-class ImagesEntity{
+class ImagesEntity extends Entity{
 	static private $defaultImagesPath=null;
 	static private $formatsAccepted=null;
 	static private $thumbsSizes=null;
@@ -20,7 +20,10 @@ class ImagesEntity{
 	 * - thumnails sizes to generate ($thumbsSizes)
 	 * - default thumbnail size ($thumbsDefaultSize).
 	 */
-	public function __construct(){
+	public function __construct($entityName){
+		
+		parent::__construct($entityName);
+		
 		if(is_null(self::$defaultImagesPath)){
 			__debug("Initialize default values from configuration file keys",__METHOD__,__CLASS__);
 			self::$defaultImagesPath = __config('resources','path');
@@ -170,10 +173,10 @@ class ImagesEntity{
 		{
 			if($pathElement!="")
 			{
-				$imagesPath .= "/".HtmlTools::encodeUrlParam(strtolower($this->attributes[$pathElement]));
+				$imagesPath .= "/".HtmlTools::encodeUrlParam(strtolower($this->translate($this->attributes[$pathElement],$pathElement, "en-EN")));
 			}
 		}
-		//echo "<pre>ImagesEntity.entityName=".$this->getInfo('entityName')."</pre>";
+		//echo "<pre>ImagesEntity.entityName=".$this->getInfo('entityName').", imagesPath=$imagesPath</pre>";
 		$paths['absolute']= dirname(__FILE__)."/../".self::$defaultImagesPath.$this->getInfo('entityName').$imagesPath;
 		$paths['relative']= self::$defaultImagesPath.$this->getInfo('entityName').$imagesPath;
 		__debug("paths=['absolute'=>\"".print_r($paths['absolute'],true)."\", 'relative'=>\"".print_r($paths['relative'],true)."\"]","loadImages",__CLASS__);

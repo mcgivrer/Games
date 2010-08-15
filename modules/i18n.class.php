@@ -30,6 +30,7 @@ class I18n extends Singleton{
 	public function __construct(){
 		//self::$debug = Debug::getInstance(__CLASS__);
 		self::$_langkey = Config::getInstance()->get("system","language");
+		
 		if(!isset(self::$_language) || self::$_language == null){
 			self::$_language = parse_ini_file(dirname(__FILE__)."/../i18n/".self::$_langkey."/main.properties",true);
 			__debug("path:["."i18n/".self::$_langkey."/main.properties]",__METHOD__,__CLASS__);

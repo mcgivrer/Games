@@ -1,5 +1,5 @@
 <?php
-class Game extends Entity implements IEntity {
+class Game extends ImagesEntity implements IEntity {
 	/**
 	 * Images stored with this object.
 	 * @var unknown_type
@@ -8,6 +8,7 @@ class Game extends Entity implements IEntity {
 	
     public function __construct(){
     	$this->attributes=array('id'=>"", 'title'=>"", 'support'=>"", 'note'=>"",'comment'=>"",'author'=>"");
+        $this->addAttributeCallBack('title', array($this,'translate'));
     }
     
     /**
@@ -15,10 +16,9 @@ class Game extends Entity implements IEntity {
      * @param string $id
      */
     public function Game($id){
-    	parent::Entity(__CLASS__);
+    	parent::__construct(__CLASS__);
         $this->attributes['id']=$id;
     	__debug("Game.entityName=".$this->getInfo('entityName'),"Game",__CLASS__);
-        
     }
     
 	/**
@@ -26,25 +26,26 @@ class Game extends Entity implements IEntity {
 	 * @param array $data from file.
 	 */    
     public function load($id, $data,$datamapping){
-    	parent::load($id, $data,$datamapping);
+    	parent::loadData($id, $data,$datamapping);
     	$this->loadImages("support/title","cover,arts,screenshots");
     }
-    
+        
     /**
      * return "display" formatted <code>$attribute</code> value.
      * @param $attribute
      */
-    public function getDisplay($attribute){
+    public function getDisplay($attribute,$value){
+    	//echo "<pre>display: attr:$attribute, val:$value</pre>";
     	if(isset($this->attributes[$attribute])){
 	    	switch($attribute){
 	    		case 'title':
-	    			return "".ucwords("".$this->getAttribute($attribute));
+	    			return "".ucwords("".$value);
 	    			break;
 	    		case 'support':
-	    			return "".strtoupper("".$this->getAttribute($attribute));
+	    			return "".strtoupper("".$value);
 	    			break;
 	    		case 'comment':
-	    			return "".ucfirst("".$this->getAttribute($attribute));
+	    			return "".ucfirst("".$value);
 	    		default:
 	    			return "".$this->getAttribute($attribute);
 	    			break;
