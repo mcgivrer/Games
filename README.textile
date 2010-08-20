@@ -1,0 +1,27 @@
+h1. Games, a framework design test
+
+This project is a small framework design test to improve some of the modules to be implemented into WebContext, the other project I am leading, a full featured and industrial PHP framework.
+
+Here are experimented:
+
+* Autoload functionality (no more "require" or include !)
+* Debug and trace log (see debug.class.php),
+* Configuration purpose,
+* Data Persistance in files (text format as temporary source, xml soon, and Database in near futur) with Entity management,
+* MVC concept with PageManager and Router,
+* Helpers concept,
+* Javascript integration with JQuery and some plugins,
+* Themes at (Page and Application Level) with templating,
+* Internationalization (i18n),
+* Standard CMS Image management 
+** Image resizing with standard GD library,
+** Multi level thumbnailer,
+** Images storing following some entity defined rules
+* ...
+
+And the list is growing every week !
+
+A lot of features are experimental for now, and not stabilized. So if you want user these, it's at yourown risks ;) 
+But if you want to contribute with your own knowledge to these, please feel free to contact "me":mailto:frederic.delorme@gmail.com.
+
+Have fun !
