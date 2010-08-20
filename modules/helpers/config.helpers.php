@@ -11,4 +11,9 @@ function __config($group, $key,$default=""){
 function __isActive($group, $key){
 	return Config::getInstance()->isActive($group,$key);
 }
+
+function __getRewiteMode(){
+	$rewriteModeActive= Config::getInstance()->isActive('system','rewritemode');
+	return ($rewriteModeActive?"":"?");
+}
 ?>

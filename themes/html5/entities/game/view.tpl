@@ -3,16 +3,16 @@
 		<h2><?= __s('game','master_title',$data['game']->getInfo('support'), $data['game']->getInfo('title') )?></h2>
 		<div class="file">
 			<a href="<?= $data['game']->getPicture('cover',1,"","#")?>" rel="lightbox" title="<?= __s('game','cover_show',$data['game']->getInfo('support'),$data['game']->getInfo('title')) ?>">
-			    <img class="cover" src="<?= $data['game']->getPictureThumb('cover',1,__('game','default_image_cover'))?>" title="cover for <?= $data['game']->getInfo('title') ?>" alt="box cover of game '<?=$data['game']->getInfo('title') ?>'">
+			    <span class="cover"><img src="<?= $data['game']->getPictureThumb('cover',1,__('game','default_image_cover'))?>" title="cover for <?= $data['game']->getInfo('title') ?>" alt="box cover of game '<?=$data['game']->getInfo('title') ?>'"></span>
 			</a>
 			<div class="block">
 				<h3><?= __('game','info_title')?></h3>
 				<div class="block-content">		
 				<div class="note"><span class="legend"><?= __('list','note')?></span><span><?=$data['game']->getInfo('note') ?></span></div>
 				<ul class="infos">
-					<li><span class="label"><?= __('list','author')?></span><?= $data['game']->getInfo('author') ?></li>
+					<li><div class="label"><?= __('list','author')?></div><?= $data['game']->getInfo('author') ?></li>
 					<li>
-						<span class="label fullwidth"><?= __('list','comment')?></span>
+						<div class="label"><?= __('list','comment')?></div>
 						<div class="comment">
 				    	<?= $data['game']->getInfo('comment') ?>
 						</div>

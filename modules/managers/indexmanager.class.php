@@ -5,13 +5,13 @@
  * @version 1.0
  * @copyright 2010/08/11
  */
-class IndexManager extends PageManager{
+class IndexManager extends ApplicationManager{
 	
 	/**
 	 * Call parent constructorto initialize default system.
 	 */
-	public function __construct(){
-		parent::__construct(__CLASS__);
+	public function __construct($name,$params){
+		parent::__construct(__CLASS__,$params);
 	}
 	
 	/**
@@ -20,18 +20,19 @@ class IndexManager extends PageManager{
 	 */
 	public function view(){
 		__debug("retrieve params and populate data","view",__CLASS__);
-		$g = __requestSession('g',"1");
-		$s = __requestSession('s',"x360");
-		__debug("display page id=$g",__METHOD__,__CLASS__);
+		$g = __parameterRequest('g',"1",$this,"session");
+		$s = __parameterRequest('s',"x360",$this,"session");
+		__debug("display page g=$g | s=$s",__METHOD__,__CLASS__);
 		
 		$game = $this->persistance->getDataById($g);
 						
 		$games = $this->persistance->getDataFiltered('Game',
 						array('id','title','support'),
 						"support=".strtolower($s),
-						array('limit'=>20));
+						array('limit'=>20,'sort'=>"title asc"));
 		
-		$supports = $this->persistance->getDataListDistinct('Game','support');
+		$supports = $this->persistance->getDataListDistinct(
+				'Game','support',null,"compareSupport");
 		
 		$this->addData('game',$game);	
 		$this->addData('games',$games);
@@ -39,9 +40,7 @@ class IndexManager extends PageManager{
 		
 		$this->addData('game_selected', $g);
 		$this->addData('support_selected', $s);
-		//$this->addData('size-screenshot',"120x80");//__("game","screenshot-size"));
 		$this->addData('size-screenshot',__config('resources','screenshot_size'));
-		//echo "<pre>game id=$g, support = $s</pre>";
 		return "master";
 	}
 	
@@ -59,16 +58,16 @@ class IndexManager extends PageManager{
 	 * @see modules/PageManager::create()
 	 */
 	public function create(){
-		return "master";
+		
+		return $this->view();
 		
 	}
 	/**
 	 * (non-PHPdoc)
 	 * @see modules/PageManager::update()
 	 */
-	public function update(){
-		return "master";
-		
+	public function edit(){
+		return $this->view();
 	}
 
 	/**
@@ -76,7 +75,8 @@ class IndexManager extends PageManager{
 	 * @see modules/PageManager::delete()
 	 */
 	public function delete(){
-		return "master";
+		
+		return $this->view();
 		
 	}
 
@@ -89,3 +89,4 @@ class IndexManager extends PageManager{
 		return self::$_instance;
 	}
 }
+?>

@@ -38,6 +38,10 @@ class ImagesEntity extends Entity{
 		}
 	}
 
+	public function load($id, $data,$datamapping){
+    	parent::loadData($id, $data,$datamapping);
+    	$this->loadImages("support/title","cover,arts,screenshots");
+	}
 	/**
 	 * Parse resources directory for this entity inheriting this class and
 	 * following the <code>$treetype</code> parameter, parse subdirectories to
@@ -159,7 +163,9 @@ class ImagesEntity extends Entity{
 	}
 	
 	public function upload($treeType="id/"){
-		
+		ini_set('upload_max_filesize', '10M');
+		ini_set('post_max_size', '10M');
+		ini_set('max_execution_time', 300);
 	}
 	/**
 	 * Generate an array containing bath absolute and relative path for image storing.
@@ -173,7 +179,7 @@ class ImagesEntity extends Entity{
 		{
 			if($pathElement!="")
 			{
-				$imagesPath .= "/".HtmlTools::encodeUrlParam(strtolower($this->translate($this->attributes[$pathElement],$pathElement, "en-EN")));
+				$imagesPath .= "/".HtmlTools::encodeUrlParam(strtolower($this->getAttribute($pathElement, "en")));
 			}
 		}
 		//echo "<pre>ImagesEntity.entityName=".$this->getInfo('entityName').", imagesPath=$imagesPath</pre>";

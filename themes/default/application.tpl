@@ -31,7 +31,7 @@
           <div id="header">
           	<div id="loading" class="hidden"><img src="images/icons/wait.png"/></div>
 			<div class="theme">
-          		<form name="theme" method="post" action="?action=setTheme">
+          		<form name="theme" method="post" action="?theme/">
 					<span></span><select id="theme" name="theme" onchange="submit();">
           			<?php foreach($data['themes'] as $theme) :?>
           			<option value="<?= $theme->shortname?>" <?=($theme->shortname == $data['theme']?"selected = \"selected\"":"")?>><?= $theme->name?></option>

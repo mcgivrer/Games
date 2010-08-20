@@ -1,0 +1,2 @@
+name|firstname|lastname|email|password|role
+McGivrer|Frédéric|Delorme|frederic.delorme@gmail.com|12345678|admin

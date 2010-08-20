@@ -118,7 +118,15 @@ class Template extends Singleton{
 		}
 		$data['theme-info'] = self::$active;
 		$data['themes'] = self::$themes;
-		include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
+		//echo "manager= $manager, template=$template<br/>";
+		$applicationTemplate = explode('/',$template);
+		if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
+			//echo "Application level template";
+			include_once("themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl");
+		}else{
+			//echo "Standard manager level template";
+			include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
+		}
 	}
 
 	

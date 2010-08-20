@@ -17,15 +17,16 @@ class Data extends TData implements IData{
 
 				// Extract entity name ($type) and file extension				
 				$expltype = explode('s.',$filename);
+				__debug("find data $filename to load into entity ".ucfirst($expltype[0]),"Data",__CLASS__);
 				$entityName  = $expltype[0];
 				$fileExtension =$expltype[1]; 
 				self::$_data[$entityName]=array();
 				switch ($fileExtension){
 					case "txt":
-						$this->parseTxtFile($filename,$entityName,$id);
+						$id = $this->parseTxtFile($filename,$entityName,$id);
 						break;
 					case "xml":
-						$this->parseXmlFile($filename,$entityName,$id);
+						$id = $this->parseXmlFile($filename,$entityName,$id);
 						break;
 					default:
 						throw new Exception("File type '".$fileExtension."' not known.");
@@ -46,28 +47,29 @@ class Data extends TData implements IData{
 			__debug("find '$filename', generate entity(ies) for this file data","Data",__CLASS__);
 			$line=0;
 			while (!feof($file)) {
-					$buffer = fgets($file);
-					$line++;
-					//__debug("retrieving data :". print_r($buffer,true),"Data",__CLASS__);
-					if($line==1){
-					$datamapping = preg_split("/[\s]*[|][\s]*/",$buffer);
-					}else if($buffer!="" && !empty($buffer) && !strstr($buffer,"END")){
-					$entityUID++;
-					$data=preg_split("/[\s]*[|][\s]*/",$buffer);
-						if(isset($data) && $data[0]!="END"){
-						//__debug("Type identified : ".print_r($type,true),"Data",__CLASS__);
-							$entity = new $entityName();
-							$entity->$entityName($id);
-							$entity->load($id, $data,$datamapping);
-							self::$_data["".$entityName]["".$entityUID]= $entity;
-							self::$_indexes[$id]=array($entityName,"".$entityUID);
-						//__debug("Entity created for key (".self::$_indexes[$id][0]."/".self::$_indexes[$id][1]."):[".print_r($entity,true)."]","Data",__CLASS__);
-						}
-						$id++;
+				$buffer = fgets($file);
+				$line++;
+				//__debug("retrieving data :". print_r($buffer,true),"Data",__CLASS__);
+				if($line==1){
+				$datamapping = preg_split("/[\s]*[|][\s]*/",$buffer);
+				}else if($buffer!="" && !empty($buffer) && !strstr($buffer,"END")){
+				$entityUID++;
+				$data=preg_split("/[\s]*[|][\s]*/",$buffer);
+					if(isset($data) && $data[0]!="END"){
+					//__debug("Type identified : ".print_r($type,true),"Data",__CLASS__);
+						$entity = new $entityName();
+						$entity->$entityName($id);
+						$entity->load($id, $data,$datamapping);
+						self::$_data["".$entityName]["".$entityUID]= $entity;
+						self::$_indexes[$id]=array($entityName,"".$entityUID);
+					//__debug("Entity created for key (".self::$_indexes[$id][0]."/".self::$_indexes[$id][1]."):[".print_r($entity,true)."]","Data",__CLASS__);
 					}
+					$id++;
 				}
-				fclose($file);
 			}
+			fclose($file);
+		}
+		return $id;			
 	}
 	
 	/**
@@ -78,7 +80,7 @@ class Data extends TData implements IData{
 		$keys = self::$_indexes[$id];
 		//echo "keys:(".print_r($keys,true).")<br/>";
 		$data = $this->getData($keys[0],$keys[1]);
-		//echo "retrieved:[".print_r($mydata,true)."]<br/>";
+		//echo "retrieved:[".print_r($data,true)."]<br/>";
 		return $data;
 	}
 	/**
@@ -96,7 +98,7 @@ class Data extends TData implements IData{
 			$ret=null;
 		}
 		if(is_array($ret)){
-			$ret = $this->manageOptions($ret, $options);
+			$ret = $this->manageOptions($entityName,$ret, $options);
 		}
 		__debug("returned data:[count=".count($ret)."]","getData",__CLASS__);
 		return $ret;
@@ -108,7 +110,7 @@ class Data extends TData implements IData{
 	 * @param array $items to be optionized.
 	 * @param array $options list of options to evaluate.
 	 */
-	private function manageOptions($items, $options){
+	private function manageOptions($entityName, $items, $options){
 				// calculate number of items
 		$count = count($items);
 		$itemsOptionized = $items; 
@@ -123,19 +125,24 @@ class Data extends TData implements IData{
 				if($count>$options['limit']){
 					$itemsOptionized = array_slice($items, 0, $options['limit'],true);
 				} 
-				$itemsOptionized['meta']['array_offset'] = $arrayOffset;
-				$itemsOptionized['meta']['array_page'] = $options['limit'];
+				//$itemsOptionized['meta']['array_offset'] = $arrayOffset;
+				//$itemsOptionized['meta']['array_page'] = $options['limit'];
+			}
+			if(isset($options['sort'])){
+				__debug("sort:".$options['sort'],__METHOD__,__CLASS__);
+				list($attribute,$direction) = explode(' ',$options['sort']);
+				uasort($itemsOptionized,array($entityName,"compare".ucfirst($attribute)));
 			}
 		}
-		$itemsOptionized['meta']['array_count'] = $count;
+		//$itemsOptionized['meta']['array_count'] = $count;
 		//print_r($itemsOptionized);
 		return $itemsOptionized;		
 	}
 	
 	/**
-	 * @see IData#getDataDistinct($entityName,$distinctOnAttribute,$attributes=null)
+	 * @see IData#getDataDistinct($entityName,$distinctOnAttribute,$attributes=null,$sortCallBack=null)
 	 */
-	public function getDataListDistinct($entityName,$distinctOnAttribute,$attributes=null){
+	public function getDataListDistinct($entityName,$distinctOnAttribute,$attributes=null,$sortCallBack=""){
 		$ret=array();
 		foreach(self::$_data[$entityName] as $entity){
 			if(!array_key_exists("".$entity->getInfo($distinctOnAttribute),$ret)){
@@ -150,9 +157,8 @@ class Data extends TData implements IData{
 				}
 			}
 		}
-		//echo "<pre>data=".print_r($ret,true)."</pre>";
 		if($attributes==null){
-			uasort($ret,array($entityName,'compare'));
+			uasort($ret,array($entityName,($sortCallBack!=""?$sortCallBack:'compare')));
 		}
 		return $ret;
 	}
@@ -232,27 +238,41 @@ class Data extends TData implements IData{
 		if($conditions!=""){
 			$conditionsArray = $this->analyzeConditions($conditions);
 		}
+		// Filter record on condition.
 		foreach(self::$_data[$entityName] as $key=>$item){
-			$retitem = array();
 			if($this->isConditionArrayTrue($item,$conditionsArray) && $key!="meta"){
-				//echo "<strong>item $key:</strong>[".print_r($item,true)."]<br/>";
-				if(is_array($attributes)){
-					__debug("Add item(".$item->getAttribute('id').") as array of attributes[$attributes]","getDataFiltered",__CLASS__);
-					foreach($attributes as $attribute){
-						$retitem[$attribute] = "".$item->getInfo($attribute);
-					}
-				}else{
-					__debug("Add item(".$item->getAttribute['id'].") as object $entityname","getDataFiltered",__CLASS__);
-					$retitem = $item;
-				}
-				$ret[$key]=$retitem;
+				$ret[$key]=$item;
 			}
 		}
+		// Apply standard options
 		if(is_array($ret) && $options!=null){
-			$ret = $this->manageOptions($ret, $options);
+			$ret = $this->manageOptions($entityName,$ret, $options);
 		}
-		return $ret;
+		// Extract needed attributes if $attributes configured.
+		$retFinal=array();
+		if(is_array($attributes)){
+			foreach($ret as $key=>$item){
+				$retitem = array();
+				foreach($attributes as $attribute){
+					$retitem[$attribute] = "".$item->getInfo($attribute);
+				}
+				$retFinal[$key]=$retitem;
+			}
+		}else{
+			$retFinal=$ret;
+		}
+		return $retFinal;
 	}
+	
+	/**
+	 * @see IData
+	 * @param unknown_type $entityName
+	 * @param unknown_type $conditions
+	 * @param unknown_type $options
+	 */
+	public function find($entityName,$conditions=null,$options=null){
+		return $this->getDataFiltered($entityName,null,$condition,$options);
+	} 
 	
 	public static function getInstance(){
 		return parent::getSingletonInstance(__CLASS__);

@@ -5,6 +5,10 @@ class Entity implements IEntity {
 	protected $attributes=array(
 		'id'=>"",
 		'entityName'=>__CLASS__);
+
+	protected $attributesType=array(
+		'id'=>"integer",
+		'entityName'=>"string");
 	
 	protected $attributesCallBack = array();
 	
@@ -31,10 +35,11 @@ class Entity implements IEntity {
     public function translate($value, $attribute, $language=""){
     	//echo "<pre>attribute:$attribute, value=[$value], language:$language</pre>";
     	$sub=$value;
-    	$langsub = __config('system','language',"en_EN");
+    	$langsub = I18n::getInstance()->getLanguage();
     	$lang=explode('-',$langsub);
-    	if(strstr($sub,"§")!=false){
-	    	$values = explode('§',$value);
+    	//print_r($lang);
+    	if(strstr($sub,"\\")!=false){
+	    	$values = explode('\\',$value);
 	    	foreach($values as $id=>$value){
 	    		$sub = explode(':',$value);
 	    		if($sub[0]==$lang[0]){
@@ -98,7 +103,10 @@ class Entity implements IEntity {
 	 * Return entity attribute <code>$key</code> value
 	 * @param string $key attribute name.
 	 */
-	public function getAttribute($attribute="title"){
+	public function getAttribute($attribute="title",$language=""){
+		if($language!=""){
+			return $this->translate($this->attributes[$attribute],$attribute,$language);
+		}
 		return $this->attributes[$attribute];
 	}
 	
@@ -109,7 +117,34 @@ class Entity implements IEntity {
 		return $value;
 	}
 	
+	/**
+	 * return serialized value for this object.
+	 */
 	public function serialize(){
 		return implode('|',$this->attributes);
+	}
+	
+	/**
+	 * Default compare implementation (based on serialized value).
+	 * @param Entity $entity1
+	 * @param Entity $entity2
+	 */
+	public function compare($entity1,$entity2){
+    	$att1= $entity1->serialize();
+    	$att2= $entity2->serialize();
+        return $this->compareAttribute($att1,$att2);
+	}
+	
+	/**
+	 * Internal Comparator for 2 string value.
+	 * @param string $att1
+	 * @param string $att2
+	 */
+	protected function compareAttribute($att1,$att2){
+    	if($att1==$att2){
+    		return 0;
+    	}else{
+    		return (($att1 < $att2) ? -1 : 1);
+    	}
 	}
 }

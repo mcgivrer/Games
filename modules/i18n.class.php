@@ -20,7 +20,7 @@
  */
 class I18n extends Singleton{
 	private static $_language = null;
-	private static $_langkey  = "en_EN";
+	private static $_langkey  = "en";
 	private static $_themes = array();
 	private static $debug = null;
 
@@ -29,8 +29,17 @@ class I18n extends Singleton{
 	 */
 	public function __construct(){
 		//self::$debug = Debug::getInstance(__CLASS__);
-		self::$_langkey = Config::getInstance()->get("system","language");
-		
+		// calculate default user language, based on Browser information.
+		$languages = explode(',',$_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+		$langs=array();
+		foreach($languages as $language){
+			$lang = explode(';',$language);
+			$langs[] = $lang; 
+		}
+		self::$_langkey = (isset($langs)?$langs[0][0]:Config::getInstance()->get("system","default_language"));
+		if(!file_exists(dirname(__FILE__)."/../i18n/".self::$_langkey."/main.properties")){
+			self::$_langkey = Config::getInstance()->get("system","default_language");
+		}
 		if(!isset(self::$_language) || self::$_language == null){
 			self::$_language = parse_ini_file(dirname(__FILE__)."/../i18n/".self::$_langkey."/main.properties",true);
 			__debug("path:["."i18n/".self::$_langkey."/main.properties]",__METHOD__,__CLASS__);
@@ -44,15 +53,26 @@ class I18n extends Singleton{
 	public function addI18nTheme($themepath){
 		__debug("Add template I18n definitions - start",__METHOD__,__CLASS__);
 		$i18npath = "themes/".$themepath."/i18n/".self::$_langkey."/application.ini";
-		if(!isset(self::$_themes[$themepath]) && file_exists(dirname(__FILE__)."/../".$i18npath)){
-			__debug("file for [".$themepath."/".self::$_langkey."] exists [".$i18npath."]. Added.",__METHOD__,__CLASS__);
-			$themeI18n = parse_ini_file($i18npath,true);
+		if(!isset(self::$_themes[$themepath])){
+			if(file_exists(dirname(__FILE__)."/../".$i18npath)){
+				__debug("file for [".$themepath."/".self::$_langkey."] exists [".$i18npath."]. Added.",__METHOD__,__CLASS__);
+				$themeI18n = parse_ini_file($i18npath,true);
+			}else{
+				__debug("file for [".$themepath."/".self::$_langkey."] does not exist [".$i18npath."]!  Load default one",__METHOD__,__CLASS__);
+				$i18npath = "themes/".$themepath."/i18n/".Config::getInstance()->get("system","default_language")."/application.ini";
+				$themeI18n = parse_ini_file($i18npath,true);
+			}
 			self::$_themes[$themepath]=$themepath;
 			self::$_language = array_merge(self::$_language,$themeI18n);
-		}else{
-			__debug("file for [".$themepath."/".self::$_langkey."] does not exist [".$i18npath."]!",__METHOD__,__CLASS__);
 		}
 		__debug("Theme I18n definition - end",__METHOD__,__CLASS__);
+	}
+	
+	/**
+	 * Return current active language.
+	 */
+	public function getLanguage(){
+		return self::$_langkey;
 	}
 	/**
 	 * return the message based on $group and $key identifiers.

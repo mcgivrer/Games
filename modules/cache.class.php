@@ -66,7 +66,8 @@ class Cache{
 	public function isExists(){
 		if($this->notFiltered()){
 			//echo "<pre>search: ".HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING'])."</pre>";
-			return file_exists($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']).".cache");
+			$cacheFile = ($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING'])!=""?$this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']):"index");
+			return file_exists($cacheFile.".cache");
 		}else{
 			return false;
 		}
@@ -82,6 +83,7 @@ class Cache{
 		if($this->notFiltered() || error_get_last()!=null){
 			$content= ob_get_contents();
 			ob_end_clean();
+			$cacheFile = ($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING'])!=""?$this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']):"index");
 			$file=fopen($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']).".cache","w+");
 			fputs($file,$content);
 			fclose($file);
@@ -92,7 +94,8 @@ class Cache{
 	}
 
 	public function getCachedPage(){
-		$content=file_get_contents($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']).".cache");
+		$cacheFile = ($this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING'])!=""?$this->cachePath.HtmlTools::encodeUrlParam($_SERVER['QUERY_STRING']):"index");
+		$content=file_get_contents($cacheFile.".cache");
 		echo $content;
 	}
 
