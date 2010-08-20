@@ -19,7 +19,7 @@ class PageManager extends Singleton{
 		//$this->persistance = DataRS::getInstance();
 		$this->persistance = Data::getInstance();
 		$this->managerName = $managerName;
-		$this->data['theme'] = __requestSession('theme',__config('template','active'));
+		$this->data['theme'] = __requestSession('theme',__config('template','active'),"session,cookie");
 		$this->data['system/rewrite'] = (__isActive('system','rewritemode')?"":"?");
 	}
 	
