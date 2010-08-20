@@ -13,6 +13,6 @@ function __requestSession($key,$defaultValue,$cookie=null,$store=""){
  * @param object $defaultvalue
  */
 function __parameterRequest($key,$defaultValue,$manager=null,$store=""){
-		return ToolsRequest::getInstance()->parameterRequest($key,$defaultValue,$manager);
+		return ToolsRequest::getInstance()->parameterRequest($key,$defaultValue,$manager,$store);
 }
 ?>

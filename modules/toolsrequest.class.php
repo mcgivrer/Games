@@ -43,25 +43,24 @@ class ToolsRequest extends Singleton{
 		//echo "<pre>get parameterRequest($parameter) =>'".$paramValue."'</pre>";
 		$value =(isset($paramValue)?$paramValue: 
 					(isset($_REQUEST[$parameter])?$_REQUEST[$parameter]:""));
-		if($value!=""){
-			if(strstr(strtolower($store),"session")!=false){
+		if($value==""){
+			if(strstr(strtolower($store),"session")!=false && isset($_SESSION["".$parameter])){
 				$value = $_SESSION["".$parameter];
 			}
-			if($value=="" && strstr(strtolower($store),"cookie")!=false){
-				$value = $_COOKIE[$parameter];
-			}			
-		}
-		if($value==""){
-			$value=$defaultValue;
+			if($value=="" && strstr(strtolower($store),"cookie")!=false && isset($_COOKIE["".$parameter])){
+				$value = $_COOKIE["".$parameter];
+			}elseif($value==""){
+				$value=$defaultValue;
+			}
 		}
 		// store key's value into session.
-		if(strstr(strtolower($store),"session")!=false){
+		if($value !="" && strstr(strtolower($store),"session")!=false){
 			$_SESSION["".$parameter]=$value;
 		}
-		if(strstr(strtolower($store),"cookie")!=false){
+		if($value !="" && strstr(strtolower($store),"cookie")!=false){
 			self::setCookie($parameter, $value);
 		}
-				
+		//echo "<pre>returned value:' $value'</pre>";
 		return $value;
 	}
 	
