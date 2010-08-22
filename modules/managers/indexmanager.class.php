@@ -25,14 +25,17 @@ class IndexManager extends ApplicationManager{
 		__debug("display page g=$g | s=$s",__METHOD__,__CLASS__);
 		
 		$game = $this->persistance->getDataById($g);
-						
+
 		$games = $this->persistance->getDataFiltered('Game',
 						array('id','title','support'),
 						"support=".strtolower($s),
 						array('limit'=>20,'sort'=>"title asc"));
 		
-		$supports = $this->persistance->getDataListDistinct(
-				'Game','support',null,"compareSupport");
+		/*$supports = $this->persistance->getDataListDistinct(
+				'Game','support',null,"compareSupport");*/
+		
+		$supports = $this->persistance->getData(
+				'Support');
 		
 		$this->addData('game',$game);	
 		$this->addData('games',$games);

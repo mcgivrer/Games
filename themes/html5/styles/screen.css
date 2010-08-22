@@ -34,6 +34,15 @@ header h1{
 	font-size:8pt;
 	color:#999;
 }
+.user{
+	float:right;
+	display:bloc;
+	font-size:8pt;
+	color:#999;
+}
+.user a{
+	color:#999;
+}
 .theme span{
 	cursor: help;
 }
@@ -100,7 +109,7 @@ aside{
 	box-shadow:2px 2px 4px #666;
 	margin-right:10px;
 	border:4px solid #ddd;
-	width:170px;
+	/*width:170px;*/
 	height:240px;
 	text-align:center;
 	background-color:#ccc;

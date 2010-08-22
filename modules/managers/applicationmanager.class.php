@@ -21,5 +21,7 @@ class ApplicationManager extends PageManager{
 		
 		return 'application/search';
 	}
+	
+	
 }
 ?>

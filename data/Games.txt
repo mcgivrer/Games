@@ -17,4 +17,7 @@ ps3|little big planet|19||McGivrer
 psp|jak and daxter the lost frontier|17|The best continue for the Jak's adventures|McGivrer
 psp|little big planet|19|One of the (or the) best Playstation Portable game !|McGivrer
 psp|en:ratchet and clank, size matter\\fr:ratchet &amp; clank, la taille ca compte|16|Platform game for PSP. a reference. After 3 adventures on PS2, installation on PSP is an easy success.|McGivrer
-END|END|END|END|END
+psone|vagrant story|16|An old PSONE game ported to the PSP.|McGivrer
+ps2|freedom fighters|17|A fantastic game the the developer team of the game second sight. It's the ancesestor.|McGivrer
+ps2|true crime streets of la|17|A GTA like, fantastic game, but to loading phase are too long.|McGivrer
+ps2|true crime new-york city|17|The sequel of True Crime, Streets of LA, but now in the New-York city.|McGivrer

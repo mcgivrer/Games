@@ -128,6 +128,26 @@ class Template extends Singleton{
 			include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
 		}
 	}
+	
+	private function composeTemplateFileName($template){
+		$applicationTemplate = explode('/',$template);
+		if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
+			//echo "Application level template";
+			if(file_exists(dirname(__FILE__)."themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl")){
+				include_once("themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl");
+			}else{
+				include_once("themes/default/managers/".$applicationTemplate[1].".tpl");
+			}
+		}else{
+			if(file_exists(dirname(__FILE__)."themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl")){
+				include_once("themes/default/managers/".$manager."/".$template.".tpl");
+			}else{
+				include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
+			}
+			//echo "Standard manager level template";
+		}
+		
+	}
 
 	
 	/**
@@ -145,7 +165,11 @@ class Template extends Singleton{
 		}
 		$data['theme-info'] = self::$active;
 		$data['themes'] = self::$themes;
-		include_once("themes/".self::$active->shortname."/entities/".$entity."/".$action.".tpl");
+		if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/entities/".$entity."/".$action.".tpl")){
+			include_once("themes/".self::$active->shortname."/entities/".$entity."/".$action.".tpl");
+		}else{
+			include_once("themes/default/entities/".$entity."/".$action.".tpl");
+		}
 	}
 
 	/**

@@ -6,6 +6,8 @@
 	//Switch Theme
 	Router::getInstance()->addRoute("theme/%t","index");
 	Router::getInstance()->addRoute("search/%search","application");
-
+	//User management
+	Router::getInstance()->addRoute("user/%action","user");
+	
 	Router::getInstance()->setDefaultRoute("games/","index");
 ?>

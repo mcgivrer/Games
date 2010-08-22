@@ -15,6 +15,14 @@
     <body>
         <div id="page">
           <header id="header">
+          	<div class="user">
+          			<? if(isset($data['user-connected'])) :?>
+          				<? __link("user/edit",__('user','user_connected'),__('user','user_connected_title'))?>&nbsp;&gt;&nbsp;
+          				<? __link("user/logout",__('user','logout'),__('user','logout_title'))?>
+          			<? else :?>
+          				<? __link("user/login",__('user','login'),__('user','login_title'))?>
+          			<? endif;?>
+          	</div>
           	<div class="theme">
           		<form name="theme" method="post" action="?action=setTheme">
 					<p><?= __('application','theme_title')?> <select id="theme" name="theme" onchange="submit();">
@@ -32,7 +40,7 @@
           	<? __render();?>
           <div class="clear"></div>
           <footer id="footer">
-            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt; - <?= __s('application','generatedTime',__enlapsedTime());?></p>
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&amp;subject=Demo&x20;PHP" title="">frederic.delorme@gmail.com</a>&gt; - <?= __s('application','generatedTime',__enlapsedTime());?></p>
           </footer>
         </div>
     </body>
