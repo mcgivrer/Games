@@ -29,12 +29,17 @@
 	font-size:7pt;
 }
 .user-login{
+	background-image:url('../../../images/icons/buttons/16x16/door_in.png');
 }
 .user-logout{
+	background-image:url('../../../images/icons/buttons/16x16/gnome-logout.png');
 }
 .user-edit{
+	background-image:url('../../../images/icons/buttons/16x16/edit_user.png');
 }
-
+.user-register{
+	background-image:url('../../../images/icons/buttons/16x16/add_user.png');
+}
 .theme span{
 	cursor: help;
 }
