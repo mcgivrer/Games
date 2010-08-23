@@ -18,7 +18,6 @@ a img {
 	margin:0px 10%;
 	width:80%;
 	min-width:780px;
-	
 }
 header{
     margin:0px 0px 10px 0px;
@@ -28,33 +27,6 @@ header{
 header h1{
 	font-family:Aaargh;
 	font-size:32px;
-}
-.theme{
-	float:right;
-	font-size:8pt;
-	color:#999;
-}
-.user{
-	float:right;
-	display:bloc;
-	font-size:8pt;
-	color:#999;
-}
-.user a{
-	color:#999;
-}
-.theme span{
-	cursor: help;
-}
-.theme select#theme, input{
-	font-size:8pt;
-	padding:1px;
-	margin:1px;
-	border:1px inset #ddd;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-	color:#999;
 }
 footer{
     border-top:1px dotted #000;
@@ -72,13 +44,12 @@ footer{
 }
 aside{
     float:right;
-    width:200px;
+    width:25%;
     font-size:9pt;
     font-family:Arial;
     /*border:1px dotted green;*/
     padding-left:10px;
 }
-
 /*----- content -----*/
 #content .file{
 	float:left;
@@ -109,19 +80,25 @@ aside{
 	box-shadow:2px 2px 4px #666;
 	margin-right:10px;
 	border:4px solid #ddd;
-	/*width:170px;*/
-	height:240px;
 	text-align:center;
 	background-color:#ccc;
+	width:30%;
 }
 #content .file a span.cover img{
+	max-width:160px;
+	max-height:240px;
 }
+#content .file #game-infos{
+	display:block;
+	list-style:none;
+	width:65%;
+}
+
 #content .file .infos{
 	display:block;
 	list-style:none;
 	width:100%;
 }
-
 #content .file .infos li {
 	display:block;
 	border-bottom:1px dotted #ddd;
@@ -165,7 +142,6 @@ aside{
 	color:#fff;
 	font-weight:normal;
 }
-
 #content .file .note .label{
 }
 #content .file .upload{
@@ -183,7 +159,7 @@ aside{
 	display:block;
 	border:2px solid #ddd;
 	margin:0px 0px 10px;
-	width:350px;
+	min-width:350px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -204,7 +180,6 @@ aside{
 	padding:4px;
 	font-size:10pt;
 }
-
 /*----- Gallery  -----*/
 #content .file .nogallery{
 	float:left;
@@ -224,13 +199,14 @@ aside{
 }
 #content .file .gallery img{
 	float:left;
+	max-width:90px;
+	/*max-height:50px;*/
 }
 #content .file .gallery-content{
 	display:inline-block;
 	width:100%;
 	text-align:center;
 }
-
 #content .file .gallery .screenshot img{
 	display:block;
 	-moz-border-radius:4px;
@@ -243,7 +219,6 @@ aside{
 	margin:4px;
 	border:0px;	
 }
-
 /*----- Sidebar -----*/
 aside h2{
 	font:14pt Aaargh;

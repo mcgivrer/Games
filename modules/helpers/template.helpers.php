@@ -6,7 +6,7 @@
  * @param $data
  */
 function __render(){
-	Template::getInstance()->renderMaster();
+	Template::getInstance()->renderPartial();
 }
 /**
  * Render Entity template based on <code>$action</code>. 
@@ -18,5 +18,17 @@ function __render(){
  */
 function __renderEntity($entity,$action,$data){
 	Template::getInstance()->renderEntity($entity,$action,$data);
+}
+
+/**
+ * Render Entity template based on <code>$action</code>. 
+ * <code>data</code> are available for rendering.
+ * <code>entity</code> is the name of the manipulated entity for this display.
+ * @param $entity
+ * @param $action
+ * @param $data
+ */
+function __renderPartial($manager,$template,$data){
+	Template::getInstance()->renderPartial($manager,$template,$data);
 }
 ?>

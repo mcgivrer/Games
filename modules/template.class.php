@@ -110,45 +110,52 @@ class Template extends Singleton{
 	 * @param string $template name of the template to use fo this manager (returned value from Manager action method, by default 'master').
 	 * @param array $data data to be parse for this page
 	 */
-	public function renderMaster($manager="",$template="",$data=""){
-		__debug("manager=$manager, template=$template",__METHOD__,__CLASS__);
+	public function renderPartial($manager="",$ptemplate="",$data=""){
+		__debug("manager=$manager, template=$ptemplate",__METHOD__,__CLASS__);
 		$attributes = self::$context->getAll();
 		foreach($attributes as $key=>$value){
 			$$key = $value; 
 		}
 		$data['theme-info'] = self::$active;
 		$data['themes'] = self::$themes;
-		//echo "manager= $manager, template=$template<br/>";
-		$applicationTemplate = explode('/',$template);
-		if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
-			//echo "Application level template";
-			include_once("themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl");
-		}else{
-			//echo "Standard manager level template";
-			include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
+		//echo "manager= $manager, ptemplate=$ptemplate,template=$template<br/>";
+		if($ptemplate!=$template && $ptemplate!="" && $ptemplate!=""){
+			$template=$ptemplate;
 		}
+		//echo "Application level template";
+		$this->includeTemplateFileName($manager,$template,$data);
 	}
 	
-	private function composeTemplateFileName($template){
+	/**
+	 * search and include template file.
+	 * @param string $manager
+	 * @param string $template
+	 * @param array $data
+	 */
+	private function includeTemplateFileName($manager,$template,$data){
+		__debug("manager=$manager, template=$template",__METHOD__,__CLASS__);
 		$applicationTemplate = explode('/',$template);
 		if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
-			//echo "Application level template";
-			if(file_exists(dirname(__FILE__)."themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl")){
-				include_once("themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl");
+			$filename= dirname(__FILE__)."/../themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl";
+
+			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl")){
+				include_once("themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl");
+			}elseif(file_exists(dirname(__FILE__)."/../themes/default/".$applicationTemplate[1].".tpl")){
+				include_once("themes/default/".$applicationTemplate[1].".tpl");
+			
 			}else{
-				include_once("themes/default/managers/".$applicationTemplate[1].".tpl");
+				include_once("themes/".$applicationTemplate[1].".tpl");
+			
 			}
 		}else{
-			if(file_exists(dirname(__FILE__)."themes/".self::$active->shortname."/managers/".$applicationTemplate[1].".tpl")){
-				include_once("themes/default/managers/".$manager."/".$template.".tpl");
+			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/managers/".self::$active->shortname."/".$template.".tpl")){
+				include_once("themes/default/managers/".self::$active->shortname."/".$template.".tpl");
 			}else{
 				include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
 			}
-			//echo "Standard manager level template";
 		}
 		
 	}
-
 	
 	/**
 	 * Display the action template for an entity.
