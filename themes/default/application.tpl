@@ -38,6 +38,7 @@
           			<?php endforeach;?>
           			</select>
           		</form>
+          		<? __renderPartial('user','application/user',$data)?>
           	</div>
             <h1><?= __('home','title') ?></h1>
           </div>
