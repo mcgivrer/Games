@@ -185,7 +185,7 @@ aside{
 	width:290px;
 }
 /*----- Block display -----*/
-#content .file .block {
+#content .block {
 	float:left;
 	display:block;
 	border:2px solid #ddd;
@@ -245,7 +245,13 @@ aside{
 	text-align:center;
 }
 
-#content .file .gallery .screenshot img{
+#content .file .gallery .screenshot div{
+	display:block;
+	float:left;
+	max-width:120px;
+	height:80px;
+}
+#content .file .gallery .screenshot div img{
 	display:block;
 	-moz-border-radius:4px;
 	-moz-box-shadow:2px 2px 4px #666;
@@ -257,14 +263,30 @@ aside{
 	margin:4px;
 	border:0px;	
 }
-
+#content #random {
+	width:99%;
+}
+#content #random a {
+	text-decoration:none;
+}
 #content #random a span.cover {
 	border-width: 1px;
+	width:120px;
+	height:80px;
 }
 #content #random a span.cover img{
 	max-width:120px;
 	max-height:80px;
-}
+	display:inline-block;
+	-moz-border-radius:4px;
+	-moz-box-shadow:2px 2px 4px #666;
+	-webkit-border-radius:4px;
+	-webkit-box-shadow:2px 2px 4px #666;
+	border-radius:4px;
+	box-shadow:2px 2px 4px #666;
+	padding:0px;
+	margin:4px;
+	border:0px;	}
 
 /*----- Sidebar -----*/
 aside h2{

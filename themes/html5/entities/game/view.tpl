@@ -17,6 +17,7 @@
 				    	<?= $data['game']->getInfo('comment') ?>
 						</div>
 					</li>
+					<li><div class="label"><?= __('game','tags_label')?></div><?=$data['game']->getInfo('tags')?></li>
 				</ul>
 				</div>
 			</div>
@@ -27,7 +28,7 @@
 				<div class=" block-content gallery-content">
 				<?php foreach($data['game']->getPictures('screenshots') as $id => $picture) :?>
 					<a class="screenshot" rel="lightbox[galery]" href="<?= $picture['image']?>" title="<?= __s('game','sc_show',$data['game']->getInfo('support'),$data['game']->getInfo('title'),$id) ?>">
-						<img src="<?=$picture['thumb'][$data['size-screenshot']]?>" title="" />
+						<div><img src="<?=$picture['thumb'][$data['size-screenshot']]?>" title="" /></div>
 					</a>
 				<?php endforeach;?>
 				<div class="clear"></div>

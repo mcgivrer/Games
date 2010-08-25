@@ -15,15 +15,17 @@ class Game extends ImagesEntity implements IEntity {
     			'support'=>"", 
     			'note'=>"",
     			'comment'=>"",
-    			'author'=>"");
+    			'author'=>"",
+    			'tags'=>array());
         $this->attributesType=array(
     			'id'=>"Integer", 
     			'title'=>"String", 
     			'support'=>"String", 
     			'note'=>"String",
     			'comment'=>"String",
-    			'author'=>"User");
-    	$this->addAttributeCallBack('title', array($this,'translate'));
+    			'author'=>"User",
+    			'tags'=>"array");
+        $this->addAttributeCallBack('title', array($this,'translate'));
     }
     
     /**

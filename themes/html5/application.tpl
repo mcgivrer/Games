@@ -5,13 +5,13 @@
         <title><?= __s('application','page_title',$data['page-title'])?></title>
         <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="<?=$data['theme']?>" />
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/screen.css" media="screen" id="<?=$data['theme']?>" />
+        <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
         <!--[if IE]>
 		<script type="text/javascript" src="themes/<?=$data['theme']?>/scripts/html5shiv.js"></script>
 		<![endif]-->
-        <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
-        <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="public/scripts/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="themes/<?=$data['theme']?>/scripts/theme.js"></script>
-        <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
+        <script type="text/javascript" src="public/scripts/jquery.lightbox-0.5.pack.js"></script>
     </head>
     <body>
         <div id="page">

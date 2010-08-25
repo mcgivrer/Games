@@ -1,4 +1,4 @@
-<<?php
+<?php
 /**
  * Default HTML component object.
  * all Html input would inherit from this object definition.
