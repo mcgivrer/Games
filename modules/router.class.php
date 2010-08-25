@@ -82,30 +82,33 @@ class Router extends Singleton{
 	
 	public function findRoute(){
 		$identifiedParams = array('managerClass' => "",'params'=>array());
-		
-		$request = explode('/',$_SERVER['QUERY_STRING']);
-		//echo "<pre>request=[".print_r($request,true)."]</pre>";
-		__debug("Parse route array and find corresponding route for '".print_r($request,true)."'",__METHOD__,__CLASS__);
-		// if not Url rewrite mode, remove the '?' character in first position.
-		if(isset($request[0]) && $request[0]=="?"){
-			$request = array_slice($request,1);
-		}
-		if($request[0]==""){
-			$route = self::$defaultRoute;
-		}else{
-			$route = self::$routes[$request[0]];
-			$params = explode('/',$route['path']);
-			if(isset($params)&& count($params)>1){
-				for($i=0;$i<count($params);$i++){
-					$param=$params[$i];
-					$value=(isset($request[$i])?$request[$i]:"");
-					//echo "<p>param ".$i.":".$param."=".$value."</p>";
-					if(isset($param[0]) && $param[0]=="%"){
-						$identifiedParams['params'][str_replace('%',"",$param)]=$value;
-						__debug("find param $param=$value",__METHOD__,__CLASS__);
+		if(isset($_SERVER['QUERY_STRING'])){
+			$request = explode('/',$_SERVER['QUERY_STRING']);
+			//echo "<pre>request=[".print_r($request,true)."]</pre>";
+			__debug("Parse route array and find corresponding route for '".print_r($request,true)."'",__METHOD__,__CLASS__);
+			// if not Url rewrite mode, remove the '?' character in first position.
+			if(isset($request[0]) && $request[0]=="?"){
+				$request = array_slice($request,1);
+			}
+			if($request[0]==""){
+				$route = self::$defaultRoute;
+			}else{
+				$route = self::$routes[$request[0]];
+				$params = explode('/',$route['path']);
+				if(isset($params)&& count($params)>1){
+					for($i=0;$i<count($params);$i++){
+						$param=$params[$i];
+						$value=(isset($request[$i])?$request[$i]:"");
+						//echo "<p>param ".$i.":".$param."=".$value."</p>";
+						if(isset($param[0]) && $param[0]=="%"){
+							$identifiedParams['params'][str_replace('%',"",$param)]=$value;
+							__debug("find param $param=$value",__METHOD__,__CLASS__);
+						}
 					}
 				}
 			}
+		}else{
+			$route = self::$defaultRoute;
 		}
 		if(
 			!isset($identifiedParams['params']['action']) 

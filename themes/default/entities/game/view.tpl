@@ -3,7 +3,7 @@
 		<h2><?= $data['game']->getInfo('support') ?> / <?= $data['game']->getInfo('title') ?></h2>
 		<div class="file">
 			<a href="<?= $data['game']->getPicture('cover',1,"","#")?>" rel="lightbox" title="<?= __s('game','cover_show',$data['game']->getInfo('support'),$data['game']->getInfo('title')) ?>">
-			    <img src="<?= $data['game']->getPictureThumb('cover',1,__('game','default_image_cover'))?>" title="cover for <?= $data['game']->getInfo('title') ?>" alt="box cover of game '<?=$data['game']->getInfo('title') ?>'">
+			    <span class="cover"><img src="<?= $data['game']->getPictureThumb('cover',1,__('game','default_image_cover'))?>" title="cover for <?= $data['game']->getInfo('title') ?>" alt="box cover of game '<?=$data['game']->getInfo('title') ?>'"/></span>
 			</a>
 			<div class="block">
 				<h3><?= __('game','info_title')?></h3>

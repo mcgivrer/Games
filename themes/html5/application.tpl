@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title><?= __s('application','page_title',(isset($data['game'])?" &gt; ".$data['game']->getInfo('support')." &gt; ".$data['game']->getInfo('title'):""))?></title>
+        <title><?= __s('application','page_title',$data['page-title'])?></title>
         <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="<?=$data['theme']?>" />
         <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/screen.css" media="screen" id="<?=$data['theme']?>" />
         <!--[if IE]>
@@ -17,7 +17,7 @@
         <div id="page">
           <header id="header">
           	<div class="theme">
-          		<form name="theme" method="post" action="?action=setTheme">
+          		<form name="theme" method="post" action="?theme/">
 					<p><?= __('application','theme_title')?> <select id="theme" name="theme" onchange="submit();">
           			<?php foreach($data['themes'] as $theme) :?>
           			<option value="<?= $theme->shortname?>" <?=($theme->shortname == $data['theme']?"selected = \"selected\"":"")?>><?= $theme->name?></option>
@@ -27,9 +27,9 @@
           		<form name="theme" method="post" action="?search/&action=search">
           			<p><input type="search" name="search" id="search" placeholder="search" size="14" maxlength="30"/></p>
           		</form>
-				<? __renderPartial('user','application/user',$data)?>
+				<? __renderPartial('user','admin/user',$data)?>
           	</div>
-            <h1><?= __('application','title') ?></h1>
+            <h1><?= __s('application','title',$data['page-title']) ?></h1>
           </header>
           	<? __render();?>
           <div class="clear"></div>

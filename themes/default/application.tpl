@@ -6,8 +6,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title><?= __('home','title').(isset($data['game'])?" - ".$data['game']->getInfo('title'):"")?></title>
-        <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/screen.css" media="screen" id="<?=$data['theme']?>" />
-        <link rel="stylesheet" type="text/css" href="themes/<?=$data['theme']?>/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="default-manager" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="<?=$data['theme']?>.lightbox" />
         <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
         <script>
@@ -31,14 +32,16 @@
           <div id="header">
           	<div id="loading" class="hidden"><img src="images/icons/wait.png"/></div>
 			<div class="theme">
-          		<form name="theme" method="post" action="?theme/">
-					<span></span><select id="theme" name="theme" onchange="submit();">
+          		<form name="theme" method="post" action="?theme/"><select id="theme" name="theme" onchange="submit();">
           			<?php foreach($data['themes'] as $theme) :?>
           			<option value="<?= $theme->shortname?>" <?=($theme->shortname == $data['theme']?"selected = \"selected\"":"")?>><?= $theme->name?></option>
           			<?php endforeach;?>
           			</select>
           		</form>
-          		<? __renderPartial('user','application/user',$data)?>
+				<form name="theme" method="post" action="?search/&action=search">
+					<p><input type="search" name="search" id="search" placeholder="search" size="14" maxlength="30"/></p>
+				</form>
+          		<? __renderPartial('user','admin/user',$data)?>
           	</div>
             <h1><?= __('home','title') ?></h1>
           </div>

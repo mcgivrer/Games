@@ -18,6 +18,7 @@ a img {
 	margin:0px 10%;
 	width:80%;
 	min-width:780px;
+	
 }
 header{
     margin:0px 0px 10px 0px;
@@ -27,6 +28,33 @@ header{
 header h1{
 	font-family:Aaargh;
 	font-size:32px;
+}
+.theme{
+	float:right;
+	font-size:8pt;
+	color:#999;
+}
+.user{
+	float:right;
+	display:bloc;
+	font-size:8pt;
+	color:#999;
+}
+.user a{
+	color:#999;
+}
+.theme span{
+	cursor: help;
+}
+.theme select#theme, input{
+	font-size:8pt;
+	padding:1px;
+	margin:1px;
+	border:1px inset #ddd;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	color:#999;
 }
 footer{
     border-top:1px dotted #000;
@@ -50,6 +78,7 @@ aside{
     /*border:1px dotted green;*/
     padding-left:10px;
 }
+
 /*----- content -----*/
 #content .file{
 	float:left;
@@ -99,6 +128,7 @@ aside{
 	list-style:none;
 	width:100%;
 }
+
 #content .file .infos li {
 	display:block;
 	border-bottom:1px dotted #ddd;
@@ -142,6 +172,7 @@ aside{
 	color:#fff;
 	font-weight:normal;
 }
+
 #content .file .note .label{
 }
 #content .file .upload{
@@ -159,7 +190,8 @@ aside{
 	display:block;
 	border:2px solid #ddd;
 	margin:0px 0px 10px;
-	min-width:350px;
+	/*width:350px;*/
+	width:63%;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -167,19 +199,24 @@ aside{
 	-webkit-box-shadow:2px 2px 4px #666;
 	box-shadow:2px 2px 4px #666;*/
 }
-#content .file .block-content{
+#content .file #game-file{
+	margin-left:200px;
+	width:69%;
 	float:left;
+}
+#content .block-content{
 	display:block;
 	padding:10px;
 	width:95%;
 }
-#content .file .block  h3{
+#content .block  h3{
 	display:block;
 	background-color:#ddd;
 	border:none;
 	padding:4px;
 	font-size:10pt;
 }
+
 /*----- Gallery  -----*/
 #content .file .nogallery{
 	float:left;
@@ -207,6 +244,7 @@ aside{
 	width:100%;
 	text-align:center;
 }
+
 #content .file .gallery .screenshot img{
 	display:block;
 	-moz-border-radius:4px;
@@ -219,6 +257,15 @@ aside{
 	margin:4px;
 	border:0px;	
 }
+
+#content #random a span.cover {
+	border-width: 1px;
+}
+#content #random a span.cover img{
+	max-width:120px;
+	max-height:80px;
+}
+
 /*----- Sidebar -----*/
 aside h2{
 	font:14pt Aaargh;

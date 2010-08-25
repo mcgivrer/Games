@@ -27,13 +27,28 @@ class ThemeDescriptor extends SimpleXMLElement {
  * Template class managing multiple themes and the rendering layers.
 */
 class Template extends Singleton{
-	
+	/**
+	 * List of themes
+	 * @var array
+	 */
 	static private $themes=array();
-	
+	/**
+	 * Theme activated
+	 * @var string
+	 */
 	static private $active="";
-	
+	/**
+	 * Context for display
+	 * @var array
+	 */
 	static private $context=array();
+
+	static private $crumbertemplate = null;
 	
+	
+	/**
+	 * Default constructor
+	 */
 	public function __construct(){
 		$this->buildThemesList();
 		$this->setTheme(__requestSession('theme',__config('template','active')));
@@ -101,7 +116,11 @@ class Template extends Singleton{
 		}
 		$data['theme-info'] = self::$active;
 		$data['themes'] = self::$themes;
-		include_once("themes/".self::$active->shortname."/application.tpl");
+		if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/application.tpl")){
+			include_once("themes/".self::$active->shortname."/application.tpl");
+		}else{
+			include_once("themes/default/application.tpl");
+		}
 	}
 	
 	/**
@@ -148,10 +167,16 @@ class Template extends Singleton{
 			
 			}
 		}else{
-			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/managers/".self::$active->shortname."/".$template.".tpl")){
-				include_once("themes/default/managers/".self::$active->shortname."/".$template.".tpl");
-			}else{
+			//echo "theme";
+			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl")){
+				//echo "->in manager";
 				include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
+			}elseif(file_exists(dirname(__FILE__)."/../themes/default/".$template.".tpl")){
+				//echo "->in default theme";
+				include_once("themes/default/".$template.".tpl");
+			}else{
+				//echo "->in path";
+				include_once("themes/default/managers/".self::$active->shortname."/".$template.".tpl");
 			}
 		}
 		

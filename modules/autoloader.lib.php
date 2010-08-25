@@ -12,12 +12,14 @@ function autoLoader($className){
 		'',
 		'modules/',
 		'modules/helpers/',
-		'modules/beta/',
 		'modules/entities/',
 		'modules/managers/',
 		'modules/patterns/',
 		'modules/exceptions/',
-	);
+		'modules/beta/',
+		'application/entities/',
+		'application/managers/'
+		);
 
 	//Add your file naming formats here
 	$fileNameFormats = array(
