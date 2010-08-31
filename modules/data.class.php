@@ -77,12 +77,34 @@ class Data extends TData implements IData{
 	 */
 	public function getDataById($id){
 		__debug("retrieve data for id:".$id,"getDataById",__CLASS__);
-		$keys = self::$_indexes[$id];
-		//echo "keys:(".print_r($keys,true).")<br/>";
-		$data = $this->getData($keys[0],$keys[1]);
-		//echo "retrieved:[".print_r($data,true)."]<br/>";
-		return $data;
+		if(isset(self::$_indexes[$id])){
+			$keys = self::$_indexes[$id];
+			//echo "keys:(".print_r($keys,true).")<br/>";
+			$data = $this->getData($keys[0],$keys[1]);
+			//echo "retrieved:[".print_r($data,true)."]<br/>";
+			return $data;
+		}else{
+			return null;
+		}
 	}
+	
+	/**
+	 * Dynamic Method get[Entity]By[Attribute]($parameters) to retrieve Entity on an Attribute value. can return an array. 
+	 * @param string $name Method's name
+	 * @param string $parameters list of parameters
+	 */
+	public function __call($name,$parameters){
+		__debug("retrieve data for ".$name."[parameters=".print_r($parameters,true)."]",__METHOD__,__CLASS__);
+		$entity=null;
+		if(strstr($name,"get")!==false){
+			$analyse=explode(',',preg_replace('/get([^\*]+)By([^\*]+)/',"$1,$2",$name));
+			//echo "<pre>$name=>".print_r($analyse,true)."</pre>";
+			$entityName = $analyse[0];
+			$entity =  $this->find($entityName,strtolower($analyse[1])."=".$parameters[0]);
+		}
+		return $entity;
+	}
+	
 	/**
 	 * @see IData#getData($entityName,$entityUID)
 	 */
@@ -271,7 +293,7 @@ class Data extends TData implements IData{
 	 * @param unknown_type $options
 	 */
 	public function find($entityName,$conditions=null,$options=null){
-		return $this->getDataFiltered($entityName,null,$condition,$options);
+		return $this->getDataFiltered($entityName,null,$conditions,$options);
 	} 
 	
 	public static function getInstance(){

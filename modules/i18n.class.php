@@ -79,10 +79,12 @@ class I18n extends Singleton{
 	 * @param $group
 	 * @param $key
 	 */
-	public function get($group,$key){
+	public function get($group,$key,$default=""){
 		__debug("start : group=$group, key=$key",__METHOD__,__CLASS__);
 		if(isset(self::$_language[$group]) && isset(self::$_language[$group][$key])){
 			return self::$_language[$group][$key];
+		}elseif($default!=""){
+			return $default;
 		}else{
 			return "message $group/$key not defined in ".self::$_langkey;
 		}
@@ -107,9 +109,9 @@ class I18n extends Singleton{
 	 * @param $group
 	 * @param $key
 	 */
-	public function removeHtml($group,$key){
+	public function removeHtml($group,$key,$default=""){
 		__debug("group=$group, key=$key",__METHOD__,__CLASS__);
-		$msg=self::get($group,$key);
+		$msg=self::get($group,$key,$default);
 		return strip_tags($msg);
 	}
 	/**

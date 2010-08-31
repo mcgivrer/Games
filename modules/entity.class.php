@@ -7,14 +7,98 @@ class Entity implements IEntity {
 		'entityName'=>__CLASS__);
 
 	protected $attributesType=array(
-		'id'=>"integer",
-		'entityName'=>"string");
+		'id'=>array('type'=>"Text"),
+		'entityName'=>array('type'=>"Text"));
 	
 	protected $attributesCallBack = array();
 	
 	public function __construct($name){
 		$this->attributes['entityName'] = $name;
 	}
+	/**
+	 * Add a new attribute to this object.
+	 * @param string $attributeName name fo this attribute
+	 * @param string/array $attributeType type of attribute can be a string with 
+	 * type or an array with following attributes : 
+	 *    array('type'=>"",'size'=>"",'options=>"");
+	 */
+	protected function addAttribute($attributeName, $attributeType){
+		if(!isset($this->attributes[$attributeName])){
+			$this->attributes[$attributeName]="";
+			$this->attributesType[$attributeName]['type'] = $attributeType;
+		}else{
+			throw new Exception("Attribute $attributeName already set","90100");
+		}
+	}
+		
+	/**
+	 * Add a bundle of attributes to this object.
+	 * @param array $attributes list of attributes as :
+	 *   array( 
+	 *      array('name'=>"", 'type'=>"",'size'=>"",'options'=>""),
+	 *      array('name'=>"", 'type'=>"",'size'=>"",'options'=>""),
+	 *      array('name'=>"", 'type'=>"",'size'=>"",'options'=>""),
+	 *      array('name'=>"", 'type'=>"",'size'=>"",'options'=>""),
+	 *      ...
+	 *      );
+	 */
+	protected function addAttributes($attributes){
+		foreach($attributes as $attribute){
+			if(!isset($this->attributes[$attribute['name']])){
+				$this->attributes[$attribute['name']]="";
+				$this->attributesType[$attribute['name']]['type'] = $attribute['type'];
+				if(isset($attribute['size'])){
+				$this->attributesType[$attribute['name']]['size'] = $attribute['size'];
+				}
+				if(isset($attribute['options'])){
+					$this->attributesType[$attribute['name']]['options'] = $attribute['options'];
+				}
+			}else{
+				throw new Exception("Attribute $attributeName already set","90100");
+			}
+		}
+	}
+	
+	/**
+	 * Return the value for attribute.
+	 * e.g.: 
+	 * - getName() will return the Attribute 'name' value.
+	 * - getDecoratedName() will return the "Display" value of the attribute "name"
+	 * 
+	 * @param unknown_type $attribute
+	 */
+	public function __get($attribute){
+		$decorated=false;
+		if(strstr($attribute,'decorated_')!==false){
+			$attribute = str_replace("decorated_","",$attribute);
+			$decorated=true;
+		}
+		if(array_key_exists($attribute,$this->attributes)){
+			// if decorated mode then call the getDisplay Method, else return attribute value.
+			return ($decorated?$this->getDisplay($attribute,$this->attributes[$attribute]):$this->attributes[$attribute]);
+		}else{
+			$trace = debug_backtrace();
+			trigger_error(
+					'Undefined property via __get(): ' . $attribute .
+					' in ' . $trace[0]['file'] .
+					' on line ' . $trace[0]['line'],
+					E_USER_NOTICE);
+		}
+	}
+
+	public function __set($attribute,$value){
+		if(array_key_exists($attribute,$this->attributes)){
+			$this->attributes[$attribute]=$value;
+		}else{
+			$trace = debug_backtrace();
+			trigger_error(
+					'Undefined property via __set(): ' . $attribute .
+					' in ' . $trace[0]['file'] .
+					' on line ' . $trace[0]['line'],
+					E_USER_NOTICE);
+		}
+	}
+	
 	
 	/**
 	 * Add a pre-treatment for a specific attribute.
@@ -66,7 +150,7 @@ class Entity implements IEntity {
 		foreach($datamapping as $attribute){
 			if($attribute!="" && $attribute !=null){
 				if($attributeCallBack!=null && isset($attributeCallBack[$attribute])){
-					$this->attributes[$attribute] = call_user_func(array($this,$attributeCallBack[$attribute]),$data[array_search($attribute,$datamapping)],$attribute);
+					//$this->attributes[$attribute] = call_user_func(array($this,$attributeCallBack[$attribute]),$data[array_search($attribute,$datamapping)],$attribute);
 				}else{
 					$this->attributes[$attribute] = $data[array_search($attribute,$datamapping)];
 				}
@@ -117,6 +201,13 @@ class Entity implements IEntity {
 		return $value;
 	}
 	
+	public function getAttributes(){
+		return $this->attributes;
+	}
+	public function getAttributeType($attributeName){
+		return $this->attributesType[$attributeName];
+	}
+	
 	/**
 	 * return serialized value for this object.
 	 */
@@ -132,7 +223,7 @@ class Entity implements IEntity {
 	public function compare($entity1,$entity2){
     	$att1= $entity1->serialize();
     	$att2= $entity2->serialize();
-        return $this->compareAttribute($att1,$att2);
+        return self::compareAttribute($att1,$att2);
 	}
 	
 	/**
@@ -140,7 +231,7 @@ class Entity implements IEntity {
 	 * @param string $att1
 	 * @param string $att2
 	 */
-	protected function compareAttribute($att1,$att2){
+	protected static function compareAttribute($att1,$att2){
     	if($att1==$att2){
     		return 0;
     	}else{

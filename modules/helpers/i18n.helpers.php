@@ -4,8 +4,8 @@
  * @param String $group
  * @param String $key
  */
-function __($group,$key){
-	return I18n::getInstance()->get($group,$key);
+function __($group,$key,$default=""){
+	return I18n::getInstance()->get($group,$key,$default);
 }
 /**
  * As __(), retreive translated sentence for group/key with parameters !
@@ -22,7 +22,7 @@ function __s($group,$key){
  * @param $group
  * @param $key
  */
-function __h($group,$key){
-	return I18n::getInstance()->removeHtml($group,$key);
+function __h($group,$key,$default){
+	return I18n::getInstance()->removeHtml($group,$key,$default);
 }
 ?>

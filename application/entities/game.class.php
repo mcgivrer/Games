@@ -16,7 +16,7 @@ class Game extends ImagesEntity implements IEntity {
     			'note'=>"",
     			'comment'=>"",
     			'author'=>"",
-    			'tags'=>array());
+    			'tags'=>"");
         $this->attributesType=array(
     			'id'=>"Integer", 
     			'title'=>"String", 
@@ -26,6 +26,7 @@ class Game extends ImagesEntity implements IEntity {
     			'author'=>"User",
     			'tags'=>"array");
         $this->addAttributeCallBack('title', array($this,'translate'));
+        //$this->addAttributeCallBack('tags', array($this,'splitTags'));
     }
     
     /**
@@ -35,9 +36,13 @@ class Game extends ImagesEntity implements IEntity {
     public function Game($id){
     	parent::__construct(__CLASS__);
         $this->attributes['id']=$id;
-    	__debug("Game.entityName=".$this->getInfo('entityName'),"Game",__CLASS__);
+    	__debug("Game.entityName=".$this->entityName,"Game",__CLASS__);
     }
-        
+
+    public function splitTags($value, $attribute, $language=""){
+    	return explode(',',$value);
+    }
+    
     /**
      * return "display" formatted <code>$attribute</code> value.
      * @param $attribute
@@ -57,6 +62,8 @@ class Game extends ImagesEntity implements IEntity {
 	    		default:
 	    			return "".$this->getAttribute($attribute);
 	    			break;
+	    		case 'tags':
+	    			return explode(',',$value);
 	    	}
     	}else{
     		return "unknown attribute '$attribute'.";
@@ -68,12 +75,12 @@ class Game extends ImagesEntity implements IEntity {
      * @param unknown_type $game1
      * @param unknown_type $game2
      */
-    public function compare($game1,$game2){
+    /*public function compare($game1,$game2){
     	$title1 = $game1->getAttribute('title');
     	$title2 = $game2->getAttribute('title');
     	
    		return self::compareAttribute($title1,$title2);
-    }
+    }*/
 
     /**
      * Compare Game object on title attribute.

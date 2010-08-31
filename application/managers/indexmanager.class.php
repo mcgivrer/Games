@@ -36,7 +36,7 @@ class IndexManager extends ApplicationManager{
 		$past = array();
 		for($i=0;$i<6;$i++){
 			while(true){
-				$rnd = rand(1,20);
+				$rnd = rand(1,2000)/100;
 				if(!array_search($rnd,$past)){
 					$past[]=$rnd;
 					break;
@@ -56,7 +56,7 @@ class IndexManager extends ApplicationManager{
 		$this->addData('games',$games);
 		$this->addData('supports',$supports);
 		$this->addData('randomgames',$randomgames);
-		$this->addData('page-title',($g!=""?" - ".strtoupper($game->getInfo('support'))." / ".ucfirst($game->getInfo('title')) :""));
+		$this->addData('page-title',($g!=""?" - ".strtoupper($game->support." / ".ucfirst($game->title)) :""));
 		$this->addData('game_selected', $g);
 		$this->addData('support_selected', $s);
 		$this->addData('size-screenshot',__config('resources','screenshot_size'));

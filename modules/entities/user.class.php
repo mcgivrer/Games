@@ -10,22 +10,16 @@ class User extends ImagesEntity implements IEntity {
 	 * Default constructor for a User entity.
 	 */
 	public function __construct(){
-    	$this->attributes	 = array(
-    			'name'		=>"", 
-    			'firstname'	=>"", 
-    			'lastname'	=>"", 
-    			'email'		=>"",
-    			'password'	=>"",
-    			'role'		=>"",
-    			'avatar'	=>"");
-    	$this->attributesType= array(
-    			'name'		=>"String", 
-    			'firstname'	=>"String", 
-    			'lastname'	=>"String", 
-    			'email'		=>"String",
-    			'password'	=>"String",
-    			'role'		=>"String",
-    			'avatar'	=>"Image");
+    	$this->addAttributes(array(
+    					array('name'=>"name",'type'=>"Text",'size'=>"20",'value'=>""),
+    					array('name'=>"firstname",'type'=>"Text",'size'=>"50",'value'=>""),
+        				array('name'=>"lastname",'type'=>"Text",'size'=>"50",'value'=>""),
+        				array('name'=>"email",'type'=>"Text",'size'=>"100",'value'=>""),
+            			array('name'=>"password",'type'=>"Password",'size'=>"30",'value'=>""),
+            			array('name'=>"role",'type'=>"Text",'size'=>"10",'value'=>""),
+            			array('name'=>"avatar",'type'=>"Image",'option'=>array('path'=>'/avatar'),'value'=>""),
+            			)
+    				);
     }
     /**
      * Default constructor.

@@ -5,6 +5,7 @@ __helpers("i18n");
 __helpers("template");
 __helpers("http");
 __helpers("html");
+__helpers("htmlform");
 /**
  * Detect and instanciate the needed PageManager.
  * get the mgr request variable and instanciate the corresponding PageManager.
@@ -158,5 +159,8 @@ class Router extends Singleton{
 		return self::getSingletonInstance(__CLASS__);
 	}
 }
+//Internal Routes
+include_once("modules/routes.php");
+//Application Routes
 include_once("config/routes.php");
 ?>

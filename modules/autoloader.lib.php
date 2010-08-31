@@ -12,6 +12,7 @@ function autoLoader($className){
 		'',
 		'modules/',
 		'modules/helpers/',
+		'modules/forms/',
 		'modules/entities/',
 		'modules/managers/',
 		'modules/patterns/',

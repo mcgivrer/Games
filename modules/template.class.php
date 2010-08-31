@@ -154,7 +154,23 @@ class Template extends Singleton{
 	private function includeTemplateFileName($manager,$template,$data){
 		__debug("manager=$manager, template=$template",__METHOD__,__CLASS__);
 		$applicationTemplate = explode('/',$template);
+		$find=false;
 		if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
+			$pathes = array(
+					"themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl",
+					"themes/default/".$applicationTemplate[1].".tpl",
+					"themes/".$applicationTemplate[1].".tpl",
+					"themes/default/admin/".self::$active->shortname."/".$applicationTemplate[1].".tpl"
+					);
+			foreach($pathes as $path){
+				$filename= dirname(__FILE__)."/../".$path;
+				if(file_exists($filename)){
+					include_once($path);
+					$find=true;
+				}
+			}
+		}
+		/*if(count($applicationTemplate)>1 && $applicationTemplate[0]=="application"){
 			$filename= dirname(__FILE__)."/../themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl";
 
 			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/".$applicationTemplate[1].".tpl")){
@@ -166,9 +182,24 @@ class Template extends Singleton{
 				include_once("themes/".$applicationTemplate[1].".tpl");
 			
 			}
-		}else{
+		}
+		*/
+		else{
+			$pathes = array(
+					"themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl",
+					"themes/default/".$template.".tpl",
+					"themes/default/managers/".self::$active->shortname."/".$template.".tpl",
+					"themes/default/admin/".$manager."/".$template.".tpl"
+					);
+			foreach($pathes as $path){
+				$filename= dirname(__FILE__)."/../".$path;
+				if(file_exists($filename)){
+					include_once($path);
+					$find=true;
+				}
+			}
 			//echo "theme";
-			if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl")){
+			/*if(file_exists(dirname(__FILE__)."/../themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl")){
 				//echo "->in manager";
 				include_once("themes/".self::$active->shortname."/managers/".$manager."/".$template.".tpl");
 			}elseif(file_exists(dirname(__FILE__)."/../themes/default/".$template.".tpl")){
@@ -177,6 +208,9 @@ class Template extends Singleton{
 			}else{
 				//echo "->in path";
 				include_once("themes/default/managers/".self::$active->shortname."/".$template.".tpl");
+			}*/
+			if(!$find){
+				throw new Exception("Template $template for manager $manager does not exists !",20004);
 			}
 		}
 		

@@ -1,4 +1,4 @@
-support|title|note|comment|author|tags
+support|title|note|comment|author|tags|
 x360|alan wake|18||McGivrer|
 x360|assassins creed ii|16||McGivrer|
 x360|battlefield bad compagny|17|The most illarious war story, inspired by the famous "Three Kings" film with G.Clooney.|McGivrer|
@@ -20,5 +20,5 @@ psone|vagrant story|16|An old PSONE game ported to the PSP.|McGivrer|
 ps2|freedom fighters|17|A fantastic game the the developer team of the game second sight. It's the ancesestor.|McGivrer|
 ps2|true crime streets of la|17|A GTA like, fantastic game, but to loading phase are too long.|McGivrer|
 ps2|true crime new-york city|17|The sequel of True Crime, Streets of LA, but now in the New-York city.|McGivrer|
-wii|mario kart wii|17|The best nad most fun course game in the world !|McGivrer|
+wii|mario kart wii|17|The best nad most fun course game in the world !|McGivrer|course,kart,mario,standard,nintendo
 wii|new super mario bros wii|19|ZE platform game "must to have"|McGivrer|plateforme,mario,wii,legende
