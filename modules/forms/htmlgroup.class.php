@@ -14,7 +14,7 @@ class HtmlGroup extends HtmlComponent{
 	 * @param HtmlComponent $htmlComponent
 	 */
 	public function add($htmlComponent){
-		$this->childComponents[]+= $htmlComponent;
+		$this->childComponents[$htmlComponent->name]= $htmlComponent;
 	}
 	/**
 	 * Render Fieldset (group) of components.
@@ -31,7 +31,7 @@ class HtmlGroup extends HtmlComponent{
 			}
 		}
 		$html .= "</fieldset>";
-		print_r(htmlentities($html));
+		//TODO trmove dev trace print_r(htmlentities($html));
 		$this->html =str_replace(array('{component}'),array($html),$this->template); 
 		return $this->html;
 	}

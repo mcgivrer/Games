@@ -33,14 +33,18 @@ class HtmlForm{
 	 * Generate the form for the $entity.
 	 * @param unknown_type $entity
 	 */
-	public function generateFormForEntity($entity){
+	public function generateFormForEntity($entity,$label=""){
+		$components = array();
+		
+		$group = new HtmlGroup($entity->entityName,null,($label!=""?label:$entity->entityName.":".$entity->id));
+
 		foreach($entity->getAttributes() as $key=>$attribute){
 			$type=$entity->getAttributeType($key);
-			print_r($type);
+			//print_r($type);
 			switch($type['type']){
 				case 'Text':
 					if($key!="id" && $key!="entityName"){
-						$this->add(new HtmlTextInput(
+						$group->add(new HtmlTextInput(
 														$key,
 														$attribute,
 														__('user',$key."_label","$key"),
@@ -53,11 +57,11 @@ class HtmlForm{
 													)
 											);
 					}else{
-						$this->add(new HtmlHiddenInput($key,$attribute,""));
+						$group->add(new HtmlHiddenInput($key,$attribute,""));
 					}
 					break;
 				case 'Password':
-					$this->add( new HtmlPasswordInput(
+					$group->add( new HtmlPasswordInput(
 											$key,
 											$attribute,
 											__('user',$key."_label","$key"),
@@ -77,10 +81,11 @@ class HtmlForm{
 				case 'Select':
 					break;
 				default:
-					$this->add(new HtmlTextInput($key,$attribute,__($entity->entityName,$key."_label",$key)));
+					$group->add(new HtmlTextInput($key,$attribute,__($entity->entityName,$key."_label",$key)));
 					break;
 			}
 		}
+		$this->add($group);
 		$this->addGroup('action', 
 						array(
 								new HtmlSubmitButton(
