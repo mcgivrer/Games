@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Games Resquest {0}</title>
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/screen.css" media="screen" id="default" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="default-manager" />
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/jquery.lightbox-0.5.css" media="screen" id="default.lightbox" />
+        <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.lightbox-0.5.pack.js"></script>
+        <script>
+        $(document).ready(function() {
+		   $('a[rel*=lightbox]').lightBox({
+			overlayBgColor: '#000',
+			overlayOpacity: 0.8,
+			imageLoading: 'images/icons/lightbox/lightbox-btn-loading.gif',
+			imageBtnClose: 'images/icons/lightbox/lightbox-btn-close.gif',
+			imageBtnPrev: 'images/icons/lightbox/lightbox-btn-prev.gif',
+			imageBtnNext: 'images/icons/lightbox/lightbox-btn-next.gif',
+			containerResizeSpeed: 350,
+			txtImage: 'Image',
+			txtOf: '/'
+		   });
+		});
+		</script>
+    </head>
+    <body>
+        <div id="page">
+          <div id="header">
+          	<div id="loading" class="hidden"><img src="images/icons/wait.png"/></div>
+			<div class="theme">
+          		<form name="theme" method="post" action="?theme/"><select id="theme" name="theme" onchange="submit();">
+          			          			<option value="default" selected = "selected">Default</option>
+          			          			<option value="html5" >HTML5</option>
+          			          			</select>
+          		</form>
+				<form name="theme" method="post" action="?search/&action=search">
+					<p><input type="search" name="search" id="search" placeholder="search" size="14" maxlength="30"/></p>
+				</form>
+          		<div class="user">
+	<a href="?user/register" title="Register on the site."  class="button user-register" accesskey="R"><u>R</u>egister</a>	<a href="?user/login" title="Login user to personal side"  class="button user-login" accesskey="L"><u>L</u>ogin</a></div>          	</div>
+            <h1>Games Resquest {0}</h1>
+          </div>
+          		Array
+(
+    [type] => Text
+)
+Array
+(
+    [type] => Text
+)
+Array
+(
+    [type] => Text
+    [size] => 20
+)
+Array
+(
+    [type] => Text
+    [size] => 50
+)
+Array
+(
+    [type] => Text
+    [size] => 50
+)
+Array
+(
+    [type] => Text
+    [size] => 100
+)
+Array
+(
+    [type] => Password
+    [size] => 30
+)
+Array
+(
+    [type] => Text
+    [size] => 10
+)
+Array
+(
+    [type] => Image
+)
+&lt;fieldset name=&quot;action&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;save&quot; id=&quot;save&quot; value=&quot;save&quot; class=&quot;button save&quot; accesskey=&quot;S&quot; title=&quot;Click to save modification&quot;/&gt;&lt;input type=&quot;submit&quot; name=&quot;cancel&quot; id=&quot;cancel&quot; value=&quot;cancel&quot; class=&quot;button cancel&quot; accesskey=&quot;C&quot; title=&quot;Click to cancel operation&quot;/&gt;&lt;/fieldset&gt;<form name="User" action="edit"><div class="attribute"><span class="label"></span><input type="hidden" name="id" id="id" value="31"/></div><div class="attribute"><span class="label"></span><input type="hidden" name="entityName" id="entityName" value="User"/></div><div class="attribute"><span class="label"><span class="label"><label for="name">name</label></span></span><input type="text" name="name" id="name" value="McGivrer" cols="20" maxlength="20"/></div><div class="attribute"><span class="label"><span class="label"><label for="firstname">firstname</label></span></span><input type="text" name="firstname" id="firstname" value="Frédéric" cols="50" maxlength="50"/></div><div class="attribute"><span class="label"><span class="label"><label for="lastname">lastname</label></span></span><input type="text" name="lastname" id="lastname" value="Delorme" cols="50" maxlength="50"/></div><div class="attribute"><span class="label"><span class="label"><label for="email">email</label></span></span><input type="text" name="email" id="email" value="frederic.delorme@gmail.com" cols="100" maxlength="100"/></div><div class="attribute"><span class="label"><span class="label"><label for="password">password</label></span></span><input type="password" name="password" id="password" value="12345678" cols="30" maxlength="30"/></div><div class="attribute"><span class="label"><span class="label"><label for="role">role</label></span></span><input type="text" name="role" id="role" value="admin" cols="10" maxlength="10"/></div><div class="attribute"><span class="label"><span class="label"><label for="avatar">avatar</label></span></span><input type="text" name="avatar" id="avatar" value="" cols="20" maxlength="20" class="text"/></div><fieldset name="action"><input type="submit" name="save" id="save" value="save" class="button save" accesskey="S" title="Click to save modification"/><input type="submit" name="cancel" id="cancel" value="cancel" class="button cancel" accesskey="C" title="Click to cancel operation"/></fieldset></form>          <div class="clear"></div>
+          <div id="footer">
+            <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
+          </div>
+        </div>
+    </body>
+</html>

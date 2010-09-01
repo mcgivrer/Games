@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Games Request  - PS2 / True Crime New-york City</title>
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="html5" />
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/screen.css" media="screen" id="html5" />
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/jquery.lightbox-0.5.css" media="screen" id="html5.lightbox" />
+        <!--[if IE]>
+		<script type="text/javascript" src="themes/html5/scripts/html5shiv.js"></script>
+		<![endif]-->
+        <script type="text/javascript" src="public/scripts/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="themes/html5/scripts/theme.js"></script>
+        <script type="text/javascript" src="public/scripts/jquery.lightbox-0.5.pack.js"></script>
+    </head>
+    <body>
+        <div id="page">
+          <header id="header">
+          	<div class="theme">
+          		<form name="theme" method="post" action="?theme/">
+					<p>Theme <select id="theme" name="theme" onchange="submit();">
+          			          			<option value="default" >Default</option>
+          			          			<option value="html5" selected = "selected">HTML5</option>
+          			          			</select></p>
+          		</form>
+          		<form name="theme" method="post" action="?search/&action=search">
+          			<p><input type="search" name="search" id="search" placeholder="search" size="14" maxlength="30"/></p>
+          		</form>
+				<div class="user">
+	<a href="?user/register" title="Register on the site."  class="button user-register" accesskey="R"><u>R</u>egister</a>	<a href="?user/login" title="Login user to personal side"  class="button user-login" accesskey="L"><u>L</u>ogin</a></div>          	</div>
+            <h1>Games Request</h1>
+          </header>
+          	<section id="content">
+<article class="game">
+	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
+		<h2>PS2 / True Crime New-york City</h2>
+		<div class="file">
+			<a href="public/images/resources/Game/ps2/true-crime-new-york-city/cover/ps2-true_crime_new_york_city-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> PS2</li><li><span class='label'>Game:</span> True Crime New-york City</li></ul>">
+			    <span class="cover"><img src="public/images/resources/Game/ps2/true-crime-new-york-city/cover/thumbs/320x240/ps2-true_crime_new_york_city-cover.png" title="cover for True Crime New-york City" alt="box cover of game 'True Crime New-york City'"></span>
+			</a>
+			<div id="game-infos" class="block">
+				<h3>Game Information</h3>
+				<div class="block-content">		
+				<div class="note"><span class="legend">Note</span><span>17</span></div>
+				<ul class="infos">
+					<li><div class="label">Author</div>McGivrer</li>
+					<li>
+						<div class="label">Test</div>
+						<div class="comment">
+				    	The sequel of True Crime, Streets of LA, but now in the New-York city.						</div>
+					</li>
+					<li><div class="label">Tags</div><br />
+<font size='1'><table dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Notice: Undefined index: tags in /home/frederic/public_html/games/modules/entity.class.php on line <i>86</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0005</td><td bgcolor='#eeeeec' align='right'>318120</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/home/frederic/public_html/games/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0017</td><td bgcolor='#eeeeec' align='right'>337920</td><td bgcolor='#eeeeec'>__run(  )</td><td title='/home/frederic/public_html/games/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>4</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0149</td><td bgcolor='#eeeeec' align='right'>550452</td><td bgcolor='#eeeeec'>Router->run(  )</td><td title='/home/frederic/public_html/games/modules/helpers/router.helpers.php' bgcolor='#eeeeec'>../router.helpers.php<b>:</b>4</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0765</td><td bgcolor='#eeeeec' align='right'>1482156</td><td bgcolor='#eeeeec'>PageManager->display(  )</td><td title='/home/frederic/public_html/games/modules/router.class.php' bgcolor='#eeeeec'>../router.class.php<b>:</b>60</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0859</td><td bgcolor='#eeeeec' align='right'>1582244</td><td bgcolor='#eeeeec'>Template->renderAppContainer(  )</td><td title='/home/frederic/public_html/games/modules/pagemanager.class.php' bgcolor='#eeeeec'>../pagemanager.class.php<b>:</b>112</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0866</td><td bgcolor='#eeeeec' align='right'>1600024</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/application.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>120</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0896</td><td bgcolor='#eeeeec' align='right'>1605424</td><td bgcolor='#eeeeec'>__render(  )</td><td title='/home/frederic/public_html/games/themes/html5/application.tpl' bgcolor='#eeeeec'>../application.tpl<b>:</b>34</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0897</td><td bgcolor='#eeeeec' align='right'>1605680</td><td bgcolor='#eeeeec'>Template->renderPartial(  )</td><td title='/home/frederic/public_html/games/modules/helpers/template.helpers.php' bgcolor='#eeeeec'>../template.helpers.php<b>:</b>9</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0898</td><td bgcolor='#eeeeec' align='right'>1607720</td><td bgcolor='#eeeeec'>Template->includeTemplateFileName(  )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>145</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0900</td><td bgcolor='#eeeeec' align='right'>1612424</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/managers/index/master.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>173</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0900</td><td bgcolor='#eeeeec' align='right'>1612576</td><td bgcolor='#eeeeec'>__renderEntity(  )</td><td title='/home/frederic/public_html/games/themes/html5/managers/index/master.tpl' bgcolor='#eeeeec'>../master.tpl<b>:</b>2</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.0902</td><td bgcolor='#eeeeec' align='right'>1612828</td><td bgcolor='#eeeeec'>Template->renderEntity(  )</td><td title='/home/frederic/public_html/games/modules/helpers/template.helpers.php' bgcolor='#eeeeec'>../template.helpers.php<b>:</b>20</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.0904</td><td bgcolor='#eeeeec' align='right'>1645044</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/entities/game/view.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>201</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.0937</td><td bgcolor='#eeeeec' align='right'>1651856</td><td bgcolor='#eeeeec'>Entity->getInfo(  )</td><td title='/home/frederic/public_html/games/themes/html5/entities/game/view.tpl' bgcolor='#eeeeec'>../view.tpl<b>:</b>20</td></tr>
+</table></font>
+<br />
+<font size='1'><table dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/frederic/public_html/games/themes/html5/entities/game/view.tpl on line <i>20</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0005</td><td bgcolor='#eeeeec' align='right'>318120</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/home/frederic/public_html/games/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0017</td><td bgcolor='#eeeeec' align='right'>337920</td><td bgcolor='#eeeeec'>__run(  )</td><td title='/home/frederic/public_html/games/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>4</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0149</td><td bgcolor='#eeeeec' align='right'>550452</td><td bgcolor='#eeeeec'>Router->run(  )</td><td title='/home/frederic/public_html/games/modules/helpers/router.helpers.php' bgcolor='#eeeeec'>../router.helpers.php<b>:</b>4</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0765</td><td bgcolor='#eeeeec' align='right'>1482156</td><td bgcolor='#eeeeec'>PageManager->display(  )</td><td title='/home/frederic/public_html/games/modules/router.class.php' bgcolor='#eeeeec'>../router.class.php<b>:</b>60</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0859</td><td bgcolor='#eeeeec' align='right'>1582244</td><td bgcolor='#eeeeec'>Template->renderAppContainer(  )</td><td title='/home/frederic/public_html/games/modules/pagemanager.class.php' bgcolor='#eeeeec'>../pagemanager.class.php<b>:</b>112</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0866</td><td bgcolor='#eeeeec' align='right'>1600024</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/application.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>120</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0896</td><td bgcolor='#eeeeec' align='right'>1605424</td><td bgcolor='#eeeeec'>__render(  )</td><td title='/home/frederic/public_html/games/themes/html5/application.tpl' bgcolor='#eeeeec'>../application.tpl<b>:</b>34</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0897</td><td bgcolor='#eeeeec' align='right'>1605680</td><td bgcolor='#eeeeec'>Template->renderPartial(  )</td><td title='/home/frederic/public_html/games/modules/helpers/template.helpers.php' bgcolor='#eeeeec'>../template.helpers.php<b>:</b>9</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0898</td><td bgcolor='#eeeeec' align='right'>1607720</td><td bgcolor='#eeeeec'>Template->includeTemplateFileName(  )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>145</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0900</td><td bgcolor='#eeeeec' align='right'>1612424</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/managers/index/master.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>173</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0900</td><td bgcolor='#eeeeec' align='right'>1612576</td><td bgcolor='#eeeeec'>__renderEntity(  )</td><td title='/home/frederic/public_html/games/themes/html5/managers/index/master.tpl' bgcolor='#eeeeec'>../master.tpl<b>:</b>2</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.0902</td><td bgcolor='#eeeeec' align='right'>1612828</td><td bgcolor='#eeeeec'>Template->renderEntity(  )</td><td title='/home/frederic/public_html/games/modules/helpers/template.helpers.php' bgcolor='#eeeeec'>../template.helpers.php<b>:</b>20</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.0904</td><td bgcolor='#eeeeec' align='right'>1645044</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'/home/frederic/public_html/games/themes/html5/entities/game/view.tpl'</font> )</td><td title='/home/frederic/public_html/games/modules/template.class.php' bgcolor='#eeeeec'>../template.class.php<b>:</b>201</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.0941</td><td bgcolor='#eeeeec' align='right'>1651920</td><td bgcolor='#eeeeec'><a href='http://www.php.net/implode' target='_new'>implode</a>
+(  )</td><td title='/home/frederic/public_html/games/themes/html5/entities/game/view.tpl' bgcolor='#eeeeec'>../view.tpl<b>:</b>20</td></tr>
+</table></font>
+</li>
+				</ul>
+				</div>
+			</div>
+						<div class="clear"></div>
+			<div class="block gallery">
+				<h3>Gallery / Screenshots</h3>
+				<div class=" block-content gallery-content">
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/ps2-true_crime_new_york_city-sc00.jpg" title="PS2 / True Crime New-york City - screenshot 1">
+						<div><img src="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/thumbs/120x80/ps2-true_crime_new_york_city-sc00.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/ps2-true_crime_new_york_city-sc001.jpg" title="PS2 / True Crime New-york City - screenshot 2">
+						<div><img src="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/thumbs/120x80/ps2-true_crime_new_york_city-sc001.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/ps2-true_crime_new_york_city-sc003.jpg" title="PS2 / True Crime New-york City - screenshot 3">
+						<div><img src="public/images/resources/Game/ps2/true-crime-new-york-city/screenshots/thumbs/120x80/ps2-true_crime_new_york_city-sc003.png" title="" /></div>
+					</a>
+								<div class="clear"></div>
+				</div>
+			</div>
+								</div>
+	</form>
+	<div class="clear"></div>
+</article><div id="random" class="block gallery">
+	<h3>Some random games from full collection</h3>
+	<div class="block-content" style="text-align:center;">
+	<p>		<a href="public/images/resources/Game/x360/risen/cover/x360-risen-cover.jpg" rel="lightbox[random]" title="X360 / Risen">
+	    <span class="cover"><img src="public/images/resources/Game/x360/risen/cover/thumbs/120x80/x360-risen-cover.png" alt="box cover of game 'Risen'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/risen/cover/x360-risen-cover.jpg" rel="lightbox[random]" title="X360 / Risen">
+	    <span class="cover"><img src="public/images/resources/Game/x360/risen/cover/thumbs/120x80/x360-risen-cover.png" alt="box cover of game 'Risen'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/magna-carta-2/cover/x360-magna_carta_2-cover.jpg" rel="lightbox[random]" title="X360 / Magna Carta 2">
+	    <span class="cover"><img src="public/images/resources/Game/x360/magna-carta-2/cover/thumbs/120x80/x360-magna_carta_2-cover.png" alt="box cover of game 'Magna Carta 2'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/alan-wake/cover/x360-alan_wake-cover.jpg" rel="lightbox[random]" title="X360 / Alan Wake">
+	    <span class="cover"><img src="public/images/resources/Game/x360/alan-wake/cover/thumbs/120x80/x360-alan_wake-cover.png" alt="box cover of game 'Alan Wake'"></span>
+		</a>
+			<a href="public/images/resources/Game/psp/ratchet-and-clank-size-matter/cover/psp-ratchet_and_clank_size_matter-cover.jpg" rel="lightbox[random]" title="PSP / Ratchet And Clank, Size Matter">
+	    <span class="cover"><img src="public/images/resources/Game/psp/ratchet-and-clank-size-matter/cover/thumbs/120x80/psp-ratchet_and_clank_size_matter-cover.png" alt="box cover of game 'Ratchet And Clank, Size Matter'"></span>
+		</a>
+			<a href="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/psp-jak_and_daxter_the_lost_frontier_cover.jpg" rel="lightbox[random]" title="PSP / Jak And Daxter The Lost Frontier">
+	    <span class="cover"><img src="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/thumbs/120x80/psp-jak_and_daxter_the_lost_frontier_cover.png" alt="box cover of game 'Jak And Daxter The Lost Frontier'"></span>
+		</a>
+	</p>
+	</div>
+</div></section>
+<aside id="sidebar">
+<nav id="support" class="list">
+	<h2>Support</h2>
+	<ul>
+            <li>
+        <a href="?games/psone" title="Show all games from &#8220; Sony PlayStation &#8221;" >PSONE</a>        </li>
+            <li>
+        <a href="?games/ps2" title="Show all games from &#8220; Sony PlayStation 2 &#8221;" >PS2</a>        </li>
+            <li>
+        <a href="?games/ps3" title="Show all games from &#8220; Sony PlayStation 3 &#8221;" >PS3</a>        </li>
+            <li class="selected">
+        <a href="?games/psp" title="Show all games from &#8220; Sony PlayStation Portable &#8221;" >PSP</a>        </li>
+            <li>
+        <a href="?games/nds" title="Show all games from &#8220; Nintendo DualScreen &#8221;" >NDS</a>        </li>
+            <li>
+        <a href="?games/wii" title="Show all games from &#8220; Nintendo Wii &#8221;" >WII</a>        </li>
+            <li>
+        <a href="?games/x360" title="Show all games from &#8220; Microsoft Xbox 360 &#8221;" >X360</a>        </li>
+    </ul>	<h2>Games</h2>
+	<ul>
+										<li>
+				<a href="?game/17" title="Show details about &ldquo; Ratchet And Clank, Size Matter &bdquo;	" >Ratchet And Clank, Size Matter</a>				</li>
+												<li>
+				<a href="?game/15" title="Show details about &ldquo; Jak And Daxter The Lost Frontier &bdquo;	" >Jak And Daxter The Lost Frontier</a>				</li>
+												<li>
+				<a href="?game/16" title="Show details about &ldquo; Little Big Planet &bdquo;	" >Little Big Planet</a>				</li>
+						</ul></nav></aside>          <div class="clear"></div>
+          <footer id="footer">
+            <p>Copyright &copy; 2010 - Frederic Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&amp;subject=Demo&x20;PHP" title="">frederic.delorme@gmail.com</a>&gt; - Page generated in 0.09937 s.</p>
+          </footer>
+        </div>
+    </body>
+</html>

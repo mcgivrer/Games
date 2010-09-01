@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Games Request  - X360 / Wet</title>
+        <link rel="stylesheet" type="text/css" href="themes/default/styles/manager.css" media="screen" id="html5" />
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/screen.css" media="screen" id="html5" />
+        <link rel="stylesheet" type="text/css" href="themes/html5/styles/jquery.lightbox-0.5.css" media="screen" id="html5.lightbox" />
+        <!--[if IE]>
+		<script type="text/javascript" src="themes/html5/scripts/html5shiv.js"></script>
+		<![endif]-->
+        <script type="text/javascript" src="public/scripts/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="themes/html5/scripts/theme.js"></script>
+        <script type="text/javascript" src="public/scripts/jquery.lightbox-0.5.pack.js"></script>
+    </head>
+    <body>
+        <div id="page">
+          <header id="header">
+          	<div class="theme">
+          		<form name="theme" method="post" action="?theme/">
+					<p>Theme <select id="theme" name="theme" onchange="submit();">
+          			          			<option value="default" >Default</option>
+          			          			<option value="html5" selected = "selected">HTML5</option>
+          			          			</select></p>
+          		</form>
+          		<form name="theme" method="post" action="?search/&action=search">
+          			<p><input type="search" name="search" id="search" placeholder="search" size="14" maxlength="30"/></p>
+          		</form>
+				<div class="user">
+	<a href="?user/register" title="Register on the site."  class="button user-register" accesskey="R"><u>R</u>egister</a>	<a href="?user/login" title="Login user to personal side"  class="button user-login" accesskey="L"><u>L</u>ogin</a></div>          	</div>
+            <h1>Games Request</h1>
+          </header>
+          	<section id="content">
+<article class="game">
+	<form id="upload" method="POST" enctype="multipart/form-data" action="index.php&no-cache" >
+		<h2>X360 / Wet</h2>
+		<div class="file">
+			<a href="public/images/resources/Game/x360/wet/cover/x360-wet-cover.jpg" rel="lightbox" title="<ul><li><span class='label'>Platform:</span> X360</li><li><span class='label'>Game:</span> Wet</li></ul>">
+			    <span class="cover"><img src="public/images/resources/Game/x360/wet/cover/thumbs/320x240/x360-wet-cover.png" title="cover for Wet" alt="box cover of game 'Wet'"></span>
+			</a>
+			<div id="game-infos" class="block">
+				<h3>Game Information</h3>
+				<div class="block-content">		
+				<div class="note"><span class="legend">Note</span><span>16</span></div>
+				<ul class="infos">
+					<li><div class="label">Author</div>McGivrer</li>
+					<li>
+						<div class="label">Test</div>
+						<div class="comment">
+				    							</div>
+					</li>
+									</ul>
+				</div>
+			</div>
+						<div class="clear"></div>
+			<div class="block gallery">
+				<h3>Gallery / Screenshots</h3>
+				<div class=" block-content gallery-content">
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc007.jpg" title="X360 / Wet - screenshot 1">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc007.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc006.jpg" title="X360 / Wet - screenshot 2">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc006.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc002.jpg" title="X360 / Wet - screenshot 3">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc002.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc000.jpg" title="X360 / Wet - screenshot 4">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc000.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc005.jpg" title="X360 / Wet - screenshot 5">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc005.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc004.jpg" title="X360 / Wet - screenshot 6">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc004.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc003.jpg" title="X360 / Wet - screenshot 7">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc003.png" title="" /></div>
+					</a>
+									<a class="screenshot" rel="lightbox[galery]" href="public/images/resources/Game/x360/wet/screenshots/x360-wet-sc001.jpg" title="X360 / Wet - screenshot 8">
+						<div><img src="public/images/resources/Game/x360/wet/screenshots/thumbs/120x80/x360-wet-sc001.png" title="" /></div>
+					</a>
+								<div class="clear"></div>
+				</div>
+			</div>
+								</div>
+	</form>
+	<div class="clear"></div>
+</article><div id="random" class="block gallery">
+	<h3>Some random games from full collection</h3>
+	<div class="block-content" style="text-align:center;">
+	<p>		<a href="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/psp-jak_and_daxter_the_lost_frontier_cover.jpg" rel="lightbox[random]" title="PSP / Jak And Daxter The Lost Frontier">
+	    <span class="cover"><img src="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/thumbs/120x80/psp-jak_and_daxter_the_lost_frontier_cover.png" alt="box cover of game 'Jak And Daxter The Lost Frontier'"></span>
+		</a>
+			<a href="public/images/resources/Game/ps2/freedom-fighters/cover/ps2-freedom_fighters-cover.jpg" rel="lightbox[random]" title="PS2 / Freedom Fighters">
+	    <span class="cover"><img src="public/images/resources/Game/ps2/freedom-fighters/cover/thumbs/120x80/ps2-freedom_fighters-cover.png" alt="box cover of game 'Freedom Fighters'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/darksiders/cover/x360-darksiders-cover.jpg" rel="lightbox[random]" title="X360 / Darksiders">
+	    <span class="cover"><img src="public/images/resources/Game/x360/darksiders/cover/thumbs/120x80/x360-darksiders-cover.png" alt="box cover of game 'Darksiders'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/battlefield-bad-compagny/cover/x360-battlefield_bad_compagny-cover.jpg" rel="lightbox[random]" title="X360 / Battlefield Bad Compagny">
+	    <span class="cover"><img src="public/images/resources/Game/x360/battlefield-bad-compagny/cover/thumbs/120x80/x360-battlefield_bad_compagny-cover.png" alt="box cover of game 'Battlefield Bad Compagny'"></span>
+		</a>
+			<a href="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/psp-jak_and_daxter_the_lost_frontier_cover.jpg" rel="lightbox[random]" title="PSP / Jak And Daxter The Lost Frontier">
+	    <span class="cover"><img src="public/images/resources/Game/psp/jak-and-daxter-the-lost-frontier/cover/thumbs/120x80/psp-jak_and_daxter_the_lost_frontier_cover.png" alt="box cover of game 'Jak And Daxter The Lost Frontier'"></span>
+		</a>
+			<a href="public/images/resources/Game/x360/alan-wake/cover/x360-alan_wake-cover.jpg" rel="lightbox[random]" title="X360 / Alan Wake">
+	    <span class="cover"><img src="public/images/resources/Game/x360/alan-wake/cover/thumbs/120x80/x360-alan_wake-cover.png" alt="box cover of game 'Alan Wake'"></span>
+		</a>
+	</p>
+	</div>
+</div></section>
+<aside id="sidebar">
+<nav id="support" class="list">
+	<h2>Support</h2>
+	<ul>
+            <li>
+        <a href="?games/psone" title="Show all games from &#8220; Sony PlayStation &#8221;" >PSONE</a>        </li>
+            <li>
+        <a href="?games/ps2" title="Show all games from &#8220; Sony PlayStation 2 &#8221;" >PS2</a>        </li>
+            <li>
+        <a href="?games/ps3" title="Show all games from &#8220; Sony PlayStation 3 &#8221;" >PS3</a>        </li>
+            <li>
+        <a href="?games/psp" title="Show all games from &#8220; Sony PlayStation Portable &#8221;" >PSP</a>        </li>
+            <li>
+        <a href="?games/nds" title="Show all games from &#8220; Nintendo DualScreen &#8221;" >NDS</a>        </li>
+            <li>
+        <a href="?games/wii" title="Show all games from &#8220; Nintendo Wii &#8221;" >WII</a>        </li>
+            <li class="selected">
+        <a href="?games/x360" title="Show all games from &#8220; Microsoft Xbox 360 &#8221;" >X360</a>        </li>
+    </ul>	<h2>Games</h2>
+	<ul>
+										<li>
+				<a href="?game/1" title="Show details about &ldquo; Alan Wake &bdquo;	" >Alan Wake</a>				</li>
+												<li>
+				<a href="?game/14" title="Show details about &ldquo; Alpha Protocol &bdquo;	" >Alpha Protocol</a>				</li>
+												<li>
+				<a href="?game/2" title="Show details about &ldquo; Assassins Creed Ii &bdquo;	" >Assassins Creed Ii</a>				</li>
+												<li>
+				<a href="?game/3" title="Show details about &ldquo; Battlefield Bad Compagny &bdquo;	" >Battlefield Bad Compagny</a>				</li>
+												<li>
+				<a href="?game/4" title="Show details about &ldquo; Battlefield Bad Compagny 2 &bdquo;	" >Battlefield Bad Compagny 2</a>				</li>
+												<li>
+				<a href="?game/5" title="Show details about &ldquo; Blur &bdquo;	" >Blur</a>				</li>
+												<li>
+				<a href="?game/6" title="Show details about &ldquo; Darksiders &bdquo;	" >Darksiders</a>				</li>
+												<li>
+				<a href="?game/7" title="Show details about &ldquo; Magna Carta 2 &bdquo;	" >Magna Carta 2</a>				</li>
+												<li>
+				<a href="?game/8" title="Show details about &ldquo; Red Faction Guerilla &bdquo;	" >Red Faction Guerilla</a>				</li>
+												<li>
+				<a href="?game/9" title="Show details about &ldquo; Risen &bdquo;	" >Risen</a>				</li>
+												<li>
+				<a href="?game/10" title="Show details about &ldquo; Split Second Velocity &bdquo;	" >Split Second Velocity</a>				</li>
+												<li>
+				<a href="?game/11" title="Show details about &ldquo; The Saboteur &bdquo;	" >The Saboteur</a>				</li>
+												<li>
+				<a href="?game/12" title="Show details about &ldquo; Tomb Raider Underworld &bdquo;	" >Tomb Raider Underworld</a>				</li>
+												<li class="selected">
+				<a href="?game/13" title="Show details about &ldquo; Wet &bdquo;	" >Wet</a>				</li>
+						</ul></nav></aside>          <div class="clear"></div>
+          <footer id="footer">
+            <p>Copyright &copy; 2010 - Frederic Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&amp;subject=Demo&x20;PHP" title="">frederic.delorme@gmail.com</a>&gt; - Page generated in 0.11751 s.</p>
+          </footer>
+        </div>
+    </body>
+</html>
