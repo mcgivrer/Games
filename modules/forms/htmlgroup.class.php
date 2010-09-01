@@ -8,9 +8,17 @@ class HtmlGroup extends HtmlComponent{
 		$this->childComponents = $childComponents;
 	}
 	
+	
+	/**
+	 * Add a new component to the group.
+	 * @param HtmlComponent $htmlComponent
+	 */
+	public function add($htmlComponent){
+		$this->childComponents[]+= $htmlComponent;
+	}
 	/**
 	 * Render Fieldset (group) of components.
-	 * @param unknown_type $form
+	 * @param HtmlForm $form
 	 */
 	public function serialize($form){
 		$html =  "<fieldset name=\"".$this->name."\">";
