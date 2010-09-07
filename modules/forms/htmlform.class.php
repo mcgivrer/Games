@@ -1,7 +1,13 @@
 <?php
 class HtmlForm{
+	private $entity;
 	private $formComponents = array();
-
+	private $method="POST";
+	private $action="edit";
+	private $name="form";
+	private $htmlAttributes= null;
+	private $options = null;
+	private $enctype="";
 	/**
 	 * Default Constructor.
 	 * @param unknown_type $name
@@ -33,10 +39,18 @@ class HtmlForm{
 	 * Generate the form for the $entity.
 	 * @param unknown_type $entity
 	 */
-	public function generateFormForEntity($entity,$label=""){
+	public function generateFormForEntity($entity,$action=""){
 		$components = array();
-		
-		$group = new HtmlGroup($entity->entityName,null,($label!=""?label:$entity->entityName.":".$entity->id));
+		$this->entity = $entity;
+		$this->action = ($action!=""?$action:$this->action);
+		$group = new HtmlGroup(
+									$entity->entityName,
+									null,
+									($this->options!=null && isset($this->options['label'])
+										?$this->options['label']
+										:__s($entity->entityName,$entity->entityName."_".$action."_label",$entity->id)
+									)
+								);
 
 		foreach($entity->getAttributes() as $key=>$attribute){
 			$type=$entity->getAttributeType($key);
@@ -47,7 +61,7 @@ class HtmlForm{
 						$group->add(new HtmlTextInput(
 														$key,
 														$attribute,
-														__('user',$key."_label","$key"),
+														__(strtolower($entity->entityName),$key."_label",htmlentities($key)),
 														array(
 															'cols'=>$type['size'],
 															'maxlength'=>( isset($type['options']['maxlength'])
@@ -64,7 +78,7 @@ class HtmlForm{
 					$group->add( new HtmlPasswordInput(
 											$key,
 											$attribute,
-											__('user',$key."_label","$key"),
+											__(strtolower($entity->entityName),$key."_label","$key"),
 											array(
 												'cols'=>$type['size'], 
 												'maxlength'=>( isset($type['options']['maxlength'])
@@ -78,10 +92,22 @@ class HtmlForm{
 				case 'Email':
 				case 'Phone':
 				case 'CardNumber':
-				case 'Select':
-					break;
 				default:
-					$group->add(new HtmlTextInput($key,$attribute,__($entity->entityName,$key."_label",$key)));
+					$group->add(new HtmlTextInput($key,$attribute,__s(strtolower($entity->entityName),$key."_label",$key)));
+					break;
+				case 'Select':
+					$group->add(new HtmlSelect(
+										$key,
+										$attribute,__s(strtolower($entity->entityName),$key."_label",$key),
+										null,
+										__(strtolower($entity->entityName),$key."_select_list_values",__('form','select_default_list',"-1:no options"))
+										)
+									);
+					break;
+				case 'Image':
+				case 'File':
+					$this->enctype="multipart/form-data";
+					$group->add(new HtmlFileInput($key,$attribute,__s(strtolower($entity->entityName),$key."_label",$key)));
 					break;
 			}
 		}
@@ -120,7 +146,10 @@ class HtmlForm{
 	}
 	
 	public function serialize(){
-		$html =  "<form name=\"".$this->name."\" action=\"".$this->action."\""
+		$html =  "<form method=\"".$this->method."\""
+						." name=\"".(__isActive('system','')?"":"index.php?").strtolower($this->entity->entityName)."/".$this->action."/".$this->entity->id."\""
+						." action=\"".$this->action."\""
+						.($this->enctype!=""?" enctype=\"".$this->enctype."\"":"")
 						.">";
 		foreach($this->formComponents as $component){
 			if($component instanceof HtmlComponent){

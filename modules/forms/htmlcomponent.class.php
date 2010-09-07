@@ -22,6 +22,7 @@ class HtmlComponent{
 	protected $label="";
 	protected $value="";
 	protected $template="";
+	protected $accesskey="";
 	
 	/**
 	 * Default constructor.
@@ -31,6 +32,7 @@ class HtmlComponent{
 	 * @param string $label
 	 * @param string $value
 	 * @param array $htmlAttributes
+	 * @param array $selectOptions
 	 * @param string $defaultTemplate
 	 */
 	public function __construct(
@@ -42,10 +44,10 @@ class HtmlComponent{
 				$htmlAttributes=null,
 				$selectOptions=null,
 				$defaultTemplate=""){
-		__debug("HtmlComponant: $input, $type, $name,$label, $value", __METHOD__, __CLASS__);
-					
+		__debug("HtmlComponent: $input, $type, $name,$label, $value", __METHOD__, __CLASS__);
+		$this->htmlversion=__config('system','output_html_version','4');
 		$this->counter++;
-		$this->label=$label;
+		$this->label=($label!=""?$label:$name);
 		$this->input = $input;
 		$this->name = $name;
 		$this->type = $type;
@@ -66,14 +68,21 @@ class HtmlComponent{
 	public function serialize($form=null){
 		__debug("serialize HtmlComponent", __METHOD__, __CLASS__);
 		// display label and input.
+		$this->accesskey =  preg_replace('/([^*]*)\_([^?])([^*]*)/',' accesskey="\2"',$this->label);
+		$this->label=preg_replace('/([^*]*)\_([^?])([^*]*)/','\1<span class="accesskey">\2</span>\3',$this->label);
+		$accesskeyAttribute=false;
 		$label = (isset($this->label) && $this->label!=""?"<label for=\"".$this->name."\">".$this->label."</label>":"");
 		$component = "<".$this->input.($this->type!=""?" type=\"".$this->type."\"":"")
 								.($this->name!=""?" name=\"".$this->name."\" id=\"".$this->name."\"":$this->type."_".self::$counter)."";
 		$component .=" value=\"".$this->value."\"";
 		if(isset($this->htmlAttributes)){
 			foreach($this->htmlAttributes as $key=>$value){
-				$component  .= " $key=\"$value\"";		
+				$component  .= " $key=\"$value\"";
+				$accesskeyAttribute=($key=="accesskey");
 			}
+		}
+		if(!$accesskeyAttribute){
+			$component .= $this->accesskey;
 		}
 		if(strtolower($this->input)=="select" && $this->selectOptions!=null){
 			$component  .= ">";

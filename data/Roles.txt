@@ -1,0 +1,4 @@
+name|description|
+en:User,fr:Utilisateur|en:Application user,fr:Utilisateur de l'application|
+en:Administrator,fr:Administrateur|en:Application administrateur,fr:Administrateur de l'application|
+en:Moderator,fr:Moderateur|en:User,fr:Utilisateur|

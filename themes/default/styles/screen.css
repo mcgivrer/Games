@@ -219,3 +219,6 @@ span.label{
 	display:inline-block;
 	width:150px;
 }
+#page-content form .label .accesskey{
+	border-bottom:1px solid #000;
+}

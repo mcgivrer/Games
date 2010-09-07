@@ -1,1 +1,1 @@
-	<? __generateForm($data['user'],'edit');?>
+	<? __generateForm($data['user'],"save","","POST");?>

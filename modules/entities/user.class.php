@@ -16,8 +16,9 @@ class User extends ImagesEntity implements IEntity {
         				array('name'=>"lastname",'type'=>"Text",'size'=>"50",'value'=>""),
         				array('name'=>"email",'type'=>"Text",'size'=>"100",'value'=>""),
             			array('name'=>"password",'type'=>"Password",'size'=>"30",'value'=>""),
-            			array('name'=>"role",'type'=>"Text",'size'=>"10",'value'=>""),
-            			array('name'=>"avatar",'type'=>"Image",'option'=>array('path'=>'/avatar'),'value'=>""),
+            			array('name'=>"role",'type'=>"Select",'size'=>"5",'value'=>"0", 'options'=>array('items'=>explode(',',__('user','role_select_list_values')))),
+            			//array('name'=>"role",'type'=>"Select",'size'=>"5",'value'=>"",'options'=>array('items'=>"@Role(id,name)")),
+            			array('name'=>"avatar",'type'=>"Image",'options'=>array('path'=>'/avatar'),'value'=>""),
             			)
     				);
     }
@@ -37,11 +38,9 @@ class User extends ImagesEntity implements IEntity {
     public function load($id, $data,$datamapping){
     	parent::loadData($id, $data,$datamapping);
     	$this->loadImages("name","avatar");
-    	//print_r($this);
     }
     
 	public function getDisplay($attribute,$value){
-	    	//echo "<pre>display: attr:$attribute, val:$value</pre>";
     	if(isset($this->attributes[$attribute])){
 	    	switch($attribute){
 	    		case 'name':
