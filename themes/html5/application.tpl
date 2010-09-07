@@ -31,7 +31,7 @@
           	</div>
             <h1><?= __s('application','title',$data['page-title']) ?></h1>
           </header>
-          	<? __render();?>
+          <div id="page-content"><? __render();?></div>
           <div class="clear"></div>
           <footer id="footer">
             <p><?=__s('application','footer', __s('application','generatedTime',__enlapsedTime()));?></p>

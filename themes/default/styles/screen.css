@@ -194,7 +194,28 @@ a img {
 	color:#fff;
 	text-decoration:none;
 }
+/*----- forms -----*/
 span.label{
 	font-weight:bold;
 	color:#000;
+}
+#page-content {
+	width:100%;
+	min-width:600px;
+}
+#page-content form{
+	padding:0px;
+	margin:10px 0px;
+}
+#page-content form fieldset {
+	padding:10px;
+	margin:5px;
+}
+#page-content form fieldset .attribute{
+	padding:2px;
+	margin-bottom:4px;
+}
+#page-content form fieldset .attribute .label{
+	display:inline-block;
+	width:150px;
 }

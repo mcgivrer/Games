@@ -66,8 +66,7 @@ class HtmlComponent{
 	public function serialize($form=null){
 		__debug("serialize HtmlComponent", __METHOD__, __CLASS__);
 		// display label and input.
-		$label = (isset($this->label) && $this->label!=""?"<span class=\"label\">"
-							    ."<label for=\"".$this->name."\">".$this->label."</label></span>":"");
+		$label = (isset($this->label) && $this->label!=""?"<label for=\"".$this->name."\">".$this->label."</label>":"");
 		$component = "<".$this->input.($this->type!=""?" type=\"".$this->type."\"":"")
 								.($this->name!=""?" name=\"".$this->name."\" id=\"".$this->name."\"":$this->type."_".self::$counter)."";
 		$component .=" value=\"".$this->value."\"";

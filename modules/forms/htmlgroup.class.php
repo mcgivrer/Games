@@ -22,7 +22,7 @@ class HtmlGroup extends HtmlComponent{
 	 */
 	public function serialize($form){
 		$html =  "<fieldset name=\"".$this->name."\">";
-		$html .= (isset($this->label) && $this->label=""?"<legend>".$this->label."</legend>":"");
+		$html .= (isset($this->label) && $this->label!=""?"<legend>".$this->label."</legend>":"");
 		if(isset($this->childComponents)){
 			foreach($this->childComponents as $component){
 				if($component instanceof HtmlComponent){

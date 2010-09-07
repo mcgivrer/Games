@@ -45,7 +45,7 @@
           	</div>
             <h1><?= __('home','title') ?></h1>
           </div>
-          	<? __render();?>
+          <div id="page-content"><? __render();?></div>
           <div class="clear"></div>
           <div id="footer">
             <p>Copyright &copy; 2010 - Frédéric Delorme&lt;<a href="mailto:frederic.delorme@gmail.com&subject=Demo PHP" title="">frederic.delorme@gmail.com</a>&gt;</p>
