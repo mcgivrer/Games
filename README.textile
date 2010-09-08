@@ -1,22 +1,58 @@
-h1. Games, a framework design test
+h1. Games, a WebContext framework research project
 
 This project is a small framework design test to improve some of the modules to be implemented into WebContext, the other project I am leading, a full featured and industrial PHP framework.
 
-Here are experimented:
+h2. News
 
-* Autoload functionality (no more "require" or include !)
-* Debug and trace log (see debug.class.php),
-* Configuration purpose,
+To be able to follow work in progress , here are the list of the last features we are working on, in a day-by-day format.
+
+h3. 2010/09/09
+
+*HtmlForm to Entity*
+
+HtmlForm component send data through HTTP post operation. With the new @loadFromPost()@ method in the "Entity":./tree/master/modules/entity.class.php, data save is enable.
+Any PageManager must implement a @save()@ method to store data sent from the Form.
+* "HtmlForm":./tree/master/modules/forms/htmlform.class.php bugfix about name and action attributes,
+* "Entity":./tree/master/modules/entity.class.php modified to support "POST" data update to entity attributes. "Image":./tree/master/modules/image.class.php attribute type is not supported right now.  will be fixed soon. As it's a prototype, transmitted data are not already sanitized about XSS or any SQLInjection. Data sanitizer will be soon implemented as a Singleton oriented "service".
+
+h3. 2010/09/07
+
+*HtmlForm*
+
+To implement new Html components, "HtmlComponent":./tree/master/modules/forms/htmlcomponent.class.php has been updated: now, @enctype@ attribute manage multipart form to enable File upload.
+
+* "HtmlFile":./tree/master/modules/forms/htmlfile.class.php support File html input and automaticaly add enctype to form.
+* "HtmlSelect":./tree/master/modules/forms/htmlselect.class.php manage  new selectOptions parameter for the HtmlComponent.
+
+*Role Management*
+
+A new internal entity appear to support User "Role":./tree/master/modules/entity/role.class.php.
+
+h3. 2010/09/05
+
+*Forms & Users*
+
+* "HtmlForm":./tree/master/modules/forms/htmlform.class.php and "HtmlComponent":./tree/master/modules/forms/htmlcomponent.class.php 's to provide easyway to create Form on Entity, following an automatic generation way, based on Entity Attribute description.
+
+* "Entity":./tree/master/modules/entity.class.php just modified to manage in a better way attributes and their types. 
+* Internal Entity for User management.
+* "User":./tree/master/modules/entities/user.class.php, "Role":./tree/master/modules/entities/role.class.php , and "UserManager":./tree/master/modules/managers/usermanager.class.php is currently implemented, relying on HtmlForm work.
+
+h2. Here are experimented:
+
+* Autoload functionality (no more "require" or include !) >> __done.__
+* Debug and trace log (see debug.class.php)  >> __done__
+* Configuration purpose  >> __done__
 * Data Persistance in files (text format as temporary source, xml soon, and Database in near futur) with Entity management,
-* MVC concept with PageManager and Router,
-* Helpers concept,
+* MVC concept with PageManager and Router  >> __done__
+* Helpers concept  >> __done__
 * Javascript integration with JQuery and some plugins,
-* Themes at (Page and Application Level) with templating,
-* Internationalization (i18n),
+* Themes at (Page and Application Level) with templating  >> __done__
+* Internationalization (i18n)  >> __done__
 * Standard CMS Image management 
-** Image resizing with standard GD library,
-** Multi level thumbnailer,
-** Images storing following some entity defined rules
+** Image resizing with standard GD library  >> __done__
+** Multi level thumbnailer  >> __done__
+** Images storing following some entity defined rules  >> __done.__
 * ...
 
 And the list is growing every week !
