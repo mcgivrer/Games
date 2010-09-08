@@ -147,8 +147,8 @@ class HtmlForm{
 	
 	public function serialize(){
 		$html =  "<form method=\"".$this->method."\""
-						." name=\"".(__isActive('system','')?"":"index.php?").strtolower($this->entity->entityName)."/".$this->action."/".$this->entity->id."\""
-						." action=\"".$this->action."\""
+						." name=\"".$this->action."\""
+						." action=\"".(__isActive('system','')?"":"index.php?").strtolower($this->entity->entityName)."/".$this->action."/".$this->entity->id."\""
 						.($this->enctype!=""?" enctype=\"".$this->enctype."\"":"")
 						.">";
 		foreach($this->formComponents as $component){

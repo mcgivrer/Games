@@ -142,6 +142,25 @@ class Entity implements IEntity {
 	}
 	
 	/**
+	 * Load data from POST.
+	 * @param $_POST $post content of the POST event from HTML form.
+	 */
+	public function loadFromPost($post){
+		foreach($this->attributes as $key=>$attribute){
+			switch($this->attributesType[$key]['type']){
+				case 'Image':
+					echo"<pre>this an image Object</pre>";
+					break;
+				case 'Text':
+				case 'Password':
+				default:
+					$this->attributes[$key]=$post[$key];
+					break;
+			}
+		}
+	}
+	
+	/**
 	 * Load data into object.
 	 * @see IEntity#load($uid,$data,$datamapping)
 	 */

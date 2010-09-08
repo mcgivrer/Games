@@ -64,8 +64,11 @@ class UserManager extends ApplicationManager{
 	/**
 	 * Update to persistance selected user.
 	 */
-	public function update(){
-		return "update";
+	public function save(){
+		$user = new User();
+		$user->loadFromPost($_POST);
+		print_r($user);
+		return "view";
 	}
 	
 	/**
