@@ -12,7 +12,7 @@ class ImagesEntity extends Entity{
 	static private $thumbsDefaultSize=null;
 
 	protected $pictures = array();
-	
+
 	/**
 	 * Intialize some defaut values
 	 * - Base image path ($defaultImagesPath)
@@ -21,9 +21,9 @@ class ImagesEntity extends Entity{
 	 * - default thumbnail size ($thumbsDefaultSize).
 	 */
 	public function __construct($entityName){
-		
+
 		parent::__construct($entityName);
-		
+
 		if(is_null(self::$defaultImagesPath)){
 			__debug("Initialize default values from configuration file keys",__METHOD__,__CLASS__);
 			self::$defaultImagesPath = __config('resources','path');
@@ -57,13 +57,13 @@ class ImagesEntity extends Entity{
 	 * game->attributes['cover'][n]
 	 * game->attributes['screenshots'][n]
 	 * game->attributes['arts'][n]
-	 * 
+	 *
 	 * @param string $treeType '/' separated attribute list for images storing schema.
 	 */
 	public function loadImages($treeType="/id/",$categories=""){
-		
+
 		__debug("param: treeType='$treeType', categories='$categories', search for existing images into ".self::$defaultImagesPath,"loadImages",__CLASS__);
-		$paths = $this->generateImagesPath($treeType);		
+		$paths = $this->generateImagesPath($treeType);
 		$imagesAbsolutePath= $paths['absolute'];
 		$imagesRelativePath= $paths['relative'];
 		$categories = explode(',',$categories);
@@ -73,9 +73,9 @@ class ImagesEntity extends Entity{
 			$dir = opendir($imagesAbsolutePath);
 			while(false !== ($item = readdir($dir)))
 			{
-				if( 
-					//((count($categories)>0 && isset($categories[$item])) || count($categories)==0) && 
-					file_exists($imagesAbsolutePath."/".$item) 
+				if(
+					//((count($categories)>0 && isset($categories[$item])) || count($categories)==0) &&
+					file_exists($imagesAbsolutePath."/".$item)
 					&& is_dir($imagesAbsolutePath."/".$item)
 					)
 				{
@@ -86,16 +86,16 @@ class ImagesEntity extends Entity{
 					{
 						$file = $imagesAbsolutePath."/".$item."/".$image;
 						$fileRelative = $subdirRelative.$image;
-						if(is_file($file) 
-								&& $image != "." 
-								&& $image !=".." 
-								&& $image !="Thumbs.db" 
+						if(is_file($file)
+								&& $image != "."
+								&& $image !=".."
+								&& $image !="Thumbs.db"
 								//&& preg_match('/(^\*)+[.]['.self::$formatsAccepted.']/',strtolower($image))
 						){
 							//echo("<pre>subdir=[$imagesAbsolutePath/$item]</pre>");
-							//__debug("image=".$imagesAbsolutePath."/".$item."$image","loadImages",__CLASS__);
+							__debug("image=".$imagesAbsolutePath."/".$item."$image","loadImages",__CLASS__);
 							$this->pictures[$item][$i]['image']=$fileRelative;
-							
+
 							if(!Image::getInstance(self::$thumbsSizes)->thumbsExists(
 								$imagesAbsolutePath."/".$item."/thumbs/",
 								self::$thumbsDefaultSize))
@@ -114,12 +114,12 @@ class ImagesEntity extends Entity{
 						}
 					}
 				}else{
-					throw new Exception("Error during parsing image subdirectories into '".$imagesPath."'"); 
+					throw new Exception("Error during parsing image subdirectories into '".$imagesAbsolutePath."'".print_r(error_get_last(),true));
 				}
 			}
 		}
 	}
-	
+
 	/**
 	 * Reutrn an Image. by default the cover.
 	 * @param string $key Subdirectory image path.
@@ -127,16 +127,16 @@ class ImagesEntity extends Entity{
 	 * @param string thumb (optional) Size of the thumb.
 	 */
 	public function getPicture($key="default",$index=1,$thumb="",$default){
-		
+
 		if($thumb!=""){
-			
+
 			if(isset($this->pictures[$key][$index]['thumb'][$thumb])){
 				return $this->pictures[$key][$index]['thumb'][$thumb];
 			}else{
 				return $this->pictures[$key][$index]['thumb'][self::$thumbsDefaultSize];
 			}
 		}else{
-			
+
 			return (isset($this->pictures[$key][$index]['image'])?$this->pictures[$key][$index]['image']:$default);
 		}
 
@@ -150,7 +150,7 @@ class ImagesEntity extends Entity{
 	public function getPictures($key="screenshots"){
 		return (isset($this->pictures[$key])?$this->pictures[$key]:null);
 	}
-	
+
 	/**
 	 * Return Image thumbs. by default the cover.
 	 * @param unknown_type $key
@@ -161,7 +161,7 @@ class ImagesEntity extends Entity{
 		}
 		return (isset($this->pictures[$key][$index]['thumb'][$size])?$this->pictures[$key][$index]['thumb'][$size]:$default);
 	}
-	
+
 	public function upload($treeType="id/"){
 		ini_set('upload_max_filesize', '10M');
 		ini_set('post_max_size', '10M');
@@ -191,3 +191,4 @@ class ImagesEntity extends Entity{
 	}
 }
 ?>
+

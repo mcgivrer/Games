@@ -20,5 +20,19 @@ psone|vagrant story|16|An old PSONE game ported to the PSP.|McGivrer|
 ps2|freedom fighters|17|A fantastic game the the developer team of the game second sight. It's the ancesestor.|McGivrer|
 ps2|true crime streets of la|17|A GTA like, fantastic game, but to loading phase are too long.|McGivrer|
 ps2|true crime new-york city|17|The sequel of True Crime, Streets of LA, but now in the New-York city.|McGivrer|
-wii|mario kart wii|17|The best nad most fun course game in the world !|McGivrer|course,kart,mario,standard,nintendo
-wii|new super mario bros wii|19|ZE platform game "must to have"|McGivrer|plateforme,mario,wii,legende
+wii|mario kart wii|17|The best nad most fun course game in the world !|McGivrer|course,kart,mario,standard,nintendo,wii
+wii|new super mario bros wii|19|ZE platform game "must to have"|McGivrer|plateforme,mario,wii,legende,wii
+wii|zak and wiki|15|a new view of reflexion game, with a lot of neuronal activity and a bit of reflex.|McGivrer|reflexion,action,platform,wii
+wii|wii fit|16|Fitness entertainment and workout for a good health|McGivrer|sport,fitness,wii
+wii|shauwn white snow bording road trip|14|A good skiing sport game|McGivrer|sport,ski,wii
+wii|super mario galaxy|19|this the main reference in 3D mario world.|McGivrer|mario,wii,platform,3d,reference
+wii|en:rayman and the raving rabbits\\fr:rayman contre les lapins encore + cretins|14|A very good trip into the mad world of these mad bunnies|McGivrer|partygame,rayman,raving rabbits
+wii|en:the raving rabbits show\\fr:The Lapins cretins show|16|Ravong rabbits at there top health|McGivrer|partygame,rayman,raving rabbits
+wii|super mario a,wiill starts|16|Only a raw portage of the original games|McGivrer|mario,platform,old-school,wii
+wii|prince of persia forgotten sands|16||McGivrer|platform,adventure,pop,wii
+wii|just dance|17|Excellent game to learn how to move on international dance floors.|McGivrer|casual,dance,move,sport,health,wii
+wii|donkey kong country returns|19|The great return of Didi and Donkey. A very good return !|McGivrer|platform,donkey kong,wii
+wii|mario party 8|13|The last version of Mario Party with a alot aof new game modes and much more mini games.|McGivrer|partygame,wii
+wii|cerebral academie|15|A good brain training game|McGivrer|brain,training,wii
+wii|anno creer votre monde|16|Create your own world and rule it accross ages|McGivrer|world,management,create,wii
+

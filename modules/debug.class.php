@@ -6,7 +6,7 @@ class Debug{
 	private static $timeFormat="";
 	private static $messages = array();
 	private $microtimeStart=null;
-	
+
 	private $className="";
 
 	const LEVEL_MAIN="MAIN";
@@ -20,8 +20,8 @@ class Debug{
 		if(self::$path==""){
 			self::$path = __config("debug","logfilepath");
 			self::$timeFormat = __config('debug','timeformat',"Ymd-his,u");
-			if( isset(self::$path) && 
-				self::$path!="" && 
+			if( isset(self::$path) &&
+				self::$path!="" &&
 				!file_exists(self::$path)){
 				$oldpath = self::$path;
 				self::$path=dirname(__FILE__)."/../log/debug-trace.log";
@@ -29,7 +29,7 @@ class Debug{
 					"<span class=\"ui-icon ui-icon-alert\" style=\"float:left; margin:0 7px 50px 0;\"></span>".
 					"Error on log file path in <code>config.ini [group:debug / key:logfilepath]</code>".
 					"<ul><li>filepath [<code>".$oldpath."</code>] does not exist.</li>".
-					"<li>use of following path [<code>".self::$path."</code>] in place of configured one.</li></ul>");			
+					"<li>use of following path [<code>".self::$path."</code>] in place of configured one.</li></ul>");
 
 			}
 			$this->className=$pClassName;
@@ -92,7 +92,7 @@ class Debug{
 			echo "</div>";
 		}
 	}
-	
+
 	/**
 	 * Set current className.
 	 * @param $className
@@ -101,7 +101,7 @@ class Debug{
 	public function setClassName($className=""){
 		if($className!="") $this->className=$className;
 	}
-	
+
 	/**
 	 * Return time enlapsed from starting page generation.
 	 */
@@ -112,7 +112,7 @@ class Debug{
 	/**
 	 * initialise Debug output and log file.
 	 */
-	public function getInstance($pClassName=""){
+	public static function getInstance($pClassName=""){
 		if(!isset(self::$_instance) || self::$_instance == null){
 			self::$_instance = new Debug($pClassName);
 		}else{
@@ -122,3 +122,4 @@ class Debug{
 	}
 }
 ?>
+

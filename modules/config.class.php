@@ -1,11 +1,11 @@
 <?php
 /**
- * Configuration manager. 
+ * Configuration manager.
  * Load the config/config.ini file into a PHP array, following groups and key.
  * you will be able to get key value with the <code>get($group,$key,$default)</code> method,
- * where $group/$key are value unique identifier, and $default, a default value if group/key 
+ * where $group/$key are value unique identifier, and $default, a default value if group/key
  * not found into configuration file.
- * 
+ *
  * @author Frédéric Delorme<frederic.delorme@gmail.com>
  * @version 1.3
  * @copyright 2010/08/08
@@ -68,13 +68,13 @@ class Config{
 	/**
 	 * initialise parmaters from config.ini file.
 	 */
-	public function getInstance(){
+	public static function getInstance(){
 		if(!isset(self::$_instance) || self::$_instance == null){
 			self::$_instance = new Config();
 		}
 		return self::$_instance;
 	}
-	
+
     public function __autoload($name){
     	if($name==__CLASS__){
     		return Config::getInstance();
@@ -82,3 +82,4 @@ class Config{
     }
 }
 ?>
+
